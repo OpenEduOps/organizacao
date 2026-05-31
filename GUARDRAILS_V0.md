@@ -43,6 +43,7 @@ evitar que decisoes tecnicas enfraquecam a proposta inicial.
 A V0 deve privilegiar o menor conjunto funcional que demonstre valor real:
 
 - primeira abertura;
+- cadastro local de pessoas/usuarios;
 - Radar de Necessidades;
 - registro de necessidade;
 - detalhe da necessidade;
@@ -81,9 +82,13 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
 - Nao exigir e-mail pessoal para recuperacao de acesso na V0.
 - O acesso normal deve usar usuario e senha.
 - A V0 deve prever salvaguarda local para esquecimento de usuario e senha, como
-  token simples, pergunta secreta, pessoa responsavel ou fluxo manual
+  token simples, frase de recuperacao, pessoa responsavel ou fluxo manual
   documentado.
 - Senhas nunca devem ser armazenadas em texto claro.
+- A senha inicial padrao `123456` so pode ser usada para pessoas cadastradas e
+  apenas como senha temporaria de primeiro acesso.
+- O sistema deve obrigar a troca da senha inicial antes de permitir uso normal do
+  usuario cadastrado.
 - O produto deve salvar os dados no banco local e permitir exportacao CSV de
   seguranca.
 - O produto deve prever caminho futuro para editar ou remover dados pessoais.
@@ -96,11 +101,20 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
   cadastro da escola, primeira senha e salvaguarda de acesso.
 - Durante a configuracao inicial, o produto deve exibir alerta claro sobre a
   importancia de nao perder usuario, senha e salvaguarda.
-- A salvaguarda local deve combinar usuario ou nome do responsavel, token simples
-  e pergunta secreta.
-- O token e a pergunta secreta devem ser apresentados de forma que a direcao ou
+- A salvaguarda local deve usar usuario ou nome do responsavel e permitir
+  recuperacao por token simples ou frase de recuperacao.
+- O token e a frase de recuperacao devem ser apresentados de forma que a direcao ou
   pessoa responsavel consiga anotar e guardar em local seguro.
-- A resposta secreta nao deve ser armazenada em texto claro.
+- A resposta da frase de recuperacao nao deve ser armazenada em texto claro.
+- Para pessoas cadastradas depois da configuracao inicial, a salvaguarda local
+  tambem deve ser definida no primeiro acesso, junto com a troca da senha padrao.
+- A recuperacao individual deve poder usar token simples ou frase de recuperacao.
+- Exemplos de frase de recuperacao devem ser simples e compreensiveis,
+  como bairro onde cresceu, apelido de infancia ou outra referencia pessoal que
+  a pessoa consiga lembrar sem registrar dado sensivel de terceiros.
+- O produto deve recomendar que o token seja anotado em local seguro. Se a pessoa
+  tirar foto temporariamente para anotar depois, deve apagar a foto apos guardar
+  a informacao em local seguro.
 - Se usuario, senha e salvaguarda forem perdidos, o acesso administrativo pode
   ser perdido. Nesse caso, a recuperacao dependera de um procedimento tecnico
   documentado, se existir.
@@ -110,6 +124,7 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
 
 - Cada envolvido deve consultar o Radar Escola no computador em que o aplicativo
   esta instalado, usando seu usuario e senha.
+- Envolvidos devem ser selecionados a partir de pessoas/usuarios cadastrados.
 - A V0 nao deve enviar e-mails automaticos.
 - A V0 nao deve depender de WhatsApp, mensageria, push notification ou qualquer
   vendor externo para acompanhar necessidades.
@@ -156,11 +171,13 @@ Devem cobrir regras puras e validacoes, incluindo:
 - criacao de necessidade;
 - transicoes de status permitidas;
 - marcacao de envolvidos;
+- cadastro de pessoa/usuario;
+- obrigatoriedade de troca da senha inicial padrao;
 - regras de prioridade;
 - regras de necessidades paradas;
 - validacao de campos obrigatorios;
 - validacao de usuario;
-- regras de token simples e pergunta secreta de recuperacao;
+- regras de token simples ou frase de recuperacao;
 - regras de plano de acao;
 - fechamento/resolucao de necessidade.
 
@@ -192,6 +209,8 @@ Devem cobrir fluxos criticos de dados:
 Devem cobrir os fluxos principais da experiencia:
 
 - primeira abertura;
+- cadastro de pessoa/usuario;
+- primeiro acesso com troca obrigatoria da senha padrao;
 - registro de uma necessidade;
 - exibicao da necessidade no radar;
 - atualizacao de andamento;

@@ -11,8 +11,8 @@ O objetivo e responder uma pergunta simples:
 Sim, desde que a V0 entregue um ciclo operacional completo:
 
 > configurar -> entrar -> registrar necessidade -> acompanhar no radar ->
-> marcar envolvidos -> atualizar andamento -> marcar como resolvido -> consultar
-> historico.
+> cadastrar pessoas -> registrar necessidade -> acompanhar no radar -> marcar
+> envolvidos -> atualizar andamento -> marcar como resolvido -> consultar historico.
 
 Se qualquer etapa desse ciclo faltar, a V0 fica incompleta.
 
@@ -45,7 +45,7 @@ O sistema pede apenas o essencial:
 - senha;
 - alerta sobre a importancia de nao perder usuario, senha e salvaguarda;
 - token simples de recuperacao;
-- pergunta secreta e resposta secreta.
+- frase de recuperacao e resposta.
 
 Resultado esperado:
 
@@ -56,7 +56,31 @@ Resultado esperado:
   salvaguarda em local seguro;
 - o usuario chega ao Radar de Necessidades.
 
-### 2. Registrar uma necessidade
+### 2. Cadastrar pessoas/usuarios
+
+A direcao ou pessoa responsavel principal cadastra as pessoas que poderao
+acompanhar necessidades.
+
+Cada cadastro deve ter:
+
+- nome;
+- usuario;
+- cargo ou funcao;
+- senha inicial padrao `123456`.
+
+No primeiro acesso, a pessoa cadastrada deve obrigatoriamente:
+
+- trocar a senha;
+- definir token simples ou frase de recuperacao;
+- guardar a salvaguarda em local seguro.
+
+Resultado esperado:
+
+- existem pessoas cadastradas para serem marcadas como envolvidas;
+- a senha padrao nao permanece como senha de uso normal;
+- cada pessoa tem sua propria forma local de recuperacao.
+
+### 3. Registrar uma necessidade
 
 A pessoa percebe algo que precisa ser resolvido.
 
@@ -79,7 +103,7 @@ Resultado esperado:
 - ela aparece no Radar de Necessidades;
 - ela nao depende mais de memoria, WhatsApp, papel ou conversa informal.
 
-### 3. Acompanhar no Radar de Necessidades
+### 4. Acompanhar no Radar de Necessidades
 
 Ao entrar no sistema, a pessoa ve:
 
@@ -93,16 +117,9 @@ Resultado esperado:
 - necessidades paradas nao desaparecem;
 - a escola consegue enxergar o que ainda precisa ser cuidado.
 
-### 4. Marcar envolvidos
+### 5. Marcar envolvidos
 
-A pessoa indica quem precisa acompanhar a necessidade.
-
-Na V0, isso pode ser simples:
-
-- pessoa responsavel;
-- setor;
-- equipe;
-- observacao em texto.
+A pessoa indica quais pessoas cadastradas precisam acompanhar a necessidade.
 
 Resultado esperado:
 
@@ -111,7 +128,7 @@ Resultado esperado:
 - os envolvidos podem consultar o Radar Escola no computador instalado, usando
   usuario e senha.
 
-### 5. Atualizar andamento
+### 6. Atualizar andamento
 
 Uma pessoa envolvida acessa o computador onde o aplicativo esta instalado e
 entra com seu usuario e senha.
@@ -137,7 +154,7 @@ Resultado esperado:
 - outras pessoas podem consultar a situacao no Radar Escola;
 - a necessidade continua viva ate ser resolvida.
 
-### 6. Marcar como resolvido
+### 7. Marcar como resolvido
 
 Quando o problema for resolvido, alguem registra:
 
@@ -156,7 +173,7 @@ Resultado esperado:
 - a solucao fica preservada;
 - a escola cria memoria operacional.
 
-### 7. Consultar historico
+### 8. Consultar historico
 
 Depois, a escola pode consultar necessidades resolvidas.
 
@@ -191,8 +208,9 @@ Resultado esperado:
 
 O menor fluxo que ainda entrega valor real e:
 
-> registrar necessidade -> ver no radar -> marcar envolvidos -> atualizar
-> andamento -> marcar como resolvido -> consultar historico.
+> cadastrar pessoas -> registrar necessidade -> ver no radar -> marcar
+> envolvidos -> atualizar andamento -> marcar como resolvido -> consultar
+> historico.
 
 Exportacao CSV nao e parte da dor diaria do usuario comum. Ela deve existir como
 rotina do perfil direcao ou pessoa responsavel principal porque o produto e
@@ -253,12 +271,14 @@ A V0 deve ser validada com uma historia simples:
 
 1. Maria instala e abre o Radar Escola.
 2. Maria cria o primeiro acesso da escola.
-3. Maria registra que o projetor da sala 8 nao liga.
-4. A necessidade aparece no Radar de Necessidades.
-5. Maria marca Joao como responsavel/envolvido.
-6. Joao acessa o mesmo computador e registra uma atualizacao.
-7. A necessidade aparece como em andamento.
-8. Depois de resolver, Joao marca a necessidade como resolvida.
-9. Maria consulta o historico e ve o que foi feito.
+3. Maria cadastra Joao como usuario com cargo ou funcao e senha inicial `123456`.
+4. Joao acessa pela primeira vez, troca a senha e define sua salvaguarda.
+5. Maria registra que o projetor da sala 8 nao liga.
+6. A necessidade aparece no Radar de Necessidades.
+7. Maria marca Joao como responsavel/envolvido.
+8. Joao acessa o mesmo computador e registra uma atualizacao.
+9. A necessidade aparece como em andamento.
+10. Depois de resolver, Joao marca a necessidade como resolvida.
+11. Maria consulta o historico e ve o que foi feito.
 
 Se essa historia funcionar de ponta a ponta, a V0 tem um MVP util.

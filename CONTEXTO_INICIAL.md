@@ -25,7 +25,7 @@ O ponto de partida mais saudavel parece estar na intersecao entre:
 
 Como a proposta inicial e operacional, a V0 nao deve depender de dados pessoais
 de estudantes. O foco deve estar em necessidades da instituicao, equipamentos,
-locais, pessoas envolvidas na operacao e historico de resolucao.
+locais, pessoas cadastradas na operacao e historico de resolucao.
 
 Por esse motivo, o primeiro foco recomendado nao esta na sala de aula, em
 plataformas pedagogicas, em ambientes virtuais de aprendizagem ou em solucoes
@@ -181,9 +181,18 @@ ou incidente, exceto quando forem necessarios internamente.
 
 #### Marcar envolvidos
 
-A necessidade deve permitir indicar pessoas envolvidas, como solicitante,
-responsavel, setor, equipe tecnica, coordenacao, direcao ou outras pessoas que
-precisam acompanhar o caso.
+A necessidade deve permitir indicar pessoas cadastradas que precisam acompanhar
+o caso, como solicitante, responsavel, equipe tecnica, coordenacao, secretaria,
+direcao ou outras funcoes operacionais da escola.
+
+Na V0, isso exige cadastro local de pessoas/usuarios antes de marcar envolvidos.
+Cada pessoa deve ter, no minimo, nome, usuario, cargo ou funcao e status de
+primeiro acesso.
+
+Pessoas cadastradas pela direcao ou responsavel principal podem receber a senha
+inicial padrao `123456` apenas para o primeiro acesso. Ao entrar pela primeira
+vez, a pessoa deve obrigatoriamente trocar a senha, definir sua salvaguarda
+local de recuperacao e guardar token ou frase de recuperacao em local seguro.
 
 #### Plano de acao detalhado
 
@@ -261,6 +270,9 @@ A concepcao da V0 deve ser lida junto com:
 
 O MVP deve priorizar:
 
+- cadastro local de pessoas/usuarios com cargo ou funcao;
+- primeiro acesso de pessoas cadastradas com senha temporaria `123456`, troca
+  obrigatoria de senha e salvaguarda local;
 - registro de necessidades;
 - solicitacao de apoio ou ajuda;
 - acompanhamento de andamento;
@@ -269,7 +281,8 @@ O MVP deve priorizar:
 - registro de manutencoes;
 - comentarios e historico da necessidade;
 - categorias e prioridades simples;
-- perfis basicos, como solicitante, tecnico e gestor;
+- papeis operacionais simples, como solicitante, tecnico, secretaria,
+  coordenacao, direcao ou gestor;
 - relatorios simples;
 - exportacao em CSV;
 - instalacao simples para Windows;

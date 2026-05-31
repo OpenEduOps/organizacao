@@ -25,12 +25,13 @@ Frase-guia:
 A V0 termina quando o Radar Escola permite:
 
 - configurar o primeiro acesso local;
+- cadastrar pessoas/usuarios locais com cargo ou funcao;
 - entrar com usuario e senha;
 - registrar uma necessidade;
 - listar necessidades no Radar de Necessidades;
 - visualizar detalhe de uma necessidade;
 - atualizar andamento;
-- marcar envolvidos como texto simples ou selecao basica;
+- marcar envolvidos a partir de pessoas/usuarios cadastrados;
 - registrar resolucao;
 - consultar historico de necessidades resolvidas;
 - cadastrar equipamento basico;
@@ -52,15 +53,34 @@ decisao explicita posterior.
 - Senha.
 - Alerta sobre a importancia de nao perder usuario, senha e salvaguarda.
 - Geracao de token simples de recuperacao.
-- Cadastro de pergunta secreta e resposta secreta.
+- Cadastro de frase de recuperacao e resposta.
 
 ### Acesso
 
 - Login com usuario e senha.
-- Recuperacao local de acesso com usuario ou nome, token simples e pergunta
-  secreta, se implementada no primeiro ciclo.
+- Recuperacao local de acesso com usuario ou nome e salvaguarda local, usando
+  token simples ou frase de recuperacao.
 - Sem e-mail pessoal para recuperacao.
 - Sem dependencia de internet.
+
+### Pessoas e usuarios
+
+- A V0 deve ter cadastro local de pessoas/usuarios desde o inicio.
+- Campos minimos:
+  - nome;
+  - usuario;
+  - cargo ou funcao;
+  - senha inicial;
+  - status de primeiro acesso.
+- Pessoas cadastradas podem ser marcadas como envolvidas em necessidades.
+- A senha inicial padrao para pessoas cadastradas pode ser `123456`, mas apenas
+  para primeiro acesso.
+- No primeiro login da pessoa cadastrada, a troca de senha deve ser obrigatoria
+  antes de usar o sistema.
+- Ao trocar a senha inicial, a pessoa deve definir sua propria salvaguarda local
+  de recuperacao.
+- A salvaguarda individual deve permitir recuperacao por token simples ou por
+  frase de recuperacao.
 
 ### Necessidades
 
@@ -83,7 +103,7 @@ decisao explicita posterior.
 
 ### Envolvidos
 
-- Envolvidos podem ser texto simples, lista local ou cadastro basico.
+- Envolvidos devem ser pessoas/usuarios cadastrados.
 - Cada envolvido deve poder consultar o aplicativo no computador instalado, se
   tiver usuario e senha.
 - Sem notificacao automatica.
@@ -177,6 +197,8 @@ A V0 pode ser considerada entregue quando:
 - roda localmente em ambiente de desenvolvimento;
 - possui caminho claro para empacotamento desktop;
 - permite primeiro uso local;
+- permite cadastrar pessoa/usuario local com cargo ou funcao;
+- obriga troca da senha inicial padrao no primeiro acesso da pessoa cadastrada;
 - permite login;
 - cria necessidade;
 - mostra a necessidade no Radar de Necessidades;

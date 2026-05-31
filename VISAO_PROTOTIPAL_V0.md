@@ -56,9 +56,9 @@ Principio do produto:
 |                                                      |
 | Salvaguarda local de acesso                          |
 | Token: RE-48291                                      |
-| Pergunta secreta                                     |
-| [ Nome da primeira escola onde trabalhei ______ ]    |
-| Resposta secreta                                     |
+| Frase de recuperacao                                 |
+| [ Bairro onde cresci ________________________ ]      |
+| Resposta                                             |
 | [ __________________________________________ ]       |
 |                                                      |
 | [ Comecar ]                                         |
@@ -123,7 +123,7 @@ Principio do produto:
 | [ Selecionar equipamento ] [ Cadastrar novo ]        |
 |                                                      |
 | Quem precisa acompanhar?                             |
-| [ Ana, Coordenacao, Tecnico __________________ ]      |
+| [ Selecionar pessoas cadastradas ]                   |
 |                                                      |
 | [ Registrar necessidade ]                            |
 |                                                      |
@@ -229,6 +229,94 @@ Principio do produto:
 +------------------------------------------------------+
 ```
 
+## Primeiro Acesso de Pessoa Cadastrada
+
+```text
++------------------------------------------------------+
+| Primeiro acesso                              [Sair]   |
++------------------------------------------------------+
+| Sua senha inicial e temporaria.                      |
+| Para continuar, crie uma nova senha e salve sua       |
+| salvaguarda de acesso.                               |
++------------------------------------------------------+
+|                                                      |
+| Usuario                                              |
+| [ joao.tecnico _____________________________ ]       |
+|                                                      |
+| Senha atual                                          |
+| [ 123456 ___________________________________ ]       |
+|                                                      |
+| Nova senha                                           |
+| [ __________________________________________ ]       |
+|                                                      |
+| Confirmar nova senha                                 |
+| [ __________________________________________ ]       |
+|                                                      |
+| Salvaguarda local                                    |
+| Token: RE-73924                                      |
+|                                                      |
+| Frase de recuperacao                                 |
+| [ Bairro onde cresci ________________________ ]      |
+| Resposta                                            |
+| [ __________________________________________ ]       |
+|                                                      |
+| Recomenda-se anotar o token em local seguro.          |
+| Se tirar foto para anotar depois, apague a foto.      |
+|                                                      |
+| [ Salvar e entrar ]                                  |
+|                                                      |
++------------------------------------------------------+
+```
+
+## Pessoas e Usuarios
+
+```text
++------------------------------------------------------+
+| Pessoas e usuarios                           [Voltar] |
++------------------------------------------------------+
+| [ Cadastrar pessoa ]                                  |
+|                                                      |
+| Buscar                                               |
+| [ nome, usuario, cargo ou funcao... __________ ]     |
+|                                                      |
+| ---------------------------------------------------- |
+| Maria Silva                                          |
+| Usuario: direcao.maria | Funcao: Direcao             |
+| Responsavel principal                                |
+|                                                      |
+| Joao Pereira                                         |
+| Usuario: joao.tecnico | Funcao: Tecnico              |
+| Primeiro acesso pendente                             |
+|                                                      |
++------------------------------------------------------+
+```
+
+## Cadastrar Pessoa
+
+```text
++------------------------------------------------------+
+| Cadastrar pessoa                             [Voltar] |
++------------------------------------------------------+
+|                                                      |
+| Nome                                                 |
+| [ Joao Pereira ______________________________ ]      |
+|                                                      |
+| Usuario                                              |
+| [ joao.tecnico _____________________________ ]       |
+|                                                      |
+| Cargo ou funcao                                      |
+| [ Tecnico ___________________________________ ]      |
+|                                                      |
+| Senha inicial                                        |
+| [ 123456 ]                                           |
+|                                                      |
+| A pessoa devera trocar essa senha no primeiro acesso. |
+|                                                      |
+| [ Salvar pessoa ]                                    |
+|                                                      |
++------------------------------------------------------+
+```
+
 ## Recuperar Acesso
 
 ```text
@@ -245,10 +333,10 @@ Principio do produto:
 | Token de recuperacao                                 |
 | [ RE-48291 __________________________________ ]      |
 |                                                      |
-| Pergunta secreta                                     |
-| Nome da primeira escola onde trabalhei                |
+| Frase de recuperacao                                 |
+| Bairro onde cresci                                   |
 |                                                      |
-| Resposta secreta                                     |
+| Resposta                                             |
 | [ __________________________________________ ]       |
 |                                                      |
 | Se a salvaguarda tambem tiver sido perdida, pode ser  |
@@ -299,13 +387,12 @@ Principio do produto:
 +------------------------------------------------------+
 |                                                      |
 | Quem precisa acompanhar?                             |
-| [ Buscar pessoa ou setor _____________________ ]     |
+| [ Buscar pessoa cadastrada ___________________ ]     |
 |                                                      |
 | Sugestoes                                            |
-| [ ] Coordenacao                                      |
-| [ ] Direcao                                          |
-| [ ] Equipe tecnica                                   |
-| [ ] Secretaria                                       |
+| [ ] Maria Silva - Direcao                            |
+| [ ] Joao Pereira - Tecnico                           |
+| [ ] Marta Souza - Secretaria                         |
 |                                                      |
 | Envolvidos atuais                                    |
 | ---------------------------------------------------- |
@@ -341,7 +428,7 @@ Principio do produto:
 | Adicionar passo                                      |
 | [ ____________________________________________ ]     |
 | Responsavel                                          |
-| [ Selecionar pessoa ou setor _________________ ]     |
+| [ Selecionar pessoa cadastrada _______________ ]     |
 |                                                      |
 | [ Adicionar passo ]                                  |
 | [ Salvar plano ]                                     |
@@ -453,8 +540,8 @@ Principio do produto:
 
 - A primeira tela deve iniciar pelo cadastro da escola ou pelo radar com
   configuracao guiada?
-- A salvaguarda de acesso deve usar usuario/nome, token simples e pergunta
-  secreta anotados pela direcao?
+- A direcao podera redefinir a senha de uma pessoa cadastrada para `123456` se
+  ela perder senha e salvaguarda?
 - O botao principal deve ser "Tenho algo para resolver" ou "Registrar
   necessidade"?
 - "Preciso pedir ajuda" deve ser uma acao separada ou apenas outra porta para
