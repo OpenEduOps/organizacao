@@ -175,6 +175,8 @@ decisao explicita posterior.
   - marcacao de necessidade como resolvida;
   - cancelamento ou exclusao de necessidade.
 - A auditoria deve ser simples e local, sem dashboard obrigatorio na V0.
+- A consulta da auditoria deve ser exclusiva da direcao/responsavel principal.
+- Apoio de gestao nao deve consultar auditoria.
 
 ### Computador compartilhado
 

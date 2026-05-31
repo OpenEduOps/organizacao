@@ -129,6 +129,8 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
   - cancelamento ou exclusao de necessidade.
 - A V0 nao precisa ter dashboard de auditoria, mas os eventos devem ser
   persistidos localmente.
+- A consulta da auditoria deve ser exclusiva da direcao/responsavel principal.
+- Apoio de gestao nao deve consultar auditoria.
 
 ## Computador compartilhado
 
@@ -276,6 +278,7 @@ Devem cobrir regras puras e validacoes, incluindo:
 - limite maximo de duas pessoas como apoio de gestao alem da direcao;
 - restricao de marcacao como resolvido para direcao ou apoio de gestao;
 - auditoria minima de acoes sensiveis;
+- consulta de auditoria exclusiva da direcao/responsavel principal;
 - transferencia de direcao/responsavel principal;
 - logout/saida da conta em computador compartilhado;
 - cancelamento de necessidade cadastrada por engano;

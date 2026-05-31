@@ -284,6 +284,8 @@ A V0 deve registrar "quem fez o que e quando" para acoes sensiveis, como:
 - marcacao como resolvido.
 
 Esse historico deve ser simples e local. Nao precisa virar dashboard na V0.
+Quando houver consulta desse registro, ela deve ser exclusiva da
+direcao/responsavel principal. Apoio de gestao nao consulta auditoria.
 
 ## Fluxo minimo de valor
 

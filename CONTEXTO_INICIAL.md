@@ -271,6 +271,9 @@ em eventos como cadastro de usuario, redefinicao de senha, definicao de apoio de
 exportacao/importacao de seguranca, transferencia de direcao e marcacao de
 necessidade como resolvida.
 
+A consulta da auditoria deve ser exclusiva da direcao/responsavel principal.
+Apoio de gestao pode executar acoes delegadas, mas nao deve consultar auditoria.
+
 ### Troca de direcao
 
 A V0 deve prever fluxo para transferir a responsabilidade principal da escola

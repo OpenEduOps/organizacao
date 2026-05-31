@@ -285,6 +285,7 @@ Principio do produto:
 | Direcao/responsavel ou apoio de gestao cadastra.      |
 | [ Definir apoio de gestao ]                          |
 | [ Transferir direcao ]                               |
+| [ Auditoria ]                                        |
 |                                                      |
 | Buscar                                               |
 | [ nome, usuario, cargo ou funcao... __________ ]     |
@@ -298,6 +299,24 @@ Principio do produto:
 | Usuario: joao.tecnico | Funcao: Tecnico              |
 | Primeiro acesso pendente                             |
 | [ Redefinir senha para 123456 ]                      |
+|                                                      |
++------------------------------------------------------+
+```
+
+## Auditoria
+
+```text
++------------------------------------------------------+
+| Auditoria                                    [Voltar] |
++------------------------------------------------------+
+| Consulta exclusiva da direcao/responsavel principal. |
++------------------------------------------------------+
+|                                                      |
+| Hoje                                                 |
+| ---------------------------------------------------- |
+| Maria transferiu direcao para Marta       09:10      |
+| Marta definiu Coordenacao como apoio      09:25      |
+| Coordenacao marcou #12 como resolvida     10:40      |
 |                                                      |
 +------------------------------------------------------+
 ```
