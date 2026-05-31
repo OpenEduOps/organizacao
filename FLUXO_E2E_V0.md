@@ -68,6 +68,13 @@ Cada cadastro deve ter:
 - cargo ou funcao;
 - senha inicial padrao `123456`.
 
+Fluxo de excecao:
+
+- se o cargo ou funcao ainda nao existir na lista, a direcao ou responsavel
+  principal pode cadastrar essa opcao na hora;
+- depois de cadastrar o novo cargo ou funcao, o sistema volta ao cadastro da
+  pessoa com a nova opcao selecionada.
+
 No primeiro acesso, a pessoa cadastrada deve obrigatoriamente:
 
 - trocar a senha;

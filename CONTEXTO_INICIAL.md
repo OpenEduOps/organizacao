@@ -189,6 +189,11 @@ Na V0, isso exige cadastro local de pessoas/usuarios antes de marcar envolvidos.
 Cada pessoa deve ter, no minimo, nome, usuario, cargo ou funcao e status de
 primeiro acesso.
 
+Cargo ou funcao deve funcionar como uma lista simples, para facilitar filtros e
+leitura do Radar Escola. Se, durante o cadastro de uma pessoa, o cargo ou funcao
+ainda nao existir, a direcao ou responsavel principal deve poder cadastrar essa
+opcao na hora e continuar o cadastro sem sair do fluxo.
+
 Pessoas cadastradas pela direcao ou responsavel principal podem receber a senha
 inicial padrao `123456` apenas para o primeiro acesso. Ao entrar pela primeira
 vez, a pessoa deve obrigatoriamente trocar a senha, definir sua salvaguarda

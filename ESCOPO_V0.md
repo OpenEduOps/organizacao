@@ -72,6 +72,9 @@ decisao explicita posterior.
   - cargo ou funcao;
   - senha inicial;
   - status de primeiro acesso.
+- Cargo ou funcao deve usar lista simples cadastravel localmente.
+- Se o cargo ou funcao ainda nao existir durante o cadastro de pessoa, a V0 deve
+  permitir criar essa opcao no proprio fluxo e continuar o cadastro.
 - Pessoas cadastradas podem ser marcadas como envolvidas em necessidades.
 - A senha inicial padrao para pessoas cadastradas pode ser `123456`, mas apenas
   para primeiro acesso.

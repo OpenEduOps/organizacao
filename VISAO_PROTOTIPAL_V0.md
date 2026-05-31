@@ -306,7 +306,8 @@ Principio do produto:
 | [ joao.tecnico _____________________________ ]       |
 |                                                      |
 | Cargo ou funcao                                      |
-| [ Tecnico ___________________________________ ]      |
+| [ Tecnico                                  v ]       |
+| [ + Cadastrar novo cargo ou funcao ]                 |
 |                                                      |
 | Senha inicial                                        |
 | [ 123456 ]                                           |
@@ -314,6 +315,23 @@ Principio do produto:
 | A pessoa devera trocar essa senha no primeiro acesso. |
 |                                                      |
 | [ Salvar pessoa ]                                    |
+|                                                      |
++------------------------------------------------------+
+```
+
+## Cadastrar Cargo ou Funcao
+
+```text
++------------------------------------------------------+
+| Novo cargo ou funcao                         [Voltar] |
++------------------------------------------------------+
+|                                                      |
+| Nome do cargo ou funcao                             |
+| [ Tecnico de laboratorio ____________________ ]      |
+|                                                      |
+| Esta opcao ficara disponivel para proximos cadastros.|
+|                                                      |
+| [ Salvar e voltar ao cadastro da pessoa ]            |
 |                                                      |
 +------------------------------------------------------+
 ```

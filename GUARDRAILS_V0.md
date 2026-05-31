@@ -92,6 +92,10 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
 - O produto deve salvar os dados no banco local e permitir exportacao CSV de
   seguranca.
 - O produto deve prever caminho futuro para editar ou remover dados pessoais.
+- Cargo ou funcao deve ser uma lista simples, cadastravel localmente, sem virar
+  permissao complexa na V0.
+- O cadastro de pessoa nao deve ser bloqueado quando o cargo ou funcao ainda nao
+  existir; a interface deve permitir criar a opcao como excecao dentro do fluxo.
 
 ## Recuperacao de acesso
 
@@ -179,6 +183,7 @@ Devem cobrir regras puras e validacoes, incluindo:
 - transicoes de status permitidas;
 - marcacao de envolvidos;
 - cadastro de pessoa/usuario;
+- cadastro de cargo ou funcao durante cadastro de pessoa;
 - obrigatoriedade de troca da senha inicial padrao;
 - redefinicao administrativa de senha para `123456` com nova troca obrigatoria;
 - regras de prioridade;
