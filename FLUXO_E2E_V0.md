@@ -55,6 +55,8 @@ Resultado esperado:
 - a direcao ou pessoa responsavel principal sabe que deve anotar e guardar a
   salvaguarda em local seguro;
 - o usuario chega ao Radar de Necessidades.
+- existe a possibilidade futura de transferir a responsabilidade principal se a
+  direcao mudar.
 
 ### 2. Cadastrar pessoas/usuarios
 
@@ -184,6 +186,8 @@ Resultado esperado:
 - o andamento fica documentado;
 - outras pessoas podem consultar a situacao no Radar Escola;
 - a necessidade continua viva ate ser resolvida.
+- se a pessoa entender que o problema foi tecnicamente resolvido, ela registra
+  isso no andamento, mas nao fecha a necessidade sozinha.
 
 ### 7. Marcar como resolvido
 
@@ -205,6 +209,20 @@ Resultado esperado:
 - a escola cria memoria operacional.
 - o fechamento passa pelo olhar da gestao, evitando que necessidades sejam
   encerradas sem validacao minima.
+
+### 7.1. Cancelar ou corrigir cadastro errado
+
+Se uma necessidade foi cadastrada por engano, a escola deve conseguir corrigir o
+registro.
+
+Na V0:
+
+- dados simples podem ser editados quando houver erro;
+- uma necessidade pode ser cancelada quando nao deve seguir no fluxo;
+- exclusao definitiva deve ser evitada ou ficar restrita a direcao/responsavel
+  principal;
+- alteracoes relevantes devem ficar preservadas no historico sempre que
+  possivel.
 
 ### 8. Consultar historico
 
@@ -238,6 +256,28 @@ Resultado esperado:
   maquina.
 - os CSVs exportados podem ser importados de volta para restauracao em caso de
   perda, troca ou problema no computador.
+
+## Computador compartilhado
+
+Como o Radar Escola sera usado em computadores compartilhados, a V0 deve prever:
+
+- botao visivel para sair da conta;
+- orientacao simples para encerrar a sessao ao terminar o uso;
+- protecao contra a ideia de que o computador pertence a uma unica pessoa.
+
+## Auditoria minima
+
+A V0 deve registrar "quem fez o que e quando" para acoes sensiveis, como:
+
+- cadastro de usuario;
+- redefinicao de senha;
+- delegacao de cadastro;
+- transferencia de direcao;
+- exportacao/importacao de seguranca;
+- cancelamento de necessidade;
+- marcacao como resolvido.
+
+Esse historico deve ser simples e local. Nao precisa virar dashboard na V0.
 
 ## Fluxo minimo de valor
 
@@ -315,7 +355,9 @@ A V0 deve ser validada com uma historia simples:
 7. Maria marca Joao como responsavel/envolvido.
 8. Joao acessa o mesmo computador e registra uma atualizacao.
 9. A necessidade aparece como em andamento.
-10. Depois de resolver, Joao marca a necessidade como resolvida.
-11. Maria consulta o historico e ve o que foi feito.
+10. Depois de resolver tecnicamente, Joao registra uma atualizacao informando o
+    que foi feito.
+11. Maria, como direcao, revisa e marca a necessidade como resolvida.
+12. Maria consulta o historico e ve o que foi feito.
 
 Se essa historia funcionar de ponta a ponta, a V0 tem um MVP util.

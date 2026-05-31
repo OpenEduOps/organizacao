@@ -70,7 +70,7 @@ Principio do produto:
 
 ```text
 +------------------------------------------------------+
-| Radar Escola                         [Exportar] [Ajuda]|
+| Radar Escola                  [Exportar] [Ajuda] [Sair]|
 | Veja o que sua escola precisa resolver.              |
 +------------------------------------------------------+
 |                                                      |
@@ -158,6 +158,7 @@ Principio do produto:
 | [ Registrar atualizacao ]                            |
 |                                                      |
 | [ Atualizar status ] [ Solicitar fechamento ]        |
+| [ Cancelar necessidade ]                             |
 |                                                      |
 +------------------------------------------------------+
 ```
@@ -283,6 +284,7 @@ Principio do produto:
 | [ Cadastrar pessoa ]                                  |
 | Direcao/responsavel ou pessoa delegada cadastra.      |
 | [ Delegar cadastro de usuarios ]                     |
+| [ Transferir direcao ]                               |
 |                                                      |
 | Buscar                                               |
 | [ nome, usuario, cargo ou funcao... __________ ]     |
@@ -296,6 +298,26 @@ Principio do produto:
 | Usuario: joao.tecnico | Funcao: Tecnico              |
 | Primeiro acesso pendente                             |
 | [ Redefinir senha para 123456 ]                      |
+|                                                      |
++------------------------------------------------------+
+```
+
+## Transferir Direcao
+
+```text
++------------------------------------------------------+
+| Transferir direcao                           [Voltar] |
++------------------------------------------------------+
+| Esta acao muda a pessoa responsavel principal pela    |
+| escola. Use apenas em troca real de direcao.          |
+|                                                      |
+| Nova pessoa responsavel                              |
+| [ Buscar pessoa cadastrada __________________ ]      |
+|                                                      |
+| Confirmacao                                          |
+| [ ] Entendo que esta acao muda o controle principal. |
+|                                                      |
+| [ Transferir responsabilidade ]                      |
 |                                                      |
 +------------------------------------------------------+
 ```

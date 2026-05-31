@@ -33,12 +33,16 @@ A V0 termina quando o Radar Escola permite:
 - atualizar andamento;
 - marcar envolvidos a partir de pessoas/usuarios cadastrados;
 - registrar resolucao;
+- cancelar necessidade cadastrada por engano;
 - consultar historico de necessidades resolvidas;
 - cadastrar equipamento basico;
 - vincular uma necessidade a um equipamento;
 - exportar necessidades em CSV;
 - exportar equipamentos em CSV;
 - importar dados exportados em CSV para restauracao;
+- registrar auditoria minima de acoes sensiveis;
+- permitir sair da conta em computador compartilhado;
+- transferir responsabilidade principal da escola;
 - executar testes automatizados dos fluxos criticos.
 
 Qualquer funcionalidade fora dessa lista deve ser considerada fora da V0, salvo
@@ -129,6 +133,9 @@ decisao explicita posterior.
 - Registrar resolucao.
 - Marcar como resolvido deve ser permitido apenas para direcao ou pessoas
   delegadas pela direcao para fechamento de necessidades.
+- Necessidades cadastradas por engano podem ser editadas ou canceladas.
+- Exclusao definitiva de necessidade deve ser evitada na V0 ou ficar restrita a
+  direcao/responsavel principal, preservando historico quando possivel.
 
 ### Envolvidos
 
@@ -152,7 +159,34 @@ decisao explicita posterior.
 
 - Necessidades resolvidas devem continuar consultaveis.
 - Historico deve mostrar atualizacoes relevantes e resolucao.
+- Historico deve registrar cancelamento e alteracoes relevantes.
 - Busca simples pode existir se for barata, mas nao deve bloquear a V0.
+
+### Auditoria minima
+
+- A V0 deve registrar "quem fez o que e quando" para acoes sensiveis.
+- Eventos minimos:
+  - cadastro de usuario;
+  - redefinicao administrativa de senha;
+  - delegacao de cadastro de usuarios;
+  - exportacao/importacao de seguranca;
+  - transferencia de direcao/responsavel principal;
+  - marcacao de necessidade como resolvida;
+  - cancelamento ou exclusao de necessidade.
+- A auditoria deve ser simples e local, sem dashboard obrigatorio na V0.
+
+### Computador compartilhado
+
+- A V0 deve permitir sair da conta de forma visivel.
+- A interface deve orientar o usuario a sair da conta ao terminar o uso em
+  computador compartilhado.
+- O produto nao deve assumir que o computador e pessoal.
+
+### Troca de direcao
+
+- A V0 deve permitir transferir a responsabilidade principal da escola.
+- A transferencia deve ser tratada como acao sensivel.
+- A transferencia deve exigir confirmacao clara e registrar auditoria minima.
 
 ### Exportacao de seguranca
 
@@ -176,6 +210,8 @@ decisao explicita posterior.
 - Testes unitarios para regras de necessidade e validacoes.
 - Testes de persistencia para SQLite.
 - Testes de exportacao e importacao/restauracao CSV.
+- Testes de auditoria minima para acoes sensiveis.
+- Testes de logout/saida da conta.
 - Testes de interface dos fluxos principais.
 - Testes de integracao desktop quando o empacotamento Tauri estiver disponivel.
 
@@ -235,16 +271,21 @@ A V0 pode ser considerada entregue quando:
 - permite cadastrar pessoa/usuario local com cargo ou funcao;
 - obriga troca da senha inicial padrao no primeiro acesso da pessoa cadastrada;
 - permite login;
+- permite sair da conta;
 - cria necessidade;
 - mostra a necessidade no Radar de Necessidades;
 - atualiza andamento;
 - registra resolucao;
+- restringe marcacao como resolvido a direcao ou pessoa delegada;
+- permite cancelar necessidade cadastrada por engano;
 - preserva historico;
+- registra auditoria minima de acoes sensiveis;
 - cadastra equipamento basico;
 - vincula equipamento a necessidade;
 - exporta necessidades em CSV;
 - exporta equipamentos em CSV;
 - importa de volta dados exportados em CSV;
+- permite transferencia de direcao/responsavel principal;
 - possui testes automatizados dos fluxos criticos;
 - documenta como executar, testar e validar a V0.
 

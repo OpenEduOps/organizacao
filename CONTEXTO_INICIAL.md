@@ -263,6 +263,34 @@ fechamento.
 
 Esse fechamento cria memoria operacional para a instituicao.
 
+### Auditoria minima
+
+A V0 deve registrar historico interno simples para acoes sensiveis. O objetivo
+nao e criar um dashboard de auditoria, mas preservar "quem fez o que e quando"
+em eventos como cadastro de usuario, redefinicao de senha, delegacao de cadastro,
+exportacao/importacao de seguranca, transferencia de direcao e marcacao de
+necessidade como resolvida.
+
+### Troca de direcao
+
+A V0 deve prever fluxo para transferir a responsabilidade principal da escola
+quando houver troca de direcao. Essa transferencia deve ser acao sensivel,
+registrada em auditoria minima, e deve exigir confirmacao clara para evitar
+perda acidental do controle administrativo.
+
+### Computador compartilhado
+
+Como o Radar Escola sera usado em computador compartilhado, a V0 deve ter fluxo
+simples de sair da conta e orientar a pessoa a encerrar a sessao ao terminar o
+uso. O produto nao deve assumir que o computador e pessoal.
+
+### Edicao, cancelamento e exclusao
+
+A V0 deve permitir corrigir erros sem apagar memoria operacional importante.
+Necessidades cadastradas por engano devem poder ser editadas ou canceladas, mas
+exclusao definitiva deve ser evitada ou restrita a direcao/responsavel
+principal. O historico deve preservar alteracoes relevantes sempre que possivel.
+
 ## Linguagem de intencao do usuario
 
 A interface deve priorizar frases que representem o que a pessoa quer fazer, em

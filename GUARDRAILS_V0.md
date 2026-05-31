@@ -113,6 +113,36 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
 - O cadastro de pessoa nao deve ser bloqueado quando o cargo ou funcao ainda nao
   existir; a interface deve permitir criar a opcao como excecao dentro do fluxo.
 
+## Auditoria minima
+
+- A V0 deve registrar historico local simples de acoes sensiveis.
+- A auditoria deve responder, no minimo: quem fez, o que fez e quando fez.
+- Eventos sensiveis minimos:
+  - cadastro de usuario;
+  - redefinicao administrativa de senha;
+  - delegacao de cadastro de usuarios;
+  - exportacao/importacao de seguranca;
+  - transferencia de direcao/responsavel principal;
+  - marcacao de necessidade como resolvida;
+  - cancelamento ou exclusao de necessidade.
+- A V0 nao precisa ter dashboard de auditoria, mas os eventos devem ser
+  persistidos localmente.
+
+## Computador compartilhado
+
+- O produto deve ter acao visivel de sair da conta.
+- A interface deve orientar pessoas cadastradas a sair da conta ao terminar o
+  uso, especialmente em computador compartilhado.
+- Sessao aberta em computador compartilhado deve ser tratada como risco de UX e
+  seguranca.
+
+## Troca de direcao
+
+- A V0 deve prever transferencia da responsabilidade principal da escola.
+- A transferencia deve ser acao sensivel, com confirmacao clara.
+- A transferencia deve registrar auditoria minima.
+- O fluxo deve reduzir risco de perda acidental de controle administrativo.
+
 ## Recuperacao de acesso
 
 - Recuperacao por e-mail pessoal nao deve fazer parte do fluxo principal da V0.
@@ -200,6 +230,16 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
 - A restricao de resolucao nao deve impedir que envolvidos expliquem, no
   andamento, que tecnicamente o problema foi resolvido.
 
+## Edicao, cancelamento e exclusao
+
+- A V0 deve permitir corrigir erros comuns de cadastro.
+- Necessidades cadastradas por engano devem poder ser canceladas.
+- Exclusao definitiva deve ser evitada na V0 ou ficar restrita a
+  direcao/responsavel principal.
+- Alteracoes e cancelamentos relevantes devem preservar historico sempre que
+  possivel.
+- A regra deve favorecer memoria operacional em vez de apagar rastros uteis.
+
 ## Arquitetura
 
 - Stack inicial: Tauri + React + TypeScript + SQLite.
@@ -226,6 +266,10 @@ Devem cobrir regras puras e validacoes, incluindo:
 - delegacao explicita de cadastro de usuarios para pessoa/cargo/funcao;
 - limite maximo de duas pessoas delegadas alem da direcao;
 - restricao de marcacao como resolvido para direcao ou pessoas delegadas;
+- auditoria minima de acoes sensiveis;
+- transferencia de direcao/responsavel principal;
+- logout/saida da conta em computador compartilhado;
+- cancelamento de necessidade cadastrada por engano;
 - criacao de necessidade;
 - transicoes de status permitidas;
 - marcacao de envolvidos;
@@ -251,6 +295,7 @@ Devem cobrir o uso do SQLite em cenarios essenciais:
 - atualizacao de andamento;
 - vinculo entre necessidade e equipamento;
 - registro de historico;
+- registro de auditoria minima;
 - criacao e leitura de equipamento;
 - migracoes basicas do banco;
 - integridade minima dos dados.
@@ -277,10 +322,13 @@ Devem cobrir os fluxos principais da experiencia:
 - cadastro de pessoa/usuario;
 - primeiro acesso com troca obrigatoria da senha padrao;
 - orientacao de privacidade no primeiro acesso de pessoa cadastrada;
+- saida da conta em computador compartilhado;
 - registro de uma necessidade;
 - exibicao da necessidade no radar;
 - atualizacao de andamento;
 - registro de resolucao;
+- solicitacao de fechamento por usuario comum e fechamento pela gestao;
+- cancelamento de necessidade cadastrada por engano;
 - visualizacao de historico;
 - criacao de equipamento basico;
 - fluxo de exportacao CSV de seguranca.
@@ -302,6 +350,9 @@ Devem ser adicionados quando o empacotamento Tauri estiver disponivel:
 - Mudancas em regras de necessidade, persistencia, exportacao/importacao CSV,
   acompanhamento pelos envolvidos, resolucao de necessidades ou recuperacao de
   acesso devem incluir testes automatizados.
+- Mudancas em auditoria, sessao/logout, transferencia de direcao ou
+  cancelamento/exclusao tambem devem incluir testes automatizados quando
+  implementadas.
 - Bugs corrigidos devem receber teste de regressao sempre que possivel.
 - A ausencia de teste em area critica deve ser justificada no pull request.
 
@@ -324,6 +375,9 @@ Antes de ampliar escopo, a V0 deve demonstrar:
 - acompanhamento no Radar de Necessidades;
 - atualizacao de andamento;
 - resolucao documentada;
+- auditoria minima de acoes sensiveis;
+- saida da conta em computador compartilhado;
+- transferencia de direcao/responsavel principal;
 - historico preservado;
 - exportacao CSV de seguranca;
 - importacao/restauracao dos CSVs exportados;
