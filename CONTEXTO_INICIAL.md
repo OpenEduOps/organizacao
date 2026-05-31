@@ -228,6 +228,30 @@ de acompanhamento posterior.
 
 Esse fechamento cria memoria operacional para a instituicao.
 
+## Linguagem de intencao do usuario
+
+A interface deve priorizar frases que representem o que a pessoa quer fazer, em
+vez de expor primeiro categorias tecnicas do sistema.
+
+Um menu inicial ou conjunto de acoes pode seguir esta linguagem:
+
+- Tenho algo para resolver;
+- Preciso pedir ajuda;
+- Quero ver o que esta acontecendo;
+- Quero ver o que esta parado;
+- Quero acompanhar um caso;
+- Quero envolver outras pessoas;
+- Quero combinar os proximos passos;
+- Quero avisar uma atualizacao;
+- Quero dizer que foi resolvido;
+- Quero ver o historico;
+- Quero cadastrar um equipamento;
+- Quero fazer backup.
+
+Essa linguagem deve ajudar professoras, secretaria, coordenacao e equipes de
+apoio a reconhecer rapidamente a acao desejada sem precisar entender termos como
+ticket, chamado, incidente, workflow ou dashboard.
+
 ### MVP inicial
 
 O MVP deve priorizar:
