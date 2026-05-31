@@ -637,7 +637,12 @@ Principio do produto:
 | Salvar em                                            |
 | [ Escolher pendrive, pasta de rede ou outra maquina ]|
 |                                                      |
-| Os CSVs exportados devem permitir restauracao futura. |
+| Restaurar substitui todos os dados atuais.            |
++------------------------------------------------------+
+| Confirmacao ao restaurar                             |
+| Os dados atuais deste computador serao substituidos.  |
+| Nao existe mescla na V0.                              |
+| [ Cancelar ] [ Entendo e quero restaurar ]           |
 |                                                      |
 +------------------------------------------------------+
 ```

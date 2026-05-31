@@ -202,6 +202,10 @@ decisao explicita posterior.
   leitura fora do aplicativo.
 - A V0 deve permitir importar de volta os dados exportados, para restaurar em
   caso de perda, troca ou problema no computador.
+- A restauracao por CSV deve sempre substituir os dados locais atuais. A V0 nao
+  deve tentar mesclar dados importados com dados existentes.
+- Antes de restaurar, a interface deve exibir mensagem explicita de que os dados
+  atuais serao substituidos.
 - A exportacao precisa preservar dados suficientes para restauracao coerente,
   incluindo vinculos entre necessidades, equipamentos, pessoas, envolvidos,
   andamentos e historico.

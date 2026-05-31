@@ -216,6 +216,10 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
 - O CSV deve ser legivel fora do aplicativo.
 - A V0 deve permitir importar de volta os CSVs exportados pelo proprio Radar
   Escola para restauracao em caso de perda, troca ou problema no computador.
+- Restauracao por CSV deve sempre substituir os dados locais atuais.
+- A V0 nao deve tentar mesclar dados importados com dados existentes.
+- Antes da restauracao, a interface deve exibir confirmacao forte informando que
+  os dados atuais serao substituidos.
 - A exportacao deve preservar vinculos entre necessidades, equipamentos,
   pessoas, envolvidos, andamentos e historico.
 - A importacao de restauracao deve ser tratada como acao sensivel da direcao ou
@@ -309,6 +313,7 @@ Devem cobrir fluxos criticos de dados:
 - exportacao de necessidades em CSV;
 - exportacao de equipamentos em CSV;
 - importacao/restauracao a partir dos CSVs exportados;
+- restauracao substituindo os dados locais atuais, sem mescla;
 - cabecalhos esperados;
 - dados essenciais presentes;
 - preservacao de vinculos entre necessidades, equipamentos, pessoas,

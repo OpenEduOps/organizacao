@@ -256,6 +256,10 @@ Resultado esperado:
   maquina.
 - os CSVs exportados podem ser importados de volta para restauracao em caso de
   perda, troca ou problema no computador.
+- a restauracao sempre substitui os dados locais atuais; nao existe mescla na
+  V0.
+- antes de confirmar a restauracao, o sistema avisa claramente que os dados
+  atuais serao substituidos.
 
 ## Computador compartilhado
 
