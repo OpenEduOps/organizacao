@@ -82,43 +82,24 @@ usar sem depender de infraestrutura complexa.
 
 ---
 
-## Documentos Iniciais
+## Documentacao Dos Projetos
 
-Algumas decisões iniciais de produto, experiência e arquitetura estão registradas
-em documentos próprios:
+Este repositorio guarda a documentacao institucional da organizacao OpenEduOps.
 
-* [`CONTEXTO_INICIAL.md`](CONTEXTO_INICIAL.md): recorte do problema, direção do
-  primeiro produto e estratégia desktop local;
-* [`REQUISITOS_V0.md`](REQUISITOS_V0.md): requisitos funcionais, requisitos nao
-  funcionais e criterios de aceite da V0;
-* [`CI_CD_OSS.md`](CI_CD_OSS.md): direcao inicial de CI/CD OSS profissional para
-  a organizacao e para o futuro app Radar Escola;
-* [`docs/ci.md`](docs/ci.md): funcionamento da CI inicial deste repositorio;
-* [`docs/desktop-release.md`](docs/desktop-release.md): objetivo final da
-  esteira desktop para baixar, instalar e executar o app no Windows;
-* [`docs/project-context.md`](docs/project-context.md): contexto e requisitos
-  duraveis do Radar Escola;
-* [`docs/implementation-plan.md`](docs/implementation-plan.md): fases de
-  implementacao e criterios de aceite por etapa;
-* [`docs/final-testable-delivery.md`](docs/final-testable-delivery.md): linha
-  de chegada testavel da V0;
-* [`docs/implementation-status.md`](docs/implementation-status.md): estado atual
-  implementado, validado e adiado;
-* [`docs/roadmap.md`](docs/roadmap.md): resumo navegavel das fases do produto;
+O planejamento, requisitos, roadmap e documentacao de implementacao do produto
+Radar Escola ficam no repositorio proprio:
+
+* [OpenEduOps/radar-escola](https://github.com/OpenEduOps/radar-escola)
+
+Documentos institucionais deste repositorio:
+
+* [`docs/ci.md`](docs/ci.md): funcionamento da CI deste repositorio;
 * [`docs/permissions.md`](docs/permissions.md): politica de permissoes minimas
   dos workflows;
 * [`docs/oss-guardrails.md`](docs/oss-guardrails.md): guardrails praticos para
   contribuicao OSS;
 * [`COMO_CONTRIBUIR.md`](COMO_CONTRIBUIR.md): orientacoes para contribuir com o
-  projeto;
-* [`VISAO_PROTOTIPAL_V0.md`](VISAO_PROTOTIPAL_V0.md): primeira visão prototipal
-  em baixa fidelidade;
-* [`GUARDRAILS_V0.md`](GUARDRAILS_V0.md): limites de escopo, privacidade,
-  arquitetura, exportação de segurança, testes automatizados e critérios de
-  aceite da V0;
-* [`ESCOPO_V0.md`](ESCOPO_V0.md): linha de corte do primeiro MVP executável;
-* [`FLUXO_E2E_V0.md`](FLUXO_E2E_V0.md): fluxo ponta a ponta de uso comum que
-  torna o MVP útil.
+  projeto.
 
 ---
 
@@ -316,9 +297,10 @@ atual. A proposta é uma aplicação desktop local para Windows voltada a regist
 necessidades, envolver pessoas, acompanhar andamento, preservar histórico e
 apoiar a manutenção operacional da escola.
 
-O repositório já contém um scaffold técnico mínimo do Radar Escola em
-Tauri + React + TypeScript. Esse scaffold existe para validar a casca desktop e
-a esteira de CI/CD, sem representar ainda o MVP funcional.
+O produto Radar Escola possui repositorio proprio para documentacao, scaffold,
+planejamento e implementacao:
+
+* [OpenEduOps/radar-escola](https://github.com/OpenEduOps/radar-escola)
 
 Exemplos de iniciativas futuras:
 
