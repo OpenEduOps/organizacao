@@ -169,18 +169,19 @@ Resultado esperado:
 - problemas recorrentes ficam mais faceis de perceber;
 - trocas de equipe nao apagam o historico.
 
-## Rotina de salvaguarda de dados
+## Rotina de exportacao de seguranca
 
-Backup nao faz parte do fluxo principal de um usuario comum.
+Exportar dados nao faz parte do fluxo principal de um usuario comum.
 
-Mesmo assim, como o produto e local, a V0 deve prever backup manual como rotina
-da pessoa responsavel pela instalacao, administracao ou salvaguarda dos dados.
+Mesmo assim, como o produto e local, a V0 deve prever exportacao CSV como rotina
+da pessoa responsavel pela instalacao ou pela protecao dos dados.
 
 Resultado esperado:
 
 - os dados locais podem ser preservados;
 - a escola reduz risco de perda por problema no computador;
-- existe um caminho simples para restauracao.
+- existe uma copia simples para guardar em pendrive, pasta de rede ou outra
+  maquina.
 
 ## Fluxo minimo de valor
 
@@ -189,9 +190,9 @@ O menor fluxo que ainda entrega valor real e:
 > registrar necessidade -> ver no radar -> marcar envolvidos -> atualizar
 > andamento -> marcar como resolvido -> consultar historico.
 
-Backup nao e parte da dor diaria do usuario comum, mas deve existir como rotina
-da pessoa responsavel porque o produto e local e os dados precisam ser
-protegidos.
+Exportacao CSV nao e parte da dor diaria do usuario comum, mas deve existir como
+rotina da pessoa responsavel porque o produto e local e os dados precisam ser
+protegidos contra perda do computador ou problema na maquina.
 
 ## O que torna o MVP util
 
@@ -212,7 +213,7 @@ E passe a ter:
 - registro de atualizacoes;
 - resolucao documentada;
 - historico consultavel;
-- rotina de backup local para responsavel.
+- rotina de exportacao CSV de seguranca para responsavel.
 
 ## O que nao faz parte do fluxo E2E da V0
 

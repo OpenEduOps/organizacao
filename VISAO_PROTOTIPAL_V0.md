@@ -61,7 +61,7 @@ Principio do produto:
 
 ```text
 +------------------------------------------------------+
-| Radar Escola                         [Backup] [Ajuda]|
+| Radar Escola                         [Exportar] [Ajuda]|
 | Veja o que sua escola precisa resolver.              |
 +------------------------------------------------------+
 |                                                      |
@@ -406,28 +406,27 @@ Principio do produto:
 +------------------------------------------------------+
 ```
 
-## Backup e Restauracao
+## Exportacao de Seguranca
 
 ```text
 +------------------------------------------------------+
-| Backup e restauracao                         [Voltar] |
+| Exportacao de seguranca                      [Voltar] |
 +------------------------------------------------------+
 | Seus dados ficam neste computador.                    |
-| Faca backup em uma pasta segura ou pendrive.          |
+| Exporte uma copia CSV para pendrive, pasta de rede    |
+| ou outra maquina.                                    |
 +------------------------------------------------------+
 |                                                      |
-| Ultimo backup                                        |
+| Ultima exportacao                                    |
 | 20/05/2026 as 14:32                                  |
 |                                                      |
-| [ Fazer backup agora ]                               |
-| [ Escolher pasta de backup ]                         |
-|                                                      |
-| Restaurar dados                                      |
-| [ Selecionar arquivo de backup ]                     |
-|                                                      |
-| Exportar                                             |
 | [ Exportar necessidades em CSV ]                     |
 | [ Exportar equipamentos em CSV ]                     |
+|                                                      |
+| Salvar em                                            |
+| [ Escolher pendrive, pasta de rede ou outra maquina ]|
+|                                                      |
+| Importacao/restauracao completa fica fora da V0.     |
 |                                                      |
 +------------------------------------------------------+
 ```

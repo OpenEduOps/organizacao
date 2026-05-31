@@ -92,8 +92,9 @@ em documentos próprios:
 * [`VISAO_PROTOTIPAL_V0.md`](VISAO_PROTOTIPAL_V0.md): primeira visão prototipal
   em baixa fidelidade;
 * [`GUARDRAILS_V0.md`](GUARDRAILS_V0.md): limites de escopo, privacidade,
-  arquitetura, testes automatizados e critérios de aceite da V0;
-* [`ESCOPO_V0.md`](ESCOPO_V0.md): linha de corte do primeiro MVP executável.
+  arquitetura, exportação de segurança, testes automatizados e critérios de
+  aceite da V0;
+* [`ESCOPO_V0.md`](ESCOPO_V0.md): linha de corte do primeiro MVP executável;
 * [`FLUXO_E2E_V0.md`](FLUXO_E2E_V0.md): fluxo ponta a ponta de uso comum que
   torna o MVP útil.
 

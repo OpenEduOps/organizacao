@@ -50,7 +50,7 @@ A V0 deve privilegiar o menor conjunto funcional que demonstre valor real:
 - andamento;
 - registro de resolucao;
 - historico;
-- backup manual;
+- exportacao CSV de seguranca;
 - equipamentos basicos quando necessarios para vincular uma necessidade.
 
 Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
@@ -84,7 +84,8 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
   codigo de recuperacao, chave impressa, pessoa responsavel ou fluxo manual
   documentado.
 - Senhas nunca devem ser armazenadas em texto claro.
-- O produto deve permitir backup e exportacao dos dados.
+- O produto deve salvar os dados no banco local e permitir exportacao CSV de
+  seguranca.
 - O produto deve prever caminho futuro para editar ou remover dados pessoais.
 
 ## Recuperacao de acesso
@@ -98,8 +99,8 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
 - A pessoa responsavel pela salvaguarda deve ser orientada a guardar o codigo ou
   chave em local seguro.
 - Se usuario, senha e salvaguarda forem perdidos, o acesso administrativo pode
-  ser perdido. Nesse caso, a recuperacao dependera de restaurar um backup valido
-  ou de um procedimento tecnico documentado, se existir.
+  ser perdido. Nesse caso, a recuperacao dependera de um procedimento tecnico
+  documentado, se existir.
 - A recuperacao de acesso nao deve quebrar a promessa de uso local/offline.
 
 ## Acompanhamento pelos envolvidos
@@ -116,16 +117,16 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
 - Integracoes de notificacao podem ser discutidas depois da V0, se houver
   necessidade real, baixo atrito de implantacao e guardrails de privacidade.
 
-## Backup e restauracao
+## Exportacao de seguranca
 
-- Backup manual deve ser parte da V0.
-- O sistema deve orientar backup em pasta segura, rede local ou pendrive.
-- Antes de restaurar um backup, o produto deve confirmar a acao com clareza.
-- Antes de restaurar, o produto deve criar um backup preventivo do estado atual,
-  quando tecnicamente possivel.
-- O arquivo de backup deve ser validado antes da restauracao.
-- A tela deve mostrar data, origem e destino do backup quando possivel.
-- Criptografia de backup pode ser avaliada depois, mas nao deve bloquear a V0.
+- O banco local e a persistencia principal da V0.
+- Exportacao CSV de seguranca deve ser parte da V0.
+- O sistema deve orientar explicitamente que a exportacao seja salva fora do
+  computador principal, como pendrive, pasta de rede ou outra maquina.
+- Exportar CSV deve ser simples para uma pessoa responsavel nao tecnica.
+- O CSV deve ser legivel fora do aplicativo.
+- Importacao/restauracao completa a partir de CSV pode ser avaliada depois, mas
+  nao deve bloquear a V0.
 
 ## Arquitetura
 
@@ -170,15 +171,16 @@ Devem cobrir o uso do SQLite em cenarios essenciais:
 - migracoes basicas do banco;
 - integridade minima dos dados.
 
-### Testes de backup e restauracao
+### Testes de exportacao de seguranca
 
 Devem cobrir fluxos criticos de dados:
 
-- criacao de backup;
-- validacao de arquivo de backup;
-- restauracao com dados esperados;
-- erro em arquivo invalido;
-- preservacao ou aviso antes de sobrescrever dados atuais.
+- exportacao de necessidades em CSV;
+- exportacao de equipamentos em CSV;
+- cabecalhos esperados;
+- dados essenciais presentes;
+- erro ao exportar para caminho indisponivel;
+- preservacao do banco local apos exportacao.
 
 ### Testes de interface
 
@@ -191,7 +193,7 @@ Devem cobrir os fluxos principais da experiencia:
 - registro de resolucao;
 - visualizacao de historico;
 - criacao de equipamento basico;
-- fluxo de backup manual.
+- fluxo de exportacao CSV de seguranca.
 
 ### Testes de integracao desktop
 
@@ -200,13 +202,13 @@ Devem ser adicionados quando o empacotamento Tauri estiver disponivel:
 - abertura do aplicativo;
 - acesso ao banco local;
 - leitura e escrita de arquivos permitidos;
-- escolha de pasta de backup;
+- escolha de destino para exportacao CSV;
 - funcionamento basico no Windows.
 
 ### Guardrail de cobertura
 
 - A cobertura deve priorizar fluxos criticos, nao porcentagem artificial.
-- Mudancas em regras de necessidade, persistencia, backup, restauracao,
+- Mudancas em regras de necessidade, persistencia, exportacao CSV,
   acompanhamento pelos envolvidos ou recuperacao de acesso devem incluir testes
   automatizados.
 - Bugs corrigidos devem receber teste de regressao sempre que possivel.
@@ -232,6 +234,6 @@ Antes de ampliar escopo, a V0 deve demonstrar:
 - atualizacao de andamento;
 - resolucao documentada;
 - historico preservado;
-- backup manual;
+- exportacao CSV de seguranca;
 - testes automatizados dos fluxos criticos;
 - documentacao minima para usuario e contribuidor.

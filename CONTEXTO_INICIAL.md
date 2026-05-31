@@ -239,7 +239,7 @@ Um menu inicial ou conjunto de acoes pode seguir esta linguagem:
 - Quero dizer que foi resolvido;
 - Quero ver o historico;
 - Quero cadastrar um equipamento;
-- Quero fazer backup.
+- Quero exportar uma copia de seguranca.
 
 Essa linguagem deve ajudar professoras, secretaria, coordenacao e equipes de
 apoio a reconhecer rapidamente a acao desejada sem precisar entender termos como
@@ -252,8 +252,8 @@ A concepcao da V0 deve ser lida junto com:
 - `VISAO_PROTOTIPAL_V0.md`, que registra a primeira visao prototipal em baixa
   fidelidade;
 - `GUARDRAILS_V0.md`, que define limites de escopo, privacidade, consulta
-  manual pelos envolvidos, backup, arquitetura, testes automatizados e criterios
-  de aceite;
+  manual pelos envolvidos, exportacao de seguranca, arquitetura, testes
+  automatizados e criterios de aceite;
 - `ESCOPO_V0.md`, que define a linha de corte do primeiro MVP executavel;
 - `FLUXO_E2E_V0.md`, que consolida o ciclo ponta a ponta da V0.
 
@@ -348,8 +348,8 @@ Para o primeiro MVP, uma direcao de produto coerente e:
 - instalador amigavel para Windows;
 - icone na area de trabalho e no menu iniciar;
 - banco local, preferencialmente SQLite no inicio;
-- backup e restauracao simples;
-- exportacao e importacao de dados;
+- exportacao CSV de seguranca;
+- exportacao CSV de dados;
 - uso sem internet obrigatoria;
 - experiencia de abertura semelhante a um software comum;
 - interface simples, direta e em Portugues Brasileiro;
@@ -436,7 +436,7 @@ Essa escolha ajuda a sustentar a experiencia desejada:
 - abertura por icone, sem expor navegador ou servidor local ao usuario;
 - janela propria de aplicativo desktop;
 - acesso controlado a arquivos locais;
-- suporte a backup e restauracao;
+- suporte a exportacao de seguranca;
 - integracao com recursos do sistema operacional;
 - menor peso em comparacao com alternativas desktop mais pesadas;
 - possibilidade de manter a maior parte da experiencia e das regras simples em
@@ -449,7 +449,7 @@ complexidade tecnica fora do caminho do usuario final.
 O usuario final nao deve precisar saber que existem React, TypeScript, SQLite,
 Tauri, Rust, banco de dados ou camadas internas. Ele deve perceber apenas um
 programa instalado, simples de abrir e capaz de cadastrar, acompanhar, organizar,
-salvar e fazer backup.
+salvar e exportar uma copia de seguranca.
 
 ## Formacao de contribuidores
 
@@ -466,7 +466,7 @@ Isso significa que o projeto deve buscar um equilibrio entre:
 - testes acessiveis;
 - documentacao clara;
 - oportunidades de aprendizado em interface, regras de negocio, persistencia,
-  acessibilidade, instalacao, empacotamento, backup e qualidade.
+  acessibilidade, instalacao, empacotamento, exportacao de dados e qualidade.
 
 A formacao dos contribuidores deve nascer de um produto util, nao de um exercicio
 artificial de tecnologia.
@@ -491,7 +491,7 @@ Objetivo inicial:
 - vincule necessidades a equipamentos;
 - acompanhe status;
 - mantenha historico de manutencao;
-- faca backup e exportacao dos dados.
+- exporte copias CSV de seguranca dos dados.
 
 ### EduInventory
 

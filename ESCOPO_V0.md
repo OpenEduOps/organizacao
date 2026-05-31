@@ -12,7 +12,8 @@ produto amplo demais.
 ## Objetivo da V0
 
 Permitir que uma escola registre necessidades operacionais, acompanhe o que esta
-em andamento, mantenha historico basico e faca backup local dos dados.
+em andamento, mantenha historico basico e exporte copias CSV de seguranca dos
+dados.
 
 Frase-guia:
 
@@ -34,8 +35,8 @@ A V0 termina quando o Radar Escola permite:
 - consultar historico de necessidades resolvidas;
 - cadastrar equipamento basico;
 - vincular uma necessidade a um equipamento;
-- fazer backup manual;
-- restaurar backup com confirmacao;
+- exportar necessidades em CSV;
+- exportar equipamentos em CSV;
 - executar testes automatizados dos fluxos criticos.
 
 Qualquer funcionalidade fora dessa lista deve ser considerada fora da V0, salvo
@@ -102,19 +103,21 @@ decisao explicita posterior.
 - Historico deve mostrar atualizacoes relevantes e resolucao.
 - Busca simples pode existir se for barata, mas nao deve bloquear a V0.
 
-### Backup e restauracao
+### Exportacao de seguranca
 
-- Backup manual.
-- Restauracao manual.
-- Confirmacao antes de restaurar.
-- Validacao basica do arquivo de backup.
-- Preferencialmente criar backup preventivo antes de restaurar.
+- Exportacao manual em CSV.
+- Exportacao de necessidades.
+- Exportacao de equipamentos.
+- Orientacao explicita para salvar a exportacao em pendrive, pasta de rede ou
+  outra maquina.
+- O CSV deve servir como copia de seguranca e tambem como formato simples de
+  leitura fora do aplicativo.
 
 ### Testes
 
 - Testes unitarios para regras de necessidade e validacoes.
 - Testes de persistencia para SQLite.
-- Testes de backup/restauracao.
+- Testes de exportacao CSV.
 - Testes de interface dos fluxos principais.
 - Testes de integracao desktop quando o empacotamento Tauri estiver disponivel.
 
@@ -178,8 +181,8 @@ A V0 pode ser considerada entregue quando:
 - preserva historico;
 - cadastra equipamento basico;
 - vincula equipamento a necessidade;
-- faz backup manual;
-- restaura backup com confirmacao;
+- exporta necessidades em CSV;
+- exporta equipamentos em CSV;
 - possui testes automatizados dos fluxos criticos;
 - documenta como executar, testar e validar a V0.
 
