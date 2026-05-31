@@ -33,7 +33,8 @@ evitar que decisoes tecnicas enfraquecam a proposta inicial.
   SQLite, banco de dados, servidor local, Docker ou infraestrutura.
 - Docker nao deve fazer parte da experiencia do usuario final.
 - O produto deve continuar util mesmo sem internet.
-- Notificacoes automaticas nao podem ser requisito para o produto funcionar.
+- E-mail, WhatsApp, mensageria e notificacoes automaticas nao devem fazer parte
+  da V0.
 
 ## Escopo da V0
 
@@ -52,8 +53,8 @@ A V0 deve privilegiar o menor conjunto funcional que demonstre valor real:
 
 Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
 
-- notificacoes automaticas completas;
 - recuperacao de senha por e-mail;
+- notificacoes automaticas;
 - relatorios avancados;
 - permissoes complexas;
 - integracoes externas;
@@ -93,18 +94,19 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
   ou de um procedimento tecnico documentado, se existir.
 - A recuperacao de acesso nao deve quebrar a promessa de uso local/offline.
 
-## Notificacoes
+## Acompanhamento pelos envolvidos
 
-- E-mail e a hipotese inicial por ser mais barato, aberto e menos dependente de
-  vendors.
-- WhatsApp nao deve ser requisito central do produto.
-- Notificacoes devem ser configuraveis e desativaveis.
-- O produto deve continuar util sem notificacao automatica.
-- Envolvidos devem ser avisados apenas sobre mudancas relevantes.
-- Evitar excesso de notificacoes.
-- Considerar resumo diario ou semanal opcional.
-- Considerar lembretes para necessidades paradas, mas com limites configuraveis.
-- Integracoes externas devem ser evolucao futura, nao dependencia da V0.
+- Cada envolvido deve consultar o Radar Escola no computador em que o aplicativo
+  esta instalado, usando seu usuario e senha.
+- A V0 nao deve enviar e-mails automaticos.
+- A V0 nao deve depender de WhatsApp, mensageria, push notification ou qualquer
+  vendor externo para acompanhar necessidades.
+- O produto deve manter necessidades em andamento e paradas muito visiveis no
+  Radar de Necessidades.
+- A tela de necessidades paradas deve ajudar a manter o assunto quente sem
+  depender de notificacoes externas.
+- Integracoes de notificacao podem ser discutidas depois da V0, se houver
+  necessidade real, baixo atrito de implantacao e guardrails de privacidade.
 
 ## Backup e restauracao
 
@@ -197,7 +199,8 @@ Devem ser adicionados quando o empacotamento Tauri estiver disponivel:
 
 - A cobertura deve priorizar fluxos criticos, nao porcentagem artificial.
 - Mudancas em regras de necessidade, persistencia, backup, restauracao,
-  notificacoes ou recuperacao de acesso devem incluir testes automatizados.
+  acompanhamento pelos envolvidos ou recuperacao de acesso devem incluir testes
+  automatizados.
 - Bugs corrigidos devem receber teste de regressao sempre que possivel.
 - A ausencia de teste em area critica deve ser justificada no pull request.
 

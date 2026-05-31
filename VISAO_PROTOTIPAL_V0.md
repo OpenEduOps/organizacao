@@ -142,11 +142,11 @@ Principio do produto:
 | ---------------------------------------------------- |
 | Joao: Verifiquei a tomada. Esta funcionando.         |
 | Ana: A aula de amanha tambem depende do projetor.    |
-| Sistema: Coordenacao foi notificada por e-mail.      |
+| Sistema: Coordenacao foi marcada como envolvida.     |
 |                                                      |
 | Escrever atualizacao                                 |
 | [ ____________________________________________ ]     |
-| [ Avisar envolvidos ]                                |
+| [ Registrar atualizacao ]                            |
 |                                                      |
 | [ Atualizar status ] [ Registrar como resolvido ]    |
 |                                                      |
@@ -170,9 +170,6 @@ Principio do produto:
 | Precisa acompanhar depois?                           |
 | ( ) Nao                                             |
 | ( ) Sim, lembrar em [ 7 ] dias                       |
-|                                                      |
-| Avisar envolvidos por e-mail?                        |
-| [x] Sim                                             |
 |                                                      |
 | [ Registrar como resolvido ]                         |
 |                                                      |
@@ -298,9 +295,6 @@ Principio do produto:
 | Joao Tecnico            Responsavel                  |
 | Coordenacao             Acompanhamento               |
 |                                                      |
-| Avisar novos envolvidos por e-mail?                  |
-| [x] Sim                                             |
-|                                                      |
 | [ Salvar envolvidos ]                                |
 |                                                      |
 +------------------------------------------------------+
@@ -358,9 +352,6 @@ Principio do produto:
 | [ Testamos outro cabo HDMI e o problema continua. ]  |
 | [ ____________________________________________ ]     |
 |                                                      |
-| Avisar envolvidos por e-mail?                        |
-| [x] Sim                                             |
-|                                                      |
 | [ Salvar atualizacao ]                               |
 |                                                      |
 +------------------------------------------------------+
@@ -377,15 +368,15 @@ Principio do produto:
 |                                                      |
 | #08 Computador 12 sem internet        3 dias parado  |
 | Laboratorio | Joao | Em analise                      |
-| [ Ver caso ] [ Avisar envolvidos ]                   |
+| [ Ver caso ] [ Registrar atualizacao ]               |
 |                                                      |
 | #05 Impressora sem toner              5 dias parada  |
 | Secretaria | Marta | Aguardando material             |
-| [ Ver caso ] [ Avisar envolvidos ]                   |
+| [ Ver caso ] [ Registrar atualizacao ]               |
 |                                                      |
 | #03 Porta da biblioteca emperrada     8 dias parada  |
 | Biblioteca | Coordenacao | Aguardando autorizacao     |
-| [ Ver caso ] [ Avisar envolvidos ]                   |
+| [ Ver caso ] [ Registrar atualizacao ]               |
 |                                                      |
 +------------------------------------------------------+
 ```
@@ -441,32 +432,6 @@ Principio do produto:
 +------------------------------------------------------+
 ```
 
-## Configurar Avisos
-
-```text
-+------------------------------------------------------+
-| Configurar avisos                            [Voltar] |
-+------------------------------------------------------+
-|                                                      |
-| E-mail usado para avisos da escola                   |
-| [ avisos@escola.gov.br ______________________ ]      |
-|                                                      |
-| Avisar envolvidos quando:                            |
-| [x] Uma necessidade for registrada                   |
-| [x] Alguem comentar ou atualizar andamento           |
-| [x] Uma necessidade ficar parada por muito tempo     |
-| [x] Uma necessidade for resolvida                    |
-|                                                      |
-| Frequencia de resumo                                 |
-| ( ) Nunca                                            |
-| ( ) Diario                                           |
-| ( ) Semanal                                          |
-|                                                      |
-| [ Salvar configuracoes ]                             |
-|                                                      |
-+------------------------------------------------------+
-```
-
 ## Perguntas em Aberto
 
 - A primeira tela deve iniciar pelo cadastro da escola ou pelo radar com
@@ -479,7 +444,8 @@ Principio do produto:
   registrar uma necessidade?
 - A tela principal deve priorizar "Em andamento" e "Paradas" antes de qualquer
   grafico?
-- "Avisar envolvidos" deve aparecer como botao explicito em atualizacoes?
+- Os envolvidos devem consultar apenas o computador principal com o aplicativo
+  instalado, ou a V0 deve preparar uma forma futura de acesso em rede local?
 
 ## Hipotese Principal
 

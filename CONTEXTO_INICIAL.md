@@ -157,8 +157,8 @@ Exemplos:
 
 Fluxo principal:
 
-> Necessidade -> solicitar apoio ou ajuda -> marcar envolvidos -> notificar
-> envolvidos -> plano de acao detalhado -> monitorar andamento -> registrar como
+> Necessidade -> solicitar apoio ou ajuda -> marcar envolvidos -> plano de acao
+> detalhado -> monitoramento conjunto no Radar Escola -> registrar como
 > resolvido.
 
 ### Etapas do fluxo
@@ -179,22 +179,6 @@ A necessidade deve permitir indicar pessoas envolvidas, como solicitante,
 responsavel, setor, equipe tecnica, coordenacao, direcao ou outras pessoas que
 precisam acompanhar o caso.
 
-#### Notificar envolvidos
-
-O sistema deve prever um fluxo para avisar os envolvidos quando uma necessidade
-for registrada, atualizada, atribuida, comentada ou resolvida.
-
-A forma de notificacao ainda nao esta definida.
-
-Hipotese inicial:
-
-- priorizar e-mail por ser mais barato, aberto e menos dependente de vendors;
-- evitar depender de WhatsApp como requisito central do produto;
-- permitir que notificacoes sejam desativadas ou configuradas;
-- manter o produto util mesmo sem notificacao automatica;
-- considerar WhatsApp, mensageria ou integracoes externas apenas como evolucao
-  futura, se houver necessidade real e baixo atrito de implantacao.
-
 #### Plano de acao detalhado
 
 A necessidade pode evoluir para um plano com passos, responsaveis, prazos,
@@ -213,13 +197,15 @@ O sistema deve permitir acompanhar se a necessidade esta nova, em analise, em
 execucao, aguardando material, aguardando autorizacao, pausada, resolvida ou
 cancelada.
 
-Durante esse ciclo, os envolvidos devem receber atualizacoes, preferencialmente
-por e-mail, quando houver mudancas importantes, comentarios, novas acoes,
-atrasos, atribuicoes ou resolucao.
+Durante esse ciclo, os envolvidos devem consultar o Radar Escola no computador
+em que o aplicativo esta instalado, usando seu usuario e senha, para acompanhar
+mudancas importantes, comentarios, novas acoes, atrasos, atribuicoes ou
+resolucao.
 
 O produto deve ajudar a reduzir o risco de uma necessidade desaparecer depois do
-primeiro registro. Para isso, pode evoluir com lembretes, resumos periodicos,
-avisos de pendencia e notificacoes de necessidades paradas por muito tempo.
+primeiro registro. Para isso, a V0 deve tornar necessidades paradas muito
+visiveis no Radar de Necessidades, sem depender de e-mail, WhatsApp, mensageria
+ou notificacoes automaticas.
 
 #### Registrar como resolvido
 
@@ -243,7 +229,7 @@ Um menu inicial ou conjunto de acoes pode seguir esta linguagem:
 - Quero acompanhar um caso;
 - Quero envolver outras pessoas;
 - Quero combinar os proximos passos;
-- Quero avisar uma atualizacao;
+- Quero registrar uma atualizacao;
 - Quero dizer que foi resolvido;
 - Quero ver o historico;
 - Quero cadastrar um equipamento;
@@ -259,8 +245,9 @@ A concepcao da V0 deve ser lida junto com:
 
 - `VISAO_PROTOTIPAL_V0.md`, que registra a primeira visao prototipal em baixa
   fidelidade;
-- `GUARDRAILS_V0.md`, que define limites de escopo, privacidade, notificacoes,
-  backup, arquitetura, testes automatizados e criterios de aceite.
+- `GUARDRAILS_V0.md`, que define limites de escopo, privacidade, consulta
+  manual pelos envolvidos, backup, arquitetura, testes automatizados e criterios
+  de aceite.
 
 ### MVP inicial
 
