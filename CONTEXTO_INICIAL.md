@@ -210,6 +210,42 @@ Como regra inicial:
 
 Rust nao deve ser o centro da regra de negocio no inicio do projeto.
 
+### Justificativa para React e TypeScript
+
+React e TypeScript sao escolhidos para concentrar a experiencia de uso e a
+maior parte da logica de interface do primeiro produto.
+
+Essa escolha nao deve deslocar o foco para tecnologia. Ela deve servir a uma
+experiencia final simples, consistente e acessivel para pessoas que precisam
+abrir o aplicativo e resolver problemas operacionais sem treinamento complexo.
+
+React ajuda a organizar a interface em componentes reutilizaveis, favorecendo a
+criacao de telas previsiveis para chamados, equipamentos, filtros, formularios,
+tabelas, estados vazios, mensagens de erro e fluxos de primeiro uso.
+
+TypeScript ajuda a reduzir erros comuns, tornar contratos de dados mais claros,
+facilitar refatoracoes e tornar o codigo mais compreensivel para quem esta
+aprendendo a contribuir.
+
+Essa combinacao tambem favorece a formacao de contribuidores iniciantes porque
+oferece experiencia pratica em habilidades transferiveis para o mercado:
+
+- construcao de interfaces;
+- componentes reutilizaveis;
+- formularios e validacoes;
+- estados de tela;
+- acessibilidade;
+- testes de interface;
+- organizacao de codigo por dominio;
+- leitura e evolucao de codigo tipado;
+- manutencao incremental de um produto real.
+
+React e TypeScript devem ser usados com disciplina. O projeto deve evitar
+componentes grandes, logica espalhada em telas, abstracoes prematuras e
+dependencias desnecessarias. A arquitetura deve favorecer componentes pequenos,
+pastas por dominio, validacoes centralizadas, testes focados e convencoes simples
+de contribuicao.
+
 ### Justificativa para Rust e Tauri
 
 O uso de Rust neste contexto e justificado principalmente por Tauri e pela
