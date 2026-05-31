@@ -114,6 +114,11 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
 - A resposta da frase de recuperacao nao deve ser armazenada em texto claro.
 - Para pessoas cadastradas depois da configuracao inicial, a salvaguarda local
   tambem deve ser definida no primeiro acesso, junto com a troca da senha padrao.
+- O primeiro acesso de pessoa cadastrada deve ser privado. A direcao ou pessoa
+  responsavel principal nao deve visualizar a nova senha, o token, a frase de
+  recuperacao nem a resposta.
+- A interface deve orientar que a pessoa faca esse procedimento
+  preferencialmente sem a presenca da direcao ou com distancia segura da tela.
 - A recuperacao individual deve poder usar token simples ou frase de recuperacao.
 - Exemplos de frase de recuperacao devem ser simples e compreensiveis,
   como bairro onde cresceu, apelido de infancia ou outra referencia pessoal que
@@ -230,6 +235,7 @@ Devem cobrir os fluxos principais da experiencia:
 - primeira abertura;
 - cadastro de pessoa/usuario;
 - primeiro acesso com troca obrigatoria da senha padrao;
+- orientacao de privacidade no primeiro acesso de pessoa cadastrada;
 - registro de uma necessidade;
 - exibicao da necessidade no radar;
 - atualizacao de andamento;

@@ -82,6 +82,10 @@ No primeiro acesso, a pessoa cadastrada deve obrigatoriamente:
 - guardar a salvaguarda em local seguro.
 
 O token deve ser exibido nesse momento e nao deve ser regenerado depois.
+Esse procedimento deve ser privado. A direcao cria o usuario, mas nao deve ver a
+nova senha, o token, a frase de recuperacao nem a resposta. O sistema deve
+orientar que a pessoa faca esse primeiro acesso preferencialmente sem a presenca
+da direcao ou com distancia segura da tela.
 
 Resultado esperado:
 
@@ -288,7 +292,8 @@ A V0 deve ser validada com uma historia simples:
 1. Maria instala e abre o Radar Escola.
 2. Maria cria o primeiro acesso da escola.
 3. Maria cadastra Joao como usuario com cargo ou funcao e senha inicial `123456`.
-4. Joao acessa pela primeira vez, troca a senha e define sua salvaguarda.
+4. Joao acessa pela primeira vez em momento privado, troca a senha e define sua
+   salvaguarda sem expor senha, token ou frase de recuperacao para Maria.
 5. Maria registra que o projetor da sala 8 nao liga.
 6. A necessidade aparece no Radar de Necessidades.
 7. Maria marca Joao como responsavel/envolvido.

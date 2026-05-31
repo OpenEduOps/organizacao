@@ -238,6 +238,8 @@ Principio do produto:
 | Sua senha inicial e temporaria.                      |
 | Para continuar, crie uma nova senha e salve sua       |
 | salvaguarda de acesso.                               |
+| Faca isso em momento privado. A direcao nao deve ver  |
+| sua senha, token ou frase de recuperacao.             |
 +------------------------------------------------------+
 |                                                      |
 | Usuario                                              |
@@ -263,6 +265,7 @@ Principio do produto:
 | Recomenda-se anotar o token em local seguro.          |
 | Se tirar foto para anotar depois, apague a foto.      |
 | O token nao sera gerado novamente.                    |
+| Proteja esta tela de outras pessoas.                  |
 |                                                      |
 | [ Salvar e entrar ]                                  |
 |                                                      |
@@ -314,6 +317,7 @@ Principio do produto:
 | [ 123456 ]                                           |
 |                                                      |
 | A pessoa devera trocar essa senha no primeiro acesso. |
+| Oriente a pessoa a fazer isso em momento privado.     |
 |                                                      |
 | [ Salvar pessoa ]                                    |
 |                                                      |

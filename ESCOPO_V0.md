@@ -86,6 +86,11 @@ decisao explicita posterior.
   frase de recuperacao.
 - O token de recuperacao deve ser exibido no momento de configuracao da
   salvaguarda e nao deve poder ser regenerado.
+- O primeiro acesso da pessoa cadastrada deve ser privado. A direcao ou pessoa
+  responsavel principal nao deve ver a nova senha, o token, a frase de
+  recuperacao nem a resposta.
+- A interface deve explicitar que a pessoa deve fazer esse procedimento
+  preferencialmente sem a presenca da direcao ou com distancia segura da tela.
 - Se uma pessoa cadastrada perder senha e salvaguarda, a direcao ou pessoa
   responsavel principal pode redefinir a senha dessa pessoa para `123456`.
 - Apos redefinicao administrativa, o proximo login deve obrigar nova troca de

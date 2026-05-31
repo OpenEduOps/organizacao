@@ -200,6 +200,10 @@ vez, a pessoa deve obrigatoriamente trocar a senha, definir sua salvaguarda
 local de recuperacao e guardar token ou frase de recuperacao em local seguro.
 O token de recuperacao deve ser exibido no momento de configuracao da
 salvaguarda e nao deve ser regenerado depois.
+Esse primeiro acesso deve ser tratado como privado: a direcao cria o usuario,
+mas nao deve ver a nova senha, o token, a frase de recuperacao nem a resposta.
+Preferencialmente, a pessoa deve fazer esse acesso sem a presenca da direcao ou
+com distancia suficiente para proteger a tela.
 
 Se uma pessoa cadastrada perder senha e salvaguarda, a direcao ou responsavel
 principal podera redefinir sua senha para `123456`, obrigando nova troca no
