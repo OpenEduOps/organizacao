@@ -81,7 +81,7 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
 - Nao exigir e-mail pessoal para recuperacao de acesso na V0.
 - O acesso normal deve usar usuario e senha.
 - A V0 deve prever salvaguarda local para esquecimento de usuario e senha, como
-  codigo de recuperacao, chave impressa, pessoa responsavel ou fluxo manual
+  token simples, pergunta secreta, pessoa responsavel ou fluxo manual
   documentado.
 - Senhas nunca devem ser armazenadas em texto claro.
 - O produto deve salvar os dados no banco local e permitir exportacao CSV de
@@ -92,12 +92,15 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
 
 - Recuperacao por e-mail pessoal nao deve fazer parte do fluxo principal da V0.
 - O produto deve usar usuario e senha como forma normal de acesso.
-- O produto deve considerar uma salvaguarda local de recuperacao, como codigo de
-  recuperacao, chave impressa, pessoa responsavel, usuario administrador ou
-  fluxo manual documentado.
-- A salvaguarda deve ser apresentada durante a configuracao inicial.
-- A pessoa responsavel pela salvaguarda deve ser orientada a guardar o codigo ou
-  chave em local seguro.
+- A direcao da escola deve ser tratada como responsavel maxima inicial pelo
+  cadastro da escola, primeira senha e salvaguarda de acesso.
+- Durante a configuracao inicial, o produto deve exibir alerta claro sobre a
+  importancia de nao perder usuario, senha e salvaguarda.
+- A salvaguarda local deve combinar usuario ou nome do responsavel, token simples
+  e pergunta secreta.
+- O token e a pergunta secreta devem ser apresentados de forma que a direcao ou
+  pessoa responsavel consiga anotar e guardar em local seguro.
+- A resposta secreta nao deve ser armazenada em texto claro.
 - Se usuario, senha e salvaguarda forem perdidos, o acesso administrativo pode
   ser perdido. Nesse caso, a recuperacao dependera de um procedimento tecnico
   documentado, se existir.
@@ -155,7 +158,7 @@ Devem cobrir regras puras e validacoes, incluindo:
 - regras de necessidades paradas;
 - validacao de campos obrigatorios;
 - validacao de usuario;
-- regras de codigo ou chave de recuperacao;
+- regras de token simples e pergunta secreta de recuperacao;
 - regras de plano de acao;
 - fechamento/resolucao de necessidade.
 

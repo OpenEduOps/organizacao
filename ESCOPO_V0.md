@@ -47,16 +47,18 @@ decisao explicita posterior.
 ### Primeiro uso
 
 - Nome da escola.
-- Nome da pessoa responsavel.
+- Nome da direcao ou pessoa responsavel principal.
 - Usuario de acesso.
 - Senha.
-- Geracao de salvaguarda local de acesso.
+- Alerta sobre a importancia de nao perder usuario, senha e salvaguarda.
+- Geracao de token simples de recuperacao.
+- Cadastro de pergunta secreta e resposta secreta.
 
 ### Acesso
 
 - Login com usuario e senha.
-- Recuperacao local de acesso por salvaguarda, se implementada no primeiro
-  ciclo.
+- Recuperacao local de acesso com usuario ou nome, token simples e pergunta
+  secreta, se implementada no primeiro ciclo.
 - Sem e-mail pessoal para recuperacao.
 - Sem dependencia de internet.
 

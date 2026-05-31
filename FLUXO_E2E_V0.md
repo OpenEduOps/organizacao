@@ -40,16 +40,20 @@ A pessoa abre o Radar Escola pela primeira vez.
 O sistema pede apenas o essencial:
 
 - nome da escola;
-- nome da pessoa responsavel;
+- nome da direcao ou pessoa responsavel principal;
 - usuario;
 - senha;
-- salvaguarda local de acesso.
+- alerta sobre a importancia de nao perder usuario, senha e salvaguarda;
+- token simples de recuperacao;
+- pergunta secreta e resposta secreta.
 
 Resultado esperado:
 
 - a escola esta configurada;
 - existe um primeiro usuario local;
-- existe uma forma de salvaguarda contra esquecimento de acesso;
+- existe uma salvaguarda local contra esquecimento de acesso;
+- a direcao ou pessoa responsavel principal sabe que deve anotar e guardar a
+  salvaguarda em local seguro;
 - o usuario chega ao Radar de Necessidades.
 
 ### 2. Registrar uma necessidade

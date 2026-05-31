@@ -40,17 +40,26 @@ Principio do produto:
 | Nome da escola                                      |
 | [ Escola Municipal __________________________ ]      |
 |                                                      |
-| Seu nome                                            |
-| [ Maria Silva ________________________________ ]     |
+| Responsavel principal                               |
+| [ Direcao - Maria Silva ______________________ ]     |
 |                                                      |
 | Usuario de acesso                                    |
-| [ maria.silva _______________________________ ]      |
+| [ direcao.maria _____________________________ ]      |
 |                                                      |
 | Senha de acesso                                     |
 | [ __________________________________________ ]       |
 |                                                      |
-| Salvaguarda de acesso                                |
-| [ Gerar codigo de recuperacao para responsavel ]     |
+| Atencao                                             |
+| Esta senha protege os dados da escola. Se usuario,   |
+| senha e salvaguarda forem perdidos, o acesso pode    |
+| ser perdido. Anote a salvaguarda em local seguro.    |
+|                                                      |
+| Salvaguarda local de acesso                          |
+| Token: RE-48291                                      |
+| Pergunta secreta                                     |
+| [ Nome da primeira escola onde trabalhei ______ ]    |
+| Resposta secreta                                     |
+| [ __________________________________________ ]       |
 |                                                      |
 | [ Comecar ]                                         |
 |                                                      |
@@ -227,14 +236,23 @@ Principio do produto:
 | Recuperar acesso                             [Voltar] |
 +------------------------------------------------------+
 |                                                      |
-| Se usuario e senha forem esquecidos, procure a        |
-| pessoa responsavel pela salvaguarda de acesso.        |
+| Use a salvaguarda anotada pela direcao ou pessoa      |
+| responsavel principal pela escola.                    |
 |                                                      |
-| Codigo de recuperacao                                |
+| Usuario ou nome do responsavel                       |
+| [ direcao.maria _____________________________ ]      |
+|                                                      |
+| Token de recuperacao                                 |
+| [ RE-48291 __________________________________ ]      |
+|                                                      |
+| Pergunta secreta                                     |
+| Nome da primeira escola onde trabalhei                |
+|                                                      |
+| Resposta secreta                                     |
 | [ __________________________________________ ]       |
 |                                                      |
-| O codigo deve ter sido guardado em local seguro       |
-| durante a configuracao inicial.                       |
+| Se a salvaguarda tambem tiver sido perdida, pode ser  |
+| necessario procedimento tecnico documentado.          |
 |                                                      |
 | [ Recuperar acesso ]                                 |
 |                                                      |
@@ -435,8 +453,8 @@ Principio do produto:
 
 - A primeira tela deve iniciar pelo cadastro da escola ou pelo radar com
   configuracao guiada?
-- A salvaguarda de acesso deve ser um codigo local, uma pessoa responsavel, ou
-  uma combinacao dos dois?
+- A salvaguarda de acesso deve usar usuario/nome, token simples e pergunta
+  secreta anotados pela direcao?
 - O botao principal deve ser "Tenho algo para resolver" ou "Registrar
   necessidade"?
 - "Preciso pedir ajuda" deve ser uma acao separada ou apenas outra porta para
