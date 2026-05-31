@@ -99,9 +99,79 @@ O MVP deve priorizar:
 - perfis basicos, como solicitante, tecnico e gestor;
 - relatorios simples;
 - exportacao em CSV;
-- instalacao simples, preferencialmente com Docker;
+- instalacao simples para Windows;
+- banco de dados local;
+- possibilidade de uso sem internet;
 - uso em pt-BR;
 - interface acessivel e responsiva.
+
+## Estrategia de adocao local-first
+
+Uma evolucao importante da ideia inicial e priorizar a experiencia de uso
+concreta de instituicoes com baixa maturidade tecnica.
+
+Para muitas escolas publicas, bibliotecas, laboratorios e pequenos setores
+administrativos, a melhor porta de entrada nao e um ambiente Docker, um servidor
+Linux ou uma implantacao em nuvem.
+
+A melhor porta de entrada tende a ser:
+
+> Baixar, instalar e usar.
+
+O OpenEduOps deve considerar como principio que seus primeiros produtos precisam
+ser amigaveis para Windows e utilizaveis localmente, com banco de dados local,
+sem depender de servicos externos, contas institucionais, internet constante ou
+equipe tecnica especializada.
+
+Essa direcao favorece uma experiencia de adocao mais proxima de um software
+comum de desktop, mesmo que a arquitetura interna continue sendo uma aplicacao
+web moderna.
+
+Uma formulacao possivel:
+
+> Instalacao primeiro, infraestrutura depois.
+
+## Modos de uso esperados
+
+### Modo local individual
+
+O usuario instala o sistema em uma maquina Windows, abre o aplicativo e comeca a
+usar com banco local.
+
+Esse modo favorece pilotos, testes, secretarias pequenas, bibliotecas,
+laboratorios e setores que precisam experimentar a ferramenta sem depender de
+uma implantacao institucional formal.
+
+### Modo rede local
+
+Uma maquina pode funcionar como ponto central dentro da escola, biblioteca ou
+departamento, permitindo que outras maquinas acessem o sistema pela rede local.
+
+Esse modo preserva a simplicidade, mas ja permite uso coletivo.
+
+### Modo institucional
+
+Instituicoes com equipe tecnica podem optar por uma instalacao mais robusta,
+usando Docker, Linux, banco externo e processos formais de backup.
+
+Esse modo deve existir como caminho avancado, nao como requisito inicial para
+experimentar o produto.
+
+## Diretriz tecnica inicial
+
+Para o primeiro MVP, uma direcao tecnica coerente e:
+
+- aplicacao web local-first;
+- instalador amigavel para Windows;
+- banco local, preferencialmente SQLite no inicio;
+- backup e restauracao simples;
+- exportacao e importacao de dados;
+- possibilidade futura de migracao para banco externo;
+- Docker como opcao para desenvolvimento, testes e implantacoes tecnicas;
+- arquitetura preparada para evoluir sem exigir complexidade no primeiro uso.
+
+O objetivo nao e abandonar ambientes tecnicos mais robustos. O objetivo e nao
+transforma-los em barreira de entrada.
 
 ## Sequencia possivel de produtos
 
