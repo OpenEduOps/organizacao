@@ -80,6 +80,13 @@ Resultado esperado:
 - a senha padrao nao permanece como senha de uso normal;
 - cada pessoa tem sua propria forma local de recuperacao.
 
+Se uma pessoa cadastrada perder senha e salvaguarda:
+
+- a direcao ou pessoa responsavel principal pode redefinir a senha para
+  `123456`;
+- no proximo acesso, a pessoa deve trocar a senha novamente;
+- a pessoa deve confirmar ou redefinir sua salvaguarda local.
+
 ### 3. Registrar uma necessidade
 
 A pessoa percebe algo que precisa ser resolvido.

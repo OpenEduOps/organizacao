@@ -287,6 +287,7 @@ Principio do produto:
 | Joao Pereira                                         |
 | Usuario: joao.tecnico | Funcao: Tecnico              |
 | Primeiro acesso pendente                             |
+| [ Redefinir senha para 123456 ]                      |
 |                                                      |
 +------------------------------------------------------+
 ```
@@ -313,6 +314,28 @@ Principio do produto:
 | A pessoa devera trocar essa senha no primeiro acesso. |
 |                                                      |
 | [ Salvar pessoa ]                                    |
+|                                                      |
++------------------------------------------------------+
+```
+
+## Redefinir Senha de Pessoa
+
+```text
++------------------------------------------------------+
+| Redefinir senha                              [Voltar] |
++------------------------------------------------------+
+| Joao Pereira                                         |
+| Usuario: joao.tecnico | Funcao: Tecnico              |
++------------------------------------------------------+
+|                                                      |
+| Use esta acao apenas quando a pessoa perdeu senha e   |
+| salvaguarda.                                         |
+|                                                      |
+| A senha voltara para: 123456                         |
+| No proximo acesso, a pessoa devera trocar a senha e   |
+| confirmar sua salvaguarda local.                     |
+|                                                      |
+| [ Confirmar redefinicao ]                            |
 |                                                      |
 +------------------------------------------------------+
 ```
@@ -540,8 +563,6 @@ Principio do produto:
 
 - A primeira tela deve iniciar pelo cadastro da escola ou pelo radar com
   configuracao guiada?
-- A direcao podera redefinir a senha de uma pessoa cadastrada para `123456` se
-  ela perder senha e salvaguarda?
 - O botao principal deve ser "Tenho algo para resolver" ou "Registrar
   necessidade"?
 - "Preciso pedir ajuda" deve ser uma acao separada ou apenas outra porta para

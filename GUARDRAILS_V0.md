@@ -115,6 +115,13 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
 - O produto deve recomendar que o token seja anotado em local seguro. Se a pessoa
   tirar foto temporariamente para anotar depois, deve apagar a foto apos guardar
   a informacao em local seguro.
+- A direcao ou pessoa responsavel principal pode redefinir a senha de usuarios
+  comuns para `123456` quando a pessoa perder senha e salvaguarda.
+- Essa redefinicao deve recolocar o usuario em estado de primeiro acesso,
+  exigindo troca obrigatoria de senha e nova confirmacao de salvaguarda antes do
+  uso normal.
+- A redefinicao administrativa deve ser registrada no historico/auditoria local
+  quando esse recurso existir, sem expor a senha nova em texto claro.
 - Se usuario, senha e salvaguarda forem perdidos, o acesso administrativo pode
   ser perdido. Nesse caso, a recuperacao dependera de um procedimento tecnico
   documentado, se existir.
@@ -173,6 +180,7 @@ Devem cobrir regras puras e validacoes, incluindo:
 - marcacao de envolvidos;
 - cadastro de pessoa/usuario;
 - obrigatoriedade de troca da senha inicial padrao;
+- redefinicao administrativa de senha para `123456` com nova troca obrigatoria;
 - regras de prioridade;
 - regras de necessidades paradas;
 - validacao de campos obrigatorios;
