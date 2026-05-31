@@ -102,6 +102,8 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
   usuarios para pessoas ou cargos/funcoes especificos.
 - A delegacao deve ser explicita, preferencialmente para coordenadores ou
   funcoes imediatamente abaixo da direcao, conforme a hierarquia real da escola.
+- Alem da direcao, no maximo duas pessoas podem receber a atribuicao de
+  cadastrar novos usuarios na V0.
 - Delegar cadastro de usuarios nao deve liberar automaticamente exportacao de
   seguranca nem recuperacao administrativa da propria direcao.
 - O cadastro de pessoa nao deve ser bloqueado quando o cargo ou funcao ainda nao
@@ -203,6 +205,7 @@ Devem cobrir regras puras e validacoes, incluindo:
 - restricao de exportacao de seguranca e gestao de acessos/senhas para direcao
   ou pessoa responsavel principal;
 - delegacao explicita de cadastro de usuarios para pessoa/cargo/funcao;
+- limite maximo de duas pessoas delegadas alem da direcao;
 - criacao de necessidade;
 - transicoes de status permitidas;
 - marcacao de envolvidos;

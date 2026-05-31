@@ -202,7 +202,8 @@ principal, especialmente exportacao de seguranca e gestao de acessos/senhas.
 A direcao ou responsavel principal deve poder delegar o cadastro de novos
 usuarios para pessoas ou cargos/funcoes especificos. Essa delegacao deve ser
 explicita e preferencialmente usada para coordenadores ou funcoes imediatamente
-abaixo da direcao, conforme a hierarquia real da escola.
+abaixo da direcao, conforme a hierarquia real da escola. Alem da direcao, no
+maximo duas pessoas podem receber essa atribuicao na V0.
 
 Pessoas cadastradas pela direcao ou responsavel principal podem receber a senha
 inicial padrao `123456` apenas para o primeiro acesso. Ao entrar pela primeira

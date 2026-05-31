@@ -307,6 +307,7 @@ Principio do produto:
 |                                                      |
 | Quem pode cadastrar novos usuarios?                  |
 | [ Buscar pessoa ou cargo/funcao _____________ ]      |
+| Limite: ate 2 pessoas alem da direcao.               |
 |                                                      |
 | Sugestoes                                            |
 | [ ] Coordenacao                                      |
@@ -316,6 +317,8 @@ Principio do produto:
 | Delegacoes atuais                                    |
 | ---------------------------------------------------- |
 | Coordenacao            Pode cadastrar usuarios       |
+| Vice-direcao           Pode cadastrar usuarios       |
+| Limite atingido                                      |
 |                                                      |
 | Esta delegacao nao libera exportacao de seguranca    |
 | nem recuperacao administrativa da direcao.            |

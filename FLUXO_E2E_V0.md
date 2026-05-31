@@ -101,7 +101,8 @@ A direcao tambem pode delegar o cadastro de novos usuarios para pessoas ou
 cargos/funcoes especificos, preferencialmente coordenadores ou funcoes
 imediatamente abaixo da direcao. A pessoa delegada pode cadastrar usuarios, mas
 nao recebe automaticamente acesso a exportacao de seguranca nem recuperacao da
-propria direcao.
+propria direcao. Alem da direcao, no maximo duas pessoas podem receber essa
+atribuicao na V0.
 
 Se uma pessoa cadastrada perder senha e salvaguarda:
 

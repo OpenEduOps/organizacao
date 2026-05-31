@@ -82,6 +82,7 @@ decisao explicita posterior.
 - A direcao ou pessoa responsavel principal pode delegar o cadastro de novos
   usuarios para pessoas ou cargos/funcoes especificos, preferencialmente
   coordenadores ou funcoes imediatamente abaixo da direcao.
+- Alem da direcao, no maximo duas pessoas podem receber essa atribuicao na V0.
 - Essa delegacao deve permitir cadastrar pessoas/usuarios, mas nao deve liberar
   automaticamente exportacao de seguranca nem recuperacao administrativa da
   propria direcao.
