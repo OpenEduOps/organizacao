@@ -91,6 +91,8 @@ em documentos próprios:
   primeiro produto e estratégia desktop local;
 * [`REQUISITOS_V0.md`](REQUISITOS_V0.md): requisitos funcionais, requisitos nao
   funcionais e criterios de aceite da V0;
+* [`CI_CD_OSS.md`](CI_CD_OSS.md): direcao inicial de CI/CD OSS profissional para
+  a organizacao e para o futuro app Radar Escola;
 * [`VISAO_PROTOTIPAL_V0.md`](VISAO_PROTOTIPAL_V0.md): primeira visão prototipal
   em baixa fidelidade;
 * [`GUARDRAILS_V0.md`](GUARDRAILS_V0.md): limites de escopo, privacidade,
