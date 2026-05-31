@@ -42,8 +42,8 @@ jobs:
         run: |
           set -euo pipefail
 
-          if grep -R "write-all" .github/workflows; then
-            echo "Do not use broad write-all permissions in workflows."
+          if grep -R "write""-all" .github/workflows; then
+            echo "Do not use broad workflow write permissions."
             exit 1
           fi
 
