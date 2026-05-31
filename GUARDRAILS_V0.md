@@ -124,6 +124,8 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
 
 - O banco local e a persistencia principal da V0.
 - Exportacao CSV de seguranca deve ser parte da V0.
+- Exportacao de seguranca deve ser responsabilidade do perfil direcao ou da
+  pessoa responsavel principal.
 - O sistema deve orientar explicitamente que a exportacao seja salva fora do
   computador principal, como pendrive, pasta de rede ou outra maquina.
 - Exportar CSV deve ser simples para uma pessoa responsavel nao tecnica.

@@ -108,6 +108,8 @@ decisao explicita posterior.
 ### Exportacao de seguranca
 
 - Exportacao manual em CSV.
+- A exportacao de seguranca deve ser responsabilidade do perfil direcao ou da
+  pessoa responsavel principal.
 - Exportacao de necessidades.
 - Exportacao de equipamentos.
 - Orientacao explicita para salvar a exportacao em pendrive, pasta de rede ou
