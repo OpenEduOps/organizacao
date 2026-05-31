@@ -210,6 +210,32 @@ Como regra inicial:
 
 Rust nao deve ser o centro da regra de negocio no inicio do projeto.
 
+### Justificativa para Rust e Tauri
+
+O uso de Rust neste contexto e justificado principalmente por Tauri e pela
+experiencia desktop Windows-first que o OpenEduOps deseja entregar.
+
+Rust nao entra como tecnologia central de produto, nem como objetivo de
+aprendizado inicial para todos os contribuidores. Ele entra como base nativa
+para permitir que a aplicacao seja distribuida como um programa desktop leve,
+instalavel e integrado ao Windows.
+
+Essa escolha ajuda a sustentar a experiencia desejada:
+
+- instalador para Windows;
+- abertura por icone, sem expor navegador ou servidor local ao usuario;
+- janela propria de aplicativo desktop;
+- acesso controlado a arquivos locais;
+- suporte a backup e restauracao;
+- integracao com recursos do sistema operacional;
+- menor peso em comparacao com alternativas desktop mais pesadas;
+- possibilidade de manter a maior parte da experiencia e das regras simples em
+  React e TypeScript.
+
+Portanto, Rust deve permanecer como infraestrutura discreta. Seu papel e
+viabilizar a experiencia "baixar, instalar, abrir e usar" no Windows, mantendo a
+complexidade tecnica fora do caminho do usuario final.
+
 O usuario final nao deve precisar saber que existem React, TypeScript, SQLite,
 Tauri, Rust, banco de dados ou camadas internas. Ele deve perceber apenas um
 programa instalado, simples de abrir e capaz de cadastrar, acompanhar, organizar,
