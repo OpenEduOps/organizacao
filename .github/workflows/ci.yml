@@ -85,6 +85,11 @@ jobs:
               "CODIGO_DE_CONDUTA.md",
               "GOVERNANCA.md",
               "MANIFESTO.md",
+              "docs/project-context.md",
+              "docs/implementation-plan.md",
+              "docs/implementation-status.md",
+              "docs/final-testable-delivery.md",
+              "docs/roadmap.md",
           ]
 
           missing = [doc for doc in required_docs if not Path(doc).is_file()]

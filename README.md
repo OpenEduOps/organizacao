@@ -96,6 +96,15 @@ em documentos próprios:
 * [`docs/ci.md`](docs/ci.md): funcionamento da CI inicial deste repositorio;
 * [`docs/desktop-release.md`](docs/desktop-release.md): objetivo final da
   esteira desktop para baixar, instalar e executar o app no Windows;
+* [`docs/project-context.md`](docs/project-context.md): contexto e requisitos
+  duraveis do Radar Escola;
+* [`docs/implementation-plan.md`](docs/implementation-plan.md): fases de
+  implementacao e criterios de aceite por etapa;
+* [`docs/final-testable-delivery.md`](docs/final-testable-delivery.md): linha
+  de chegada testavel da V0;
+* [`docs/implementation-status.md`](docs/implementation-status.md): estado atual
+  implementado, validado e adiado;
+* [`docs/roadmap.md`](docs/roadmap.md): resumo navegavel das fases do produto;
 * [`docs/permissions.md`](docs/permissions.md): politica de permissoes minimas
   dos workflows;
 * [`docs/oss-guardrails.md`](docs/oss-guardrails.md): guardrails praticos para
