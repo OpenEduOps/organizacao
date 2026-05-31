@@ -69,20 +69,28 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
 - Deixar claro que os dados ficam no computador da instituicao.
 - Nao enviar dados para nuvem por padrao.
 - Nao adicionar telemetria por padrao.
-- Separar e-mail de avisos institucionais e e-mail pessoal de recuperacao apenas
-  se houver consentimento e justificativa clara.
-- O e-mail pessoal deve ser opcional ou ter alternativa local de recuperacao.
+- Nao exigir e-mail pessoal para recuperacao de acesso na V0.
+- O acesso normal deve usar usuario e senha.
+- A V0 deve prever salvaguarda local para esquecimento de usuario e senha, como
+  codigo de recuperacao, chave impressa, pessoa responsavel ou fluxo manual
+  documentado.
 - Senhas nunca devem ser armazenadas em texto claro.
 - O produto deve permitir backup e exportacao dos dados.
 - O produto deve prever caminho futuro para editar ou remover dados pessoais.
 
 ## Recuperacao de acesso
 
-- Recuperacao por e-mail nao deve ser requisito obrigatorio da V0.
-- O produto deve considerar alternativa local de recuperacao, como codigo de
-  recuperacao, chave impressa, usuario administrador ou fluxo manual documentado.
-- Se houver recuperacao por e-mail, ela deve ser configuravel e depender de
-  servico de envio explicitamente configurado.
+- Recuperacao por e-mail pessoal nao deve fazer parte do fluxo principal da V0.
+- O produto deve usar usuario e senha como forma normal de acesso.
+- O produto deve considerar uma salvaguarda local de recuperacao, como codigo de
+  recuperacao, chave impressa, pessoa responsavel, usuario administrador ou
+  fluxo manual documentado.
+- A salvaguarda deve ser apresentada durante a configuracao inicial.
+- A pessoa responsavel pela salvaguarda deve ser orientada a guardar o codigo ou
+  chave em local seguro.
+- Se usuario, senha e salvaguarda forem perdidos, o acesso administrativo pode
+  ser perdido. Nesse caso, a recuperacao dependera de restaurar um backup valido
+  ou de um procedimento tecnico documentado, se existir.
 - A recuperacao de acesso nao deve quebrar a promessa de uso local/offline.
 
 ## Notificacoes
@@ -135,7 +143,8 @@ Devem cobrir regras puras e validacoes, incluindo:
 - regras de prioridade;
 - regras de necessidades paradas;
 - validacao de campos obrigatorios;
-- formatacao e validacao de e-mails;
+- validacao de usuario;
+- regras de codigo ou chave de recuperacao;
 - regras de plano de acao;
 - fechamento/resolucao de necessidade.
 

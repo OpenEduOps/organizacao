@@ -43,14 +43,14 @@ Principio do produto:
 | Seu nome                                            |
 | [ Maria Silva ________________________________ ]     |
 |                                                      |
-| E-mail para receber avisos                          |
-| [ maria@escola.gov.br _______________________ ]      |
-|                                                      |
-| E-mail pessoal para recuperacao de senha             |
-| [ maria.pessoal@email.com ___________________ ]      |
+| Usuario de acesso                                    |
+| [ maria.silva _______________________________ ]      |
 |                                                      |
 | Senha de acesso                                     |
 | [ __________________________________________ ]       |
+|                                                      |
+| Salvaguarda de acesso                                |
+| [ Gerar codigo de recuperacao para responsavel ]     |
 |                                                      |
 | [ Comecar ]                                         |
 |                                                      |
@@ -210,8 +210,8 @@ Principio do produto:
 | Veja o que sua escola precisa resolver.              |
 +------------------------------------------------------+
 |                                                      |
-| E-mail                                               |
-| [ maria@escola.gov.br _______________________ ]      |
+| Usuario                                              |
+| [ maria.silva _______________________________ ]      |
 |                                                      |
 | Senha                                                |
 | [ __________________________________________ ]       |
@@ -223,23 +223,23 @@ Principio do produto:
 +------------------------------------------------------+
 ```
 
-## Recuperar Senha
+## Recuperar Acesso
 
 ```text
 +------------------------------------------------------+
-| Recuperar senha                              [Voltar] |
+| Recuperar acesso                             [Voltar] |
 +------------------------------------------------------+
 |                                                      |
-| Informe seu e-mail pessoal de recuperacao,            |
-| se essa opcao tiver sido configurada.                 |
+| Se usuario e senha forem esquecidos, procure a        |
+| pessoa responsavel pela salvaguarda de acesso.        |
 |                                                      |
-| E-mail pessoal                                       |
-| [ maria.pessoal@email.com ___________________ ]      |
+| Codigo de recuperacao                                |
+| [ __________________________________________ ]       |
 |                                                      |
-| O sistema tentara enviar instrucoes para recuperar    |
-| o acesso. Tambem pode haver uma alternativa local.    |
+| O codigo deve ter sido guardado em local seguro       |
+| durante a configuracao inicial.                       |
 |                                                      |
-| [ Enviar instrucoes ]                                |
+| [ Recuperar acesso ]                                 |
 |                                                      |
 +------------------------------------------------------+
 ```
@@ -449,10 +449,7 @@ Principio do produto:
 +------------------------------------------------------+
 |                                                      |
 | E-mail usado para avisos da escola                   |
-| [ maria@escola.gov.br _______________________ ]      |
-|                                                      |
-| E-mail pessoal para recuperacao de senha             |
-| [ maria.pessoal@email.com ___________________ ]      |
+| [ avisos@escola.gov.br ______________________ ]      |
 |                                                      |
 | Avisar envolvidos quando:                            |
 | [x] Uma necessidade for registrada                   |
@@ -474,8 +471,8 @@ Principio do produto:
 
 - A primeira tela deve iniciar pelo cadastro da escola ou pelo radar com
   configuracao guiada?
-- O cadastro inicial deve separar e-mail de avisos institucionais e e-mail
-  pessoal para recuperacao de senha?
+- A salvaguarda de acesso deve ser um codigo local, uma pessoa responsavel, ou
+  uma combinacao dos dois?
 - O botao principal deve ser "Tenho algo para resolver" ou "Registrar
   necessidade"?
 - "Preciso pedir ajuda" deve ser uma acao separada ou apenas outra porta para
