@@ -164,6 +164,28 @@ jobs:
 
           echo "Repository hygiene checks passed."
 
+  frontend-build:
+    name: Frontend build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Build frontend
+        run: npm run build
+
   all-checks:
     name: All CI checks
     runs-on: ubuntu-latest
@@ -171,6 +193,7 @@ jobs:
       - markdown-quality
       - documentation-consistency
       - repository-hygiene
+      - frontend-build
     steps:
       - name: Report success
         run: echo "All CI checks passed."

@@ -307,7 +307,8 @@ Permissoes especiais:
 
 ### Fase 1: app Radar Escola
 
-- [ ] CI roda lint, typecheck, testes e build do frontend.
+- [x] Scaffold minimo Tauri + React + TypeScript existe sem funcionalidade falsa.
+- [x] CI roda typecheck e build do frontend.
 - [ ] CI roda checks Rust/Tauri quando houver codigo Rust.
 - [ ] CI roda testes de persistencia SQLite.
 - [ ] CI cobre regras criticas de seguranca local.

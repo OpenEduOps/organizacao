@@ -98,7 +98,7 @@ jobs:
           cargo test
 
       - name: Build Tauri Windows installer
-        run: npm run tauri build
+        run: npm run tauri -- build --ci --no-sign
 
       - name: Smoke test installer on Windows
         shell: pwsh

@@ -307,6 +307,10 @@ atual. A proposta é uma aplicação desktop local para Windows voltada a regist
 necessidades, envolver pessoas, acompanhar andamento, preservar histórico e
 apoiar a manutenção operacional da escola.
 
+O repositório já contém um scaffold técnico mínimo do Radar Escola em
+Tauri + React + TypeScript. Esse scaffold existe para validar a casca desktop e
+a esteira de CI/CD, sem representar ainda o MVP funcional.
+
 Exemplos de iniciativas futuras:
 
 ### Radar Escola

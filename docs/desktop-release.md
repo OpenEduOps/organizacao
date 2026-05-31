@@ -46,6 +46,8 @@ src-tauri/Cargo.toml
 scripts/smoke-windows.ps1
 ```
 
+Esses arquivos ja existem no scaffold minimo atual.
+
 O projeto tambem deve expor scripts locais claros:
 
 ```text
@@ -61,6 +63,20 @@ Scripts podem ser ajustados conforme o scaffold real, mas a intencao deve ser
 preservada: qualquer pessoa mantenedora precisa conseguir reproduzir localmente
 o que a CI executa.
 
+## Scaffold Atual
+
+O scaffold atual contem:
+
+- app React/TypeScript minimo;
+- Vite para build frontend;
+- Tauri 2 como casca desktop;
+- janela inicial do Radar Escola;
+- script de smoke check para localizar artefatos Windows;
+- `package-lock.json` para dependencias npm reproduziveis.
+
+Ele nao contem regra de negocio, banco local ou fluxos de usuario. Isso e
+intencional para manter o scaffold honesto.
+
 ## Esteira Ponta a Ponta
 
 O workflow `Desktop Release` deve cobrir:
@@ -72,7 +88,7 @@ O workflow `Desktop Release` deve cobrir:
 5. `cargo fmt`, `cargo clippy` e `cargo test` na camada Tauri/Rust;
 6. build do instalador Windows;
 7. smoke test do instalador em runner Windows;
-8. coleta de `.msi` ou `.exe`;
+8. coleta de `.exe` ou `.msi`;
 9. geracao de SHA-256;
 10. upload de artefato baixavel no GitHub Actions;
 11. publicacao em GitHub Release quando houver tag `v*`.
@@ -99,8 +115,8 @@ instalador que sequer abre.
 Cada build de release deve produzir:
 
 ```text
-Radar-Escola-<versao>-windows-x64.msi ou .exe
-Radar-Escola-<versao>-windows-x64.msi.sha256 ou .exe.sha256
+Radar-Escola-<versao>-windows-x64.exe
+Radar-Escola-<versao>-windows-x64.exe.sha256
 ```
 
 Enquanto nao houver assinatura de codigo, a documentacao da release deve avisar
@@ -123,30 +139,45 @@ v0.1.0
 O workflow `Desktop Release` pode ser executado manualmente para conferir o
 estado da esteira.
 
-Enquanto o scaffold do app nao existir, a execucao manual deve terminar sem
-gerar instalador e sem publicar release. Isso evita ruido operacional, mas deixa
-claro quais arquivos ainda faltam.
+O scaffold minimo do app ja existe no repositorio para validar a esteira sem
+criar funcionalidade falsa de MVP. Ele contem uma tela tecnica simples do Radar
+Escola, sem fluxo de cadastro, banco local ou regras de negocio.
+
+Enquanto o app ainda for apenas scaffold, a execucao manual pode gerar um
+instalador tecnico minimo, mas ele deve ser tratado apenas como validacao da
+casca desktop e do pipeline de release.
 
 Se alguem tentar publicar uma tag `v*` antes do scaffold existir, o preflight
 deve falhar. Uma release versionada nao pode ser publicada sem artefato real.
 
 ## Pendencias Que Dependem do App
 
-Ainda nao e possivel entregar a experiencia completa de download, instalacao e
-execucao porque faltam:
+Ainda nao e possivel entregar a experiencia completa de produto porque faltam:
 
-- codigo do app Radar Escola;
-- scaffold Tauri;
-- interface React/TypeScript;
+- fluxo funcional do MVP;
 - banco SQLite local;
-- scripts de build;
-- script de smoke test Windows;
+- persistencia real;
+- autenticacao local;
+- cadastro de pessoas/usuarios;
+- registro e acompanhamento de necessidades;
+- exportacao/restauracao de seguranca;
+- `Cargo.lock` gerado por ambiente Rust valido;
+- teste automatizado que instale e abra o app de forma verificavel no Windows;
 - definicao final de formato de instalador;
 - decisao futura sobre assinatura de codigo.
 
 Essas pendencias nao devem ser tratadas neste repositorio de organizacao. Elas
 devem ser resolvidas quando o repositorio ou diretorio do app Radar Escola for
-criado.
+evoluir para alem do scaffold.
+
+## Limitacao Local Observada
+
+No ambiente local atual, `npm ci`, `npm run typecheck`, `npm run build` e
+`npm run tauri -- info` foram executados.
+
+O build Tauri completo nao foi executado localmente porque Rust, Cargo e Visual
+Studio Build Tools/MSVC nao estao instalados nesta maquina. O workflow de
+release usa runner Windows do GitHub Actions e instala Rust antes do build.
 
 Mesmo assim, o contrato de CI/CD ja deixa claro qual sera o caminho de entrega
 do produto para a pessoa usuaria final.

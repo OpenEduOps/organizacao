@@ -13,6 +13,7 @@ Por isso, a CI atual valida:
 - presenca dos documentos centrais;
 - links internos;
 - higiene do repositorio;
+- typecheck e build do scaffold React/TypeScript;
 - postura minima de permissoes dos workflows.
 
 ## Check protegido
@@ -29,6 +30,8 @@ apenas esse nome para nao depender de nomes de matrix ou jobs auxiliares.
 ## Workflows
 
 - `.github/workflows/ci.yml`: valida documentacao e higiene do repositorio.
+  Tambem valida `npm ci`, `npm run typecheck` e `npm run build` para o scaffold
+  frontend.
 - `.github/workflows/security.yml`: valida postura de seguranca e dependency
   review em pull requests.
 - `.github/workflows/thank-contributor.yml`: envia mensagem de boas-vindas para
@@ -59,8 +62,8 @@ Quando o repositorio do app existir, a CI devera evoluir para validar:
 - regras criticas de seguranca local;
 - smoke test do fluxo minimo.
 
-Esses comandos nao devem ser adicionados a este repositorio enquanto o scaffold
-do app nao existir.
+O scaffold minimo do app ja existe para validar a casca desktop e o pipeline de
+release sem fingir funcionalidade de MVP.
 
 ## Esteira Desktop Futura
 
