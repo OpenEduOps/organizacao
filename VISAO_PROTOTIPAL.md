@@ -44,6 +44,9 @@ Principio do produto:
 | E-mail para receber avisos                          |
 | [ maria@escola.gov.br _______________________ ]      |
 |                                                      |
+| E-mail pessoal para recuperacao de senha             |
+| [ maria.pessoal@email.com ___________________ ]      |
+|                                                      |
 | Senha de acesso                                     |
 | [ __________________________________________ ]       |
 |                                                      |
@@ -201,6 +204,8 @@ Principio do produto:
 
 - A primeira tela deve iniciar pelo cadastro da escola ou pelo radar com
   configuracao guiada?
+- O cadastro inicial deve separar e-mail de avisos institucionais e e-mail
+  pessoal para recuperacao de senha?
 - O botao principal deve ser "Tenho algo para resolver" ou "Registrar
   necessidade"?
 - "Preciso pedir ajuda" deve ser uma acao separada ou apenas outra porta para
