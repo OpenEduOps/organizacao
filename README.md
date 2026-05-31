@@ -93,6 +93,13 @@ em documentos próprios:
   funcionais e criterios de aceite da V0;
 * [`CI_CD_OSS.md`](CI_CD_OSS.md): direcao inicial de CI/CD OSS profissional para
   a organizacao e para o futuro app Radar Escola;
+* [`docs/ci.md`](docs/ci.md): funcionamento da CI inicial deste repositorio;
+* [`docs/permissions.md`](docs/permissions.md): politica de permissoes minimas
+  dos workflows;
+* [`docs/oss-guardrails.md`](docs/oss-guardrails.md): guardrails praticos para
+  contribuicao OSS;
+* [`COMO_CONTRIBUIR.md`](COMO_CONTRIBUIR.md): orientacoes para contribuir com o
+  projeto;
 * [`VISAO_PROTOTIPAL_V0.md`](VISAO_PROTOTIPAL_V0.md): primeira visão prototipal
   em baixa fidelidade;
 * [`GUARDRAILS_V0.md`](GUARDRAILS_V0.md): limites de escopo, privacidade,
