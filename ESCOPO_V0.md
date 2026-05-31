@@ -42,6 +42,7 @@ A V0 termina quando o Radar Escola permite:
 - importar dados exportados em CSV para restauracao;
 - registrar auditoria minima de acoes sensiveis;
 - permitir sair da conta em computador compartilhado;
+- bloquear sessao apos 30 minutos de inatividade;
 - transferir responsabilidade principal da escola;
 - executar testes automatizados dos fluxos criticos.
 
@@ -183,6 +184,9 @@ decisao explicita posterior.
 - A V0 deve permitir sair da conta de forma visivel.
 - A interface deve orientar o usuario a sair da conta ao terminar o uso em
   computador compartilhado.
+- A sessao deve bloquear apos 30 minutos de inatividade.
+- Ao desbloquear, o sistema deve pedir a senha do usuario atual e preservar o
+  contexto quando possivel.
 - O produto nao deve assumir que o computador e pessoal.
 
 ### Troca de direcao
@@ -222,6 +226,7 @@ decisao explicita posterior.
 - Testes de exportacao e importacao/restauracao CSV.
 - Testes de auditoria minima para acoes sensiveis.
 - Testes de logout/saida da conta.
+- Testes de bloqueio de sessao por inatividade.
 - Testes de interface dos fluxos principais.
 - Testes de integracao desktop quando o empacotamento Tauri estiver disponivel.
 
@@ -282,6 +287,7 @@ A V0 pode ser considerada entregue quando:
 - obriga troca da senha inicial padrao no primeiro acesso da pessoa cadastrada;
 - permite login;
 - permite sair da conta;
+- bloqueia sessao apos 30 minutos de inatividade;
 - cria necessidade;
 - mostra a necessidade no Radar de Necessidades;
 - atualiza andamento;

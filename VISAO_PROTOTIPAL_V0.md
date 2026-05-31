@@ -1,4 +1,4 @@
-# Visao Prototipal v0
+# Visao Prototipal V0
 
 Este documento registra uma primeira visao prototipal em baixa fidelidade para o
 primeiro produto do OpenEduOps.
@@ -8,6 +8,7 @@ interface. O objetivo e validar fluxo, linguagem, prioridade das acoes e
 experiencia esperada para uma pessoa nao tecnica usando o produto em uma escola.
 
 Esta visao deve ser lida junto com `CONTEXTO_INICIAL.md` e `GUARDRAILS_V0.md`.
+Para requisitos objetivos, ver tambem `REQUISITOS_V0.md`.
 
 ## Produto
 
@@ -158,7 +159,30 @@ Principio do produto:
 | [ Registrar atualizacao ]                            |
 |                                                      |
 | [ Atualizar status ] [ Solicitar fechamento ]        |
-| [ Cancelar necessidade ]                             |
+| [ Solicitar correcao/cancelamento ]                  |
+|                                                      |
++------------------------------------------------------+
+```
+
+## Solicitar Correcao ou Cancelamento
+
+```text
++------------------------------------------------------+
+| Solicitar correcao/cancelamento              [Voltar] |
++------------------------------------------------------+
+| Projetor da sala 8 nao liga                          |
++------------------------------------------------------+
+|                                                      |
+| O que precisa ser corrigido?                         |
+| ( ) Texto, local, prioridade ou equipamento           |
+| ( ) Esta necessidade foi cadastrada por engano        |
+| ( ) Existe outro registro igual                      |
+|                                                      |
+| Explique com suas palavras                           |
+| [ Registrei na sala errada. O correto e sala 9. ]    |
+| [ ____________________________________________ ]     |
+|                                                      |
+| [ Enviar para direcao/apoio de gestao ]              |
 |                                                      |
 +------------------------------------------------------+
 ```
@@ -228,6 +252,27 @@ Principio do produto:
 | [ Entrar ]                                           |
 |                                                      |
 | Esqueci minha senha                                  |
+|                                                      |
++------------------------------------------------------+
+```
+
+## Sessao Bloqueada
+
+```text
++------------------------------------------------------+
+| Sessao bloqueada                                     |
++------------------------------------------------------+
+| A sessao ficou 30 minutos sem uso.                   |
+| Digite sua senha para continuar.                     |
++------------------------------------------------------+
+|                                                      |
+| Usuario                                              |
+| maria.silva                                          |
+|                                                      |
+| Senha                                                |
+| [ __________________________________________ ]       |
+|                                                      |
+| [ Desbloquear ] [ Sair da conta ]                    |
 |                                                      |
 +------------------------------------------------------+
 ```

@@ -6,6 +6,7 @@ OpenEduOps.
 Ele deve ser lido junto com:
 
 - `CONTEXTO_INICIAL.md`;
+- `REQUISITOS_V0.md`;
 - `VISAO_PROTOTIPAL_V0.md`;
 - `ESCOPO_V0.md`;
 - `FLUXO_E2E_V0.md`.
@@ -137,6 +138,9 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
 - O produto deve ter acao visivel de sair da conta.
 - A interface deve orientar pessoas cadastradas a sair da conta ao terminar o
   uso, especialmente em computador compartilhado.
+- A sessao deve bloquear apos 30 minutos de inatividade.
+- Ao desbloquear, o sistema deve pedir a senha do usuario atual e preservar o
+  contexto quando possivel.
 - Sessao aberta em computador compartilhado deve ser tratada como risco de UX e
   seguranca.
 
@@ -281,6 +285,7 @@ Devem cobrir regras puras e validacoes, incluindo:
 - consulta de auditoria exclusiva da direcao/responsavel principal;
 - transferencia de direcao/responsavel principal;
 - logout/saida da conta em computador compartilhado;
+- bloqueio de sessao apos 30 minutos de inatividade;
 - cancelamento de necessidade cadastrada por engano;
 - criacao de necessidade;
 - transicoes de status permitidas;
@@ -339,6 +344,7 @@ Devem cobrir os fluxos principais da experiencia:
 - primeiro acesso com troca obrigatoria da senha padrao;
 - orientacao de privacidade no primeiro acesso de pessoa cadastrada;
 - saida da conta em computador compartilhado;
+- bloqueio por inatividade e retorno com senha do usuario atual;
 - registro de uma necessidade;
 - exibicao da necessidade no radar;
 - atualizacao de andamento;

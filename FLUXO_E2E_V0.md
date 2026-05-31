@@ -269,6 +269,9 @@ Como o Radar Escola sera usado em computadores compartilhados, a V0 deve prever:
 
 - botao visivel para sair da conta;
 - orientacao simples para encerrar a sessao ao terminar o uso;
+- bloqueio automatico apos 30 minutos de inatividade;
+- desbloqueio com senha do usuario atual, preservando o contexto quando
+  possivel;
 - protecao contra a ideia de que o computador pertence a uma unica pessoa.
 
 ## Auditoria minima

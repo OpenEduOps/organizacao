@@ -324,6 +324,8 @@ A concepcao da V0 deve ser lida junto com:
 
 - `VISAO_PROTOTIPAL_V0.md`, que registra a primeira visao prototipal em baixa
   fidelidade;
+- `REQUISITOS_V0.md`, que consolida requisitos funcionais, nao funcionais e
+  criterios de aceite da V0;
 - `GUARDRAILS_V0.md`, que define limites de escopo, privacidade, consulta
   manual pelos envolvidos, exportacao de seguranca, arquitetura, testes
   automatizados e criterios de aceite;
