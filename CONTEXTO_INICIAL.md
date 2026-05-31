@@ -199,6 +199,11 @@ pratica, pessoas cadastradas podem ver as necessidades, historico, envolvidos e
 andamentos. As excecoes devem ser acoes sensiveis da direcao ou responsavel
 principal, especialmente exportacao de seguranca e gestao de acessos/senhas.
 
+A direcao ou responsavel principal deve poder delegar o cadastro de novos
+usuarios para pessoas ou cargos/funcoes especificos. Essa delegacao deve ser
+explicita e preferencialmente usada para coordenadores ou funcoes imediatamente
+abaixo da direcao, conforme a hierarquia real da escola.
+
 Pessoas cadastradas pela direcao ou responsavel principal podem receber a senha
 inicial padrao `123456` apenas para o primeiro acesso. Ao entrar pela primeira
 vez, a pessoa deve obrigatoriamente trocar a senha, definir sua salvaguarda

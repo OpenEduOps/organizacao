@@ -79,6 +79,12 @@ decisao explicita posterior.
   andamentos.
 - Acoes sensiveis devem ficar restritas a direcao ou pessoa responsavel
   principal, incluindo exportacao de seguranca e gestao de acessos/senhas.
+- A direcao ou pessoa responsavel principal pode delegar o cadastro de novos
+  usuarios para pessoas ou cargos/funcoes especificos, preferencialmente
+  coordenadores ou funcoes imediatamente abaixo da direcao.
+- Essa delegacao deve permitir cadastrar pessoas/usuarios, mas nao deve liberar
+  automaticamente exportacao de seguranca nem recuperacao administrativa da
+  propria direcao.
 - Pessoas cadastradas podem ser marcadas como envolvidas em necessidades.
 - A senha inicial padrao para pessoas cadastradas pode ser `123456`, mas apenas
   para primeiro acesso.

@@ -279,7 +279,8 @@ Principio do produto:
 | Pessoas e usuarios                           [Voltar] |
 +------------------------------------------------------+
 | [ Cadastrar pessoa ]                                  |
-| Somente direcao/responsavel altera acessos e senhas. |
+| Direcao/responsavel ou pessoa delegada cadastra.      |
+| [ Delegar cadastro de usuarios ]                     |
 |                                                      |
 | Buscar                                               |
 | [ nome, usuario, cargo ou funcao... __________ ]     |
@@ -293,6 +294,33 @@ Principio do produto:
 | Usuario: joao.tecnico | Funcao: Tecnico              |
 | Primeiro acesso pendente                             |
 | [ Redefinir senha para 123456 ]                      |
+|                                                      |
++------------------------------------------------------+
+```
+
+## Delegar Cadastro de Usuarios
+
+```text
++------------------------------------------------------+
+| Delegar cadastro de usuarios                 [Voltar] |
++------------------------------------------------------+
+|                                                      |
+| Quem pode cadastrar novos usuarios?                  |
+| [ Buscar pessoa ou cargo/funcao _____________ ]      |
+|                                                      |
+| Sugestoes                                            |
+| [ ] Coordenacao                                      |
+| [ ] Vice-direcao                                     |
+| [ ] Secretaria responsavel                           |
+|                                                      |
+| Delegacoes atuais                                    |
+| ---------------------------------------------------- |
+| Coordenacao            Pode cadastrar usuarios       |
+|                                                      |
+| Esta delegacao nao libera exportacao de seguranca    |
+| nem recuperacao administrativa da direcao.            |
+|                                                      |
+| [ Salvar delegacoes ]                                |
 |                                                      |
 +------------------------------------------------------+
 ```

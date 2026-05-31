@@ -97,6 +97,12 @@ Resultado esperado:
 - a direcao ou pessoa responsavel principal conserva as acoes sensiveis de
   exportacao de seguranca e gestao de acessos/senhas.
 
+A direcao tambem pode delegar o cadastro de novos usuarios para pessoas ou
+cargos/funcoes especificos, preferencialmente coordenadores ou funcoes
+imediatamente abaixo da direcao. A pessoa delegada pode cadastrar usuarios, mas
+nao recebe automaticamente acesso a exportacao de seguranca nem recuperacao da
+propria direcao.
+
 Se uma pessoa cadastrada perder senha e salvaguarda:
 
 - a direcao ou pessoa responsavel principal pode redefinir a senha para
