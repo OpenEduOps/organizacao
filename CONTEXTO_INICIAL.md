@@ -105,7 +105,7 @@ O MVP deve priorizar:
 - uso em pt-BR;
 - interface acessivel e responsiva.
 
-## Estrategia de adocao local-first
+## Estrategia de adocao desktop local
 
 Uma evolucao importante da ideia inicial e priorizar a experiencia de uso
 concreta de instituicoes com baixa maturidade tecnica.
@@ -119,17 +119,26 @@ A melhor porta de entrada tende a ser:
 > Baixar, instalar e usar.
 
 O OpenEduOps deve considerar como principio que seus primeiros produtos precisam
-ser amigaveis para Windows e utilizaveis localmente, com banco de dados local,
-sem depender de servicos externos, contas institucionais, internet constante ou
-equipe tecnica especializada.
+ser programas desktop locais, amigaveis para Windows e utilizaveis com banco de
+dados local, sem depender de servicos externos, contas institucionais, internet
+constante ou equipe tecnica especializada.
 
-Essa direcao favorece uma experiencia de adocao mais proxima de um software
-comum de desktop, mesmo que a arquitetura interna continue sendo uma aplicacao
-web moderna.
+Essa direcao favorece uma experiencia de adocao mais proxima de softwares livres
+tradicionais, como LibreOffice, VLC, GIMP, Audacity e 7-Zip: o usuario baixa,
+instala, abre pelo icone e usa.
+
+A aplicacao pode usar tecnologias web internamente, caso isso ajude na
+produtividade, na manutenibilidade e na formacao de contribuidores. No entanto,
+a experiencia entregue ao usuario final deve ser a de um programa desktop comum,
+nao a de um sistema que precisa ser implantado, hospedado ou configurado.
 
 Uma formulacao possivel:
 
-> Instalacao primeiro, infraestrutura depois.
+> Experiencia do usuario final primeiro, tecnologia depois.
+
+Outra formulacao complementar:
+
+> Desktop local primeiro, infraestrutura depois.
 
 ## Modos de uso esperados
 
@@ -157,21 +166,48 @@ usando Docker, Linux, banco externo e processos formais de backup.
 Esse modo deve existir como caminho avancado, nao como requisito inicial para
 experimentar o produto.
 
-## Diretriz tecnica inicial
+## Diretriz de produto inicial
 
-Para o primeiro MVP, uma direcao tecnica coerente e:
+Para o primeiro MVP, uma direcao de produto coerente e:
 
-- aplicacao web local-first;
+- aplicacao desktop local;
 - instalador amigavel para Windows;
+- icone na area de trabalho e no menu iniciar;
 - banco local, preferencialmente SQLite no inicio;
 - backup e restauracao simples;
 - exportacao e importacao de dados;
+- uso sem internet obrigatoria;
+- experiencia de abertura semelhante a um software comum;
+- interface simples, direta e em Portugues Brasileiro;
+- primeiro uso guiado;
+- tecnologia interna escolhida em funcao da experiencia final;
+- possibilidade de usar interface web internamente, desde que isso nao apareca
+  como complexidade para o usuario;
 - possibilidade futura de migracao para banco externo;
-- Docker como opcao para desenvolvimento, testes e implantacoes tecnicas;
-- arquitetura preparada para evoluir sem exigir complexidade no primeiro uso.
+- Docker como opcao para desenvolvimento, testes e implantacoes tecnicas.
 
 O objetivo nao e abandonar ambientes tecnicos mais robustos. O objetivo e nao
 transforma-los em barreira de entrada.
+
+## Formacao de contribuidores
+
+O foco inicial deve ser a experiencia do usuario final. Depois disso, a
+arquitetura e a tecnologia devem ser alinhadas para gerar boas oportunidades de
+aprendizado para contribuidores iniciantes.
+
+Isso significa que o projeto deve buscar um equilibrio entre:
+
+- utilidade real para escolas e instituicoes educacionais;
+- experiencia simples para pessoas nao tecnicas;
+- codigo compreensivel;
+- issues pequenas e bem descritas;
+- testes acessiveis;
+- documentacao clara;
+- oportunidades de aprendizado em interface, regras de negocio, persistencia,
+  acessibilidade, instalacao, empacotamento, backup e qualidade.
+
+A formacao dos contribuidores deve nascer de um produto util, nao de um exercicio
+artificial de tecnologia.
 
 ## Sequencia possivel de produtos
 
