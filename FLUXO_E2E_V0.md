@@ -187,7 +187,7 @@ Resultado esperado:
 
 ### 7. Marcar como resolvido
 
-Quando o problema for resolvido, alguem registra:
+Quando o problema for resolvido, a direcao ou pessoa delegada por ela registra:
 
 - o que foi feito;
 - quem resolveu;
@@ -203,6 +203,8 @@ Resultado esperado:
 - a necessidade sai do fluxo ativo;
 - a solucao fica preservada;
 - a escola cria memoria operacional.
+- o fechamento passa pelo olhar da gestao, evitando que necessidades sejam
+  encerradas sem validacao minima.
 
 ### 8. Consultar historico
 
@@ -234,6 +236,8 @@ Resultado esperado:
 - a escola reduz risco de perda por problema no computador;
 - existe uma copia simples para guardar em pendrive, pasta de rede ou outra
   maquina.
+- os CSVs exportados podem ser importados de volta para restauracao em caso de
+  perda, troca ou problema no computador.
 
 ## Fluxo minimo de valor
 
@@ -243,10 +247,10 @@ O menor fluxo que ainda entrega valor real e:
 > envolvidos -> atualizar andamento -> marcar como resolvido -> consultar
 > historico.
 
-Exportacao CSV nao e parte da dor diaria do usuario comum. Ela deve existir como
-rotina do perfil direcao ou pessoa responsavel principal porque o produto e
-local e os dados precisam ser protegidos contra perda do computador ou problema
-na maquina.
+Exportacao e importacao de seguranca nao fazem parte da dor diaria do usuario
+comum. Elas devem existir como rotina do perfil direcao ou pessoa responsavel
+principal porque o produto e local e os dados precisam ser protegidos contra
+perda do computador ou problema na maquina.
 
 ## O que torna o MVP util
 
@@ -268,6 +272,7 @@ E passe a ter:
 - resolucao documentada;
 - historico consultavel;
 - rotina de exportacao CSV de seguranca para direcao ou responsavel principal.
+- possibilidade de importar de volta os CSVs exportados para restauracao.
 
 ## O que nao faz parte do fluxo E2E da V0
 

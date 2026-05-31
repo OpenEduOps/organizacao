@@ -252,9 +252,14 @@ ou notificacoes automaticas.
 
 #### Registrar como resolvido
 
-Ao resolver uma necessidade, o sistema deve guardar o que foi feito, por quem,
-quando, se houve equipamento relacionado, observacoes finais e se ha necessidade
-de acompanhamento posterior.
+Ao resolver uma necessidade, a direcao ou pessoa delegada por ela deve registrar
+o que foi feito, por quem, quando, se houve equipamento relacionado,
+observacoes finais e se ha necessidade de acompanhamento posterior.
+
+Na V0, marcar como resolvido deve passar pelo olhar da gestao. Pessoas
+cadastradas podem acompanhar e atualizar andamento, mas a resolucao final deve
+ser feita pela direcao ou por pessoas delegadas por ela para esse tipo de
+fechamento.
 
 Esse fechamento cria memoria operacional para a instituicao.
 
@@ -313,6 +318,8 @@ O MVP deve priorizar:
   coordenacao, direcao ou gestor;
 - relatorios simples;
 - exportacao em CSV;
+- possibilidade de importar de volta os dados exportados, para recuperacao em
+  caso de perda ou troca do computador;
 - instalacao simples para Windows;
 - banco de dados local;
 - possibilidade de uso sem internet;

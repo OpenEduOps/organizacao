@@ -157,7 +157,7 @@ Principio do produto:
 | [ ____________________________________________ ]     |
 | [ Registrar atualizacao ]                            |
 |                                                      |
-| [ Atualizar status ] [ Registrar como resolvido ]    |
+| [ Atualizar status ] [ Solicitar fechamento ]        |
 |                                                      |
 +------------------------------------------------------+
 ```
@@ -167,6 +167,8 @@ Principio do produto:
 ```text
 +------------------------------------------------------+
 | Registrar solucao da necessidade #12          [Voltar]|
++------------------------------------------------------+
+| Acao disponivel para direcao ou pessoa delegada.      |
 +------------------------------------------------------+
 |                                                      |
 | O que foi feito?                                    |
@@ -607,11 +609,12 @@ Principio do produto:
 |                                                      |
 | [ Exportar necessidades em CSV ]                     |
 | [ Exportar equipamentos em CSV ]                     |
+| [ Importar dados de seguranca ]                      |
 |                                                      |
 | Salvar em                                            |
 | [ Escolher pendrive, pasta de rede ou outra maquina ]|
 |                                                      |
-| Importacao/restauracao completa fica fora da V0.     |
+| Os CSVs exportados devem permitir restauracao futura. |
 |                                                      |
 +------------------------------------------------------+
 ```

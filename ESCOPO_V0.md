@@ -38,6 +38,7 @@ A V0 termina quando o Radar Escola permite:
 - vincular uma necessidade a um equipamento;
 - exportar necessidades em CSV;
 - exportar equipamentos em CSV;
+- importar dados exportados em CSV para restauracao;
 - executar testes automatizados dos fluxos criticos.
 
 Qualquer funcionalidade fora dessa lista deve ser considerada fora da V0, salvo
@@ -60,6 +61,7 @@ decisao explicita posterior.
 - Login com usuario e senha.
 - Recuperacao local de acesso com usuario ou nome e salvaguarda local, usando
   token simples ou frase de recuperacao.
+- Senhas devem ser armazenadas no banco apenas como hash, nunca em texto claro.
 - Sem e-mail pessoal para recuperacao.
 - Sem dependencia de internet.
 
@@ -125,6 +127,8 @@ decisao explicita posterior.
 - Registrar atualizacao.
 - Alterar status.
 - Registrar resolucao.
+- Marcar como resolvido deve ser permitido apenas para direcao ou pessoas
+  delegadas pela direcao para fechamento de necessidades.
 
 ### Envolvidos
 
@@ -161,12 +165,17 @@ decisao explicita posterior.
   outra maquina.
 - O CSV deve servir como copia de seguranca e tambem como formato simples de
   leitura fora do aplicativo.
+- A V0 deve permitir importar de volta os dados exportados, para restaurar em
+  caso de perda, troca ou problema no computador.
+- A exportacao precisa preservar dados suficientes para restauracao coerente,
+  incluindo vinculos entre necessidades, equipamentos, pessoas, envolvidos,
+  andamentos e historico.
 
 ### Testes
 
 - Testes unitarios para regras de necessidade e validacoes.
 - Testes de persistencia para SQLite.
-- Testes de exportacao CSV.
+- Testes de exportacao e importacao/restauracao CSV.
 - Testes de interface dos fluxos principais.
 - Testes de integracao desktop quando o empacotamento Tauri estiver disponivel.
 
@@ -186,7 +195,8 @@ decisao explicita posterior.
 - Dashboard analitico.
 - Graficos.
 - Relatorios avancados.
-- Importacao em massa.
+- Importacao em massa que nao seja restauracao dos CSVs exportados pelo proprio
+  Radar Escola.
 - Anexos.
 - Fotos.
 - Comentarios ricos.
@@ -234,6 +244,7 @@ A V0 pode ser considerada entregue quando:
 - vincula equipamento a necessidade;
 - exporta necessidades em CSV;
 - exporta equipamentos em CSV;
+- importa de volta dados exportados em CSV;
 - possui testes automatizados dos fluxos criticos;
 - documenta como executar, testar e validar a V0.
 

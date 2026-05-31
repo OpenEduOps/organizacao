@@ -85,12 +85,16 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
   token simples, frase de recuperacao, pessoa responsavel ou fluxo manual
   documentado.
 - Senhas nunca devem ser armazenadas em texto claro.
+- Senhas devem ser armazenadas no banco apenas como hash adequado para senhas,
+  com sal e parametros seguros conforme a tecnologia escolhida.
 - A senha inicial padrao `123456` so pode ser usada para pessoas cadastradas e
   apenas como senha temporaria de primeiro acesso.
 - O sistema deve obrigar a troca da senha inicial antes de permitir uso normal do
   usuario cadastrado.
 - O produto deve salvar os dados no banco local e permitir exportacao CSV de
   seguranca.
+- A exportacao CSV de seguranca deve preservar dados suficientes para permitir
+  importacao/restauracao posterior.
 - O produto deve prever caminho futuro para editar ou remover dados pessoais.
 - Cargo ou funcao deve ajudar na identificacao, busca e organizacao das pessoas.
 - Na V0, pessoas cadastradas podem ver necessidades, historico, envolvidos e
@@ -178,8 +182,23 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
   computador principal, como pendrive, pasta de rede ou outra maquina.
 - Exportar CSV deve ser simples para uma pessoa responsavel nao tecnica.
 - O CSV deve ser legivel fora do aplicativo.
-- Importacao/restauracao completa a partir de CSV pode ser avaliada depois, mas
-  nao deve bloquear a V0.
+- A V0 deve permitir importar de volta os CSVs exportados pelo proprio Radar
+  Escola para restauracao em caso de perda, troca ou problema no computador.
+- A exportacao deve preservar vinculos entre necessidades, equipamentos,
+  pessoas, envolvidos, andamentos e historico.
+- A importacao de restauracao deve ser tratada como acao sensivel da direcao ou
+  pessoa responsavel principal.
+
+## Resolucao de necessidades
+
+- Pessoas cadastradas podem acompanhar necessidades e registrar atualizacoes de
+  andamento.
+- Marcar uma necessidade como resolvida deve ser permitido apenas para direcao ou
+  pessoas delegadas pela direcao para fechamento.
+- Essa restricao existe para que a resolucao passe pelo olhar da gestao e nao
+  seja encerrada sem validacao minima.
+- A restricao de resolucao nao deve impedir que envolvidos expliquem, no
+  andamento, que tecnicamente o problema foi resolvido.
 
 ## Arquitetura
 
@@ -206,6 +225,7 @@ Devem cobrir regras puras e validacoes, incluindo:
   ou pessoa responsavel principal;
 - delegacao explicita de cadastro de usuarios para pessoa/cargo/funcao;
 - limite maximo de duas pessoas delegadas alem da direcao;
+- restricao de marcacao como resolvido para direcao ou pessoas delegadas;
 - criacao de necessidade;
 - transicoes de status permitidas;
 - marcacao de envolvidos;
@@ -217,6 +237,7 @@ Devem cobrir regras puras e validacoes, incluindo:
 - regras de necessidades paradas;
 - validacao de campos obrigatorios;
 - validacao de usuario;
+- armazenamento de senhas apenas como hash;
 - regras de token simples ou frase de recuperacao;
 - regra de nao regenerar token de recuperacao;
 - regras de plano de acao;
@@ -240,8 +261,11 @@ Devem cobrir fluxos criticos de dados:
 
 - exportacao de necessidades em CSV;
 - exportacao de equipamentos em CSV;
+- importacao/restauracao a partir dos CSVs exportados;
 - cabecalhos esperados;
 - dados essenciais presentes;
+- preservacao de vinculos entre necessidades, equipamentos, pessoas,
+  envolvidos, andamentos e historico;
 - erro ao exportar para caminho indisponivel;
 - preservacao do banco local apos exportacao.
 
@@ -260,6 +284,7 @@ Devem cobrir os fluxos principais da experiencia:
 - visualizacao de historico;
 - criacao de equipamento basico;
 - fluxo de exportacao CSV de seguranca.
+- fluxo de importacao/restauracao dos CSVs exportados.
 
 ### Testes de integracao desktop
 
@@ -274,9 +299,9 @@ Devem ser adicionados quando o empacotamento Tauri estiver disponivel:
 ### Guardrail de cobertura
 
 - A cobertura deve priorizar fluxos criticos, nao porcentagem artificial.
-- Mudancas em regras de necessidade, persistencia, exportacao CSV,
-  acompanhamento pelos envolvidos ou recuperacao de acesso devem incluir testes
-  automatizados.
+- Mudancas em regras de necessidade, persistencia, exportacao/importacao CSV,
+  acompanhamento pelos envolvidos, resolucao de necessidades ou recuperacao de
+  acesso devem incluir testes automatizados.
 - Bugs corrigidos devem receber teste de regressao sempre que possivel.
 - A ausencia de teste em area critica deve ser justificada no pull request.
 
@@ -301,5 +326,6 @@ Antes de ampliar escopo, a V0 deve demonstrar:
 - resolucao documentada;
 - historico preservado;
 - exportacao CSV de seguranca;
+- importacao/restauracao dos CSVs exportados;
 - testes automatizados dos fluxos criticos;
 - documentacao minima para usuario e contribuidor.
