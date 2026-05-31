@@ -92,6 +92,10 @@ Resultado esperado:
 - existem pessoas cadastradas para serem marcadas como envolvidas;
 - a senha padrao nao permanece como senha de uso normal;
 - cada pessoa tem sua propria forma local de recuperacao.
+- pessoas cadastradas podem consultar necessidades, historico, envolvidos e
+  andamentos;
+- a direcao ou pessoa responsavel principal conserva as acoes sensiveis de
+  exportacao de seguranca e gestao de acessos/senhas.
 
 Se uma pessoa cadastrada perder senha e salvaguarda:
 

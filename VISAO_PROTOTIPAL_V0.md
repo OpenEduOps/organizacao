@@ -279,6 +279,7 @@ Principio do produto:
 | Pessoas e usuarios                           [Voltar] |
 +------------------------------------------------------+
 | [ Cadastrar pessoa ]                                  |
+| Somente direcao/responsavel altera acessos e senhas. |
 |                                                      |
 | Buscar                                               |
 | [ nome, usuario, cargo ou funcao... __________ ]     |
@@ -567,6 +568,7 @@ Principio do produto:
 | Seus dados ficam neste computador.                    |
 | Exporte uma copia CSV para pendrive, pasta de rede    |
 | ou outra maquina.                                    |
+| Acao disponivel para direcao/responsavel principal.   |
 +------------------------------------------------------+
 |                                                      |
 | Ultima exportacao                                    |

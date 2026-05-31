@@ -194,6 +194,11 @@ leitura do Radar Escola. Se, durante o cadastro de uma pessoa, o cargo ou funcao
 ainda nao existir, a direcao ou responsavel principal deve poder cadastrar essa
 opcao na hora e continuar o cadastro sem sair do fluxo.
 
+Na V0, cargo ou funcao nao deve criar uma matriz complexa de permissoes. Na
+pratica, pessoas cadastradas podem ver as necessidades, historico, envolvidos e
+andamentos. As excecoes devem ser acoes sensiveis da direcao ou responsavel
+principal, especialmente exportacao de seguranca e gestao de acessos/senhas.
+
 Pessoas cadastradas pela direcao ou responsavel principal podem receber a senha
 inicial padrao `123456` apenas para o primeiro acesso. Ao entrar pela primeira
 vez, a pessoa deve obrigatoriamente trocar a senha, definir sua salvaguarda

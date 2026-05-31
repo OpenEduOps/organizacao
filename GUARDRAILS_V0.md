@@ -92,8 +92,12 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
 - O produto deve salvar os dados no banco local e permitir exportacao CSV de
   seguranca.
 - O produto deve prever caminho futuro para editar ou remover dados pessoais.
-- Cargo ou funcao deve ser uma lista simples, cadastravel localmente, sem virar
-  permissao complexa na V0.
+- Cargo ou funcao deve ajudar na identificacao, busca e organizacao das pessoas.
+- Na V0, pessoas cadastradas podem ver necessidades, historico, envolvidos e
+  andamentos.
+- A V0 nao deve criar regras complexas de permissao por cargo ou funcao.
+- As excecoes devem ser acoes sensiveis da direcao ou pessoa responsavel
+  principal, especialmente exportacao de seguranca e gestao de acessos/senhas.
 - O cadastro de pessoa nao deve ser bloqueado quando o cargo ou funcao ainda nao
   existir; a interface deve permitir criar a opcao como excecao dentro do fluxo.
 
@@ -189,6 +193,9 @@ A V0 deve nascer com testes automatizados proporcionais ao risco do produto.
 
 Devem cobrir regras puras e validacoes, incluindo:
 
+- visibilidade geral de necessidades para pessoas cadastradas;
+- restricao de exportacao de seguranca e gestao de acessos/senhas para direcao
+  ou pessoa responsavel principal;
 - criacao de necessidade;
 - transicoes de status permitidas;
 - marcacao de envolvidos;
