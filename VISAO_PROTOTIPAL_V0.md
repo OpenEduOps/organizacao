@@ -200,6 +200,272 @@ Principio do produto:
 +------------------------------------------------------+
 ```
 
+## Entrar no Sistema
+
+```text
++------------------------------------------------------+
+| Radar Escola                                        |
+| Veja o que sua escola precisa resolver.              |
++------------------------------------------------------+
+|                                                      |
+| E-mail                                               |
+| [ maria@escola.gov.br _______________________ ]      |
+|                                                      |
+| Senha                                                |
+| [ __________________________________________ ]       |
+|                                                      |
+| [ Entrar ]                                           |
+|                                                      |
+| Esqueci minha senha                                  |
+|                                                      |
++------------------------------------------------------+
+```
+
+## Recuperar Senha
+
+```text
++------------------------------------------------------+
+| Recuperar senha                              [Voltar] |
++------------------------------------------------------+
+|                                                      |
+| Informe seu e-mail pessoal de recuperacao.            |
+|                                                      |
+| E-mail pessoal                                       |
+| [ maria.pessoal@email.com ___________________ ]      |
+|                                                      |
+| O sistema enviara instrucoes para recuperar o acesso. |
+|                                                      |
+| [ Enviar instrucoes ]                                |
+|                                                      |
++------------------------------------------------------+
+```
+
+## Cadastrar Equipamento
+
+```text
++------------------------------------------------------+
+| Cadastrar equipamento                         [Voltar]|
++------------------------------------------------------+
+|                                                      |
+| Nome do equipamento                                  |
+| [ Projetor Epson X100 _______________________ ]      |
+|                                                      |
+| Onde fica?                                           |
+| [ Sala 8 _____________________________________ ]      |
+|                                                      |
+| Patrimonio ou identificacao                          |
+| [ 12345 ______________________________________ ]      |
+|                                                      |
+| Estado atual                                         |
+| ( ) Funcionando                                      |
+| ( ) Com problema                                     |
+| ( ) Em manutencao                                    |
+| ( ) Fora de uso                                      |
+|                                                      |
+| Observacoes                                          |
+| [ Usado principalmente no turno da manha... ____ ]   |
+|                                                      |
+| [ Salvar equipamento ]                               |
+|                                                      |
++------------------------------------------------------+
+```
+
+## Envolver Pessoas
+
+```text
++------------------------------------------------------+
+| Envolver pessoas na necessidade #12           [Voltar]|
++------------------------------------------------------+
+| Projetor da sala 8 nao liga                          |
++------------------------------------------------------+
+|                                                      |
+| Quem precisa acompanhar?                             |
+| [ Buscar pessoa ou setor _____________________ ]     |
+|                                                      |
+| Sugestoes                                            |
+| [ ] Coordenacao                                      |
+| [ ] Direcao                                          |
+| [ ] Equipe tecnica                                   |
+| [ ] Secretaria                                       |
+|                                                      |
+| Envolvidos atuais                                    |
+| ---------------------------------------------------- |
+| Ana                     Solicitante                  |
+| Joao Tecnico            Responsavel                  |
+| Coordenacao             Acompanhamento               |
+|                                                      |
+| Avisar novos envolvidos por e-mail?                  |
+| [x] Sim                                             |
+|                                                      |
+| [ Salvar envolvidos ]                                |
+|                                                      |
++------------------------------------------------------+
+```
+
+## Criar Plano de Acao
+
+```text
++------------------------------------------------------+
+| Plano de acao da necessidade #12              [Voltar]|
++------------------------------------------------------+
+| Projetor da sala 8 nao liga                          |
++------------------------------------------------------+
+|                                                      |
+| Proximos passos                                      |
+| ---------------------------------------------------- |
+| [x] Verificar tomada e cabo                          |
+|     Responsavel: Joao Tecnico                        |
+|                                                      |
+| [ ] Testar outro cabo HDMI                           |
+|     Responsavel: Joao Tecnico                        |
+|                                                      |
+| [ ] Avaliar troca da lampada                         |
+|     Responsavel: Coordenacao                         |
+|                                                      |
+| Adicionar passo                                      |
+| [ ____________________________________________ ]     |
+| Responsavel                                          |
+| [ Selecionar pessoa ou setor _________________ ]     |
+|                                                      |
+| [ Adicionar passo ]                                  |
+| [ Salvar plano ]                                     |
+|                                                      |
++------------------------------------------------------+
+```
+
+## Atualizar Andamento
+
+```text
++------------------------------------------------------+
+| Atualizar andamento da necessidade #12        [Voltar]|
++------------------------------------------------------+
+| Projetor da sala 8 nao liga                          |
++------------------------------------------------------+
+|                                                      |
+| Novo status                                          |
+| ( ) Nova                                             |
+| ( ) Em analise                                       |
+| ( ) Em execucao                                      |
+| ( ) Aguardando material                              |
+| ( ) Aguardando autorizacao                           |
+| ( ) Pausada                                          |
+|                                                      |
+| O que mudou?                                         |
+| [ Testamos outro cabo HDMI e o problema continua. ]  |
+| [ ____________________________________________ ]     |
+|                                                      |
+| Avisar envolvidos por e-mail?                        |
+| [x] Sim                                             |
+|                                                      |
+| [ Salvar atualizacao ]                               |
+|                                                      |
++------------------------------------------------------+
+```
+
+## Ver Necessidades Paradas
+
+```text
++------------------------------------------------------+
+| Necessidades paradas                         [Voltar] |
++------------------------------------------------------+
+| Essas necessidades precisam voltar para o radar.      |
++------------------------------------------------------+
+|                                                      |
+| #08 Computador 12 sem internet        3 dias parado  |
+| Laboratorio | Joao | Em analise                      |
+| [ Ver caso ] [ Avisar envolvidos ]                   |
+|                                                      |
+| #05 Impressora sem toner              5 dias parada  |
+| Secretaria | Marta | Aguardando material             |
+| [ Ver caso ] [ Avisar envolvidos ]                   |
+|                                                      |
+| #03 Porta da biblioteca emperrada     8 dias parada  |
+| Biblioteca | Coordenacao | Aguardando autorizacao     |
+| [ Ver caso ] [ Avisar envolvidos ]                   |
+|                                                      |
++------------------------------------------------------+
+```
+
+## Historico
+
+```text
++------------------------------------------------------+
+| Historico                                    [Voltar] |
++------------------------------------------------------+
+| Buscar no historico                                  |
+| [ projetor, sala, pessoa, equipamento... _____ ]     |
+|                                                      |
+| Filtros                                              |
+| [Resolvidas] [Canceladas] [Todas]                    |
+|                                                      |
+| ---------------------------------------------------- |
+| #07 Troca de mouse no laboratorio     Resolvido      |
+| Resolvido por Joao Tecnico em 12/05/2026             |
+|                                                      |
+| #04 Cabo de rede rompido na secretaria Resolvido     |
+| Resolvido por Equipe tecnica em 08/05/2026           |
+|                                                      |
+| #02 Projetor sem imagem na sala 3     Resolvido      |
+| Resolvido por Marta em 01/05/2026                    |
+|                                                      |
++------------------------------------------------------+
+```
+
+## Backup e Restauracao
+
+```text
++------------------------------------------------------+
+| Backup e restauracao                         [Voltar] |
++------------------------------------------------------+
+| Seus dados ficam neste computador.                    |
+| Faca backup em uma pasta segura ou pendrive.          |
++------------------------------------------------------+
+|                                                      |
+| Ultimo backup                                        |
+| 20/05/2026 as 14:32                                  |
+|                                                      |
+| [ Fazer backup agora ]                               |
+| [ Escolher pasta de backup ]                         |
+|                                                      |
+| Restaurar dados                                      |
+| [ Selecionar arquivo de backup ]                     |
+|                                                      |
+| Exportar                                             |
+| [ Exportar necessidades em CSV ]                     |
+| [ Exportar equipamentos em CSV ]                     |
+|                                                      |
++------------------------------------------------------+
+```
+
+## Configurar Avisos
+
+```text
++------------------------------------------------------+
+| Configurar avisos                            [Voltar] |
++------------------------------------------------------+
+|                                                      |
+| E-mail usado para avisos da escola                   |
+| [ maria@escola.gov.br _______________________ ]      |
+|                                                      |
+| E-mail pessoal para recuperacao de senha             |
+| [ maria.pessoal@email.com ___________________ ]      |
+|                                                      |
+| Avisar envolvidos quando:                            |
+| [x] Uma necessidade for registrada                   |
+| [x] Alguem comentar ou atualizar andamento           |
+| [x] Uma necessidade ficar parada por muito tempo     |
+| [x] Uma necessidade for resolvida                    |
+|                                                      |
+| Frequencia de resumo                                 |
+| ( ) Nunca                                            |
+| ( ) Diario                                           |
+| ( ) Semanal                                          |
+|                                                      |
+| [ Salvar configuracoes ]                             |
+|                                                      |
++------------------------------------------------------+
+```
+
 ## Perguntas em Aberto
 
 - A primeira tela deve iniciar pelo cadastro da escola ou pelo radar com
