@@ -190,6 +190,27 @@ Para o primeiro MVP, uma direcao de produto coerente e:
 O objetivo nao e abandonar ambientes tecnicos mais robustos. O objetivo e nao
 transforma-los em barreira de entrada.
 
+## Regra arquitetural inicial
+
+A arquitetura do primeiro produto deve preservar a experiencia desktop local e
+manter a complexidade tecnica invisivel para o usuario final.
+
+Como regra inicial:
+
+- React e TypeScript devem concentrar a experiencia de uso, telas, componentes,
+  formularios, estados, validacoes e regras simples de aplicacao;
+- SQLite deve ser o banco de dados local, gratuito e embutido;
+- Tauri e Rust devem atuar como casca desktop e ponte nativa minima, cuidando
+  apenas do que for necessario para janela, instalador, arquivos locais,
+  integracao com o sistema operacional e acesso seguro aos recursos nativos.
+
+Rust nao deve ser o centro da regra de negocio no inicio do projeto.
+
+O usuario final nao deve precisar saber que existem React, TypeScript, SQLite,
+Tauri, Rust, banco de dados ou camadas internas. Ele deve perceber apenas um
+programa instalado, simples de abrir e capaz de cadastrar, acompanhar, organizar,
+salvar e fazer backup.
+
 ## Formacao de contribuidores
 
 O foco inicial deve ser a experiencia do usuario final. Depois disso, a
