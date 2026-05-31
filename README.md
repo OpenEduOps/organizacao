@@ -93,6 +93,7 @@ em documentos próprios:
   em baixa fidelidade;
 * [`GUARDRAILS_V0.md`](GUARDRAILS_V0.md): limites de escopo, privacidade,
   arquitetura, testes automatizados e critérios de aceite da V0.
+* [`ESCOPO_V0.md`](ESCOPO_V0.md): linha de corte do primeiro MVP executável.
 
 ---
 

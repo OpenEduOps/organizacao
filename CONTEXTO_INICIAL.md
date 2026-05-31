@@ -247,7 +247,8 @@ A concepcao da V0 deve ser lida junto com:
   fidelidade;
 - `GUARDRAILS_V0.md`, que define limites de escopo, privacidade, consulta
   manual pelos envolvidos, backup, arquitetura, testes automatizados e criterios
-  de aceite.
+  de aceite;
+- `ESCOPO_V0.md`, que define a linha de corte do primeiro MVP executavel.
 
 ### MVP inicial
 
