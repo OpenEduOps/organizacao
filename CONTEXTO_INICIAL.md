@@ -203,9 +203,22 @@ O objetivo e evitar que o registro fique parado em "alguem precisa ver isso".
 
 #### Monitorar andamento
 
+O monitoramento deve ser conjunto, envolvendo as pessoas marcadas na necessidade.
+
+O objetivo nao e apenas mostrar um status em uma lista. O objetivo e manter o
+assunto visivel, acompanhado e "quente" ate que exista uma resolucao registrada.
+
 O sistema deve permitir acompanhar se a necessidade esta nova, em analise, em
 execucao, aguardando material, aguardando autorizacao, pausada, resolvida ou
 cancelada.
+
+Durante esse ciclo, os envolvidos devem receber atualizacoes, preferencialmente
+por e-mail, quando houver mudancas importantes, comentarios, novas acoes,
+atrasos, atribuicoes ou resolucao.
+
+O produto deve ajudar a reduzir o risco de uma necessidade desaparecer depois do
+primeiro registro. Para isso, pode evoluir com lembretes, resumos periodicos,
+avisos de pendencia e notificacoes de necessidades paradas por muito tempo.
 
 #### Registrar como resolvido
 
