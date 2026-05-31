@@ -1,10 +1,10 @@
-Como Contribuir
-     
+# Como Contribuir
+
 Obrigado pelo interesse em contribuir com o OpenEduOps.
 
 Nosso objetivo é construir software livre para resolver problemas operacionais de instituições educacionais e, ao mesmo tempo, criar oportunidades para aprendizado prático.
 
-Quem Pode Contribuir
+## Quem Pode Contribuir
 
 Qualquer pessoa.
 

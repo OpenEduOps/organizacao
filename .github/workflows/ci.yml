@@ -23,7 +23,40 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Lint Markdown
-        run: npx --yes markdownlint-cli2@0.16.0 "**/*.md"
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import sys
+
+          errors = []
+          markdown_files = [
+              path
+              for path in Path(".").rglob("*.md")
+              if ".git" not in path.parts
+          ]
+
+          if not markdown_files:
+              errors.append("No Markdown files were found.")
+
+          for path in markdown_files:
+              text = path.read_text(encoding="utf-8")
+              if not text.strip():
+                  errors.append(f"{path}: file must not be empty")
+
+              for number, line in enumerate(text.splitlines(), start=1):
+                  if line.rstrip(" \t") != line:
+                      errors.append(f"{path}:{number}: trailing whitespace")
+                  if "\t" in line:
+                      errors.append(f"{path}:{number}: tab character")
+
+          if errors:
+              print("Markdown quality errors:")
+              for error in errors:
+                  print(f"- {error}")
+              sys.exit(1)
+
+          print(f"Markdown quality checks passed for {len(markdown_files)} files.")
+          PY
 
   documentation-consistency:
     name: Documentation consistency

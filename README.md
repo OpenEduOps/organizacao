@@ -1,5 +1,5 @@
 # OpenEduOps
-         
+
 > Construímos software livre para resolver problemas operacionais de instituições educacionais.
 
 ---
