@@ -195,6 +195,10 @@ transforma-los em barreira de entrada.
 A arquitetura do primeiro produto deve preservar a experiencia desktop local e
 manter a complexidade tecnica invisivel para o usuario final.
 
+Stack escolhida para o primeiro produto:
+
+> Tauri + React + TypeScript + SQLite.
+
 Como regra inicial:
 
 - React e TypeScript devem concentrar a experiencia de uso, telas, componentes,
