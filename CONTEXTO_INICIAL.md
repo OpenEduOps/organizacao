@@ -80,10 +80,58 @@ Esse recorte e promissor porque:
 
 ## Primeiro produto possivel
 
-Um primeiro produto pode ser chamado provisoriamente de `EduDesk`.
+O primeiro produto escolhido para iniciar o OpenEduOps e `EduDesk`.
 
-O nome ainda nao e uma decisao final. Ele representa a ideia de uma central
-operacional simples para instituicoes educacionais.
+O EduDesk representa uma central operacional simples para instituicoes
+educacionais, com foco inicial em chamados internos, equipamentos e historico de
+manutencao.
+
+Definicao curta:
+
+> EduDesk e um aplicativo desktop local para Windows que ajuda escolas a
+> organizar chamados internos, equipamentos e historico de manutencao, sem
+> depender de internet, servidor ou equipe tecnica especializada.
+
+Frase de produto:
+
+> Um programa simples para escolas organizarem chamados, equipamentos e
+> manutencoes no proprio computador.
+
+O principio de experiencia do EduDesk deve ser:
+
+> Instalar, abrir e registrar o primeiro chamado em poucos minutos.
+
+## Por que comecar pelo EduDesk
+
+O EduDesk deve ser o primeiro produto porque resolve uma dor comum em diferentes
+tipos de instituicao educacional: pedidos de manutencao, equipamentos,
+laboratorios, salas e problemas cotidianos que hoje frequentemente ficam
+espalhados em WhatsApp, papel, e-mail solto ou memoria das pessoas.
+
+Ele tambem e transversal. Pode ser util para:
+
+- escola publica pequena;
+- laboratorio de informatica;
+- biblioteca;
+- secretaria;
+- coordenacao;
+- setor administrativo;
+- campus;
+- setor tecnico.
+
+Comecar por chamados internos, equipamentos e manutencao permite gerar valor
+rapido sem restringir demais o produto.
+
+Outros recortes foram considerados, mas parecem menos adequados como primeiro
+produto unico:
+
+- `EduInventory` sozinho pode parecer apenas cadastro burocratico;
+- `EduLab` e relevante, mas restringe o publico inicial a laboratorios;
+- `EduRooms` depende mais de regras de agenda e organizacao institucional;
+- `EduLibrary` entra em um dominio mais especifico.
+
+O EduDesk cria uma base operacional comum e permite que esses outros produtos ou
+modulos aparecam depois de forma mais natural.
 
 ### MVP inicial
 
@@ -304,25 +352,60 @@ relacionados.
 
 ### EduDesk
 
-Central de chamados internos, inventario basico e historico de manutencao.
+Primeiro produto da fila.
+
+Central desktop local para chamados internos, equipamentos e historico de
+manutencao.
+
+Objetivo inicial:
+
+- permitir que uma instituicao educacional instale o aplicativo no Windows;
+- registre chamados internos;
+- cadastre equipamentos basicos;
+- vincule chamados a equipamentos;
+- acompanhe status;
+- mantenha historico de manutencao;
+- faca backup e exportacao dos dados.
 
 ### EduInventory
 
-Inventario de equipamentos, ativos e patrimonio operacional.
+Segundo produto ou modulo candidato.
+
+Inventario mais completo de equipamentos, ativos e patrimonio operacional.
+
+Pode evoluir a partir da base de equipamentos do EduDesk quando houver
+necessidade de controle mais detalhado de patrimonio, localizacao, responsaveis,
+estado, identificadores e historico.
 
 ### EduLab
+
+Terceiro produto ou modulo candidato.
 
 Gestao de laboratorios de informatica, computadores, softwares instalados,
 estado das maquinas, reservas e incidentes.
 
+Pode nascer depois que a organizacao tiver clareza sobre os fluxos reais de
+laboratorios e sobre quais dados do EduDesk e do EduInventory devem ser
+reaproveitados.
+
 ### EduRooms
+
+Quarto produto ou modulo candidato.
 
 Reserva e gestao de salas, laboratorios e equipamentos compartilhados.
 
+Deve ser considerado depois, porque envolve regras de agenda, conflitos,
+perfis de autorizacao e combinacoes institucionais que podem variar bastante.
+
 ### EduContinuity
+
+Quinto produto ou modulo candidato.
 
 Base de conhecimento operacional com procedimentos, contatos, checklists,
 rotinas e documentacao institucional.
+
+Pode complementar o EduDesk ao transformar chamados recorrentes, manutencoes e
+solucoes em conhecimento institucional reutilizavel.
 
 ## Principios para o primeiro MVP
 
