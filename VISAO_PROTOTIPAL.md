@@ -1,4 +1,4 @@
-# Visao Prototipal Inicial
+# Visao Prototipal v0
 
 Este documento registra uma primeira visao prototipal em baixa fidelidade para o
 primeiro produto do OpenEduOps.
