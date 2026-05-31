@@ -67,9 +67,10 @@ SECURITY.md
 MAINTAINERS.md
 ```
 
-`desktop-release.yml` pode existir como contrato tecnico futuro, mas deve falhar
-de forma explicita enquanto o scaffold do app nao existir. O projeto nao deve
-publicar artefatos falsos.
+`desktop-release.yml` pode existir como contrato tecnico futuro. Em execucao
+manual, ele deve informar que o app ainda nao esta pronto sem publicar artefatos.
+Em tag `v*`, ele deve falhar se o scaffold do app nao existir. O projeto nao
+deve publicar artefatos falsos.
 
 ## CI inicial para documentacao
 
@@ -210,7 +211,8 @@ desktop.
 
 Enquanto o repositorio nao tiver `package.json`, `src-tauri/Cargo.toml` e
 `scripts/smoke-windows.ps1`, o workflow deve parar no preflight com mensagem
-clara.
+clara. Execucoes manuais podem passar sem artefato; tags de release devem falhar
+ate existir instalador real.
 
 Para o Radar Escola, release futura deve considerar:
 

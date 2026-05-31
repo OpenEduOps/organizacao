@@ -35,7 +35,8 @@ apenas esse nome para nao depender de nomes de matrix ou jobs auxiliares.
   novas issues e pull requests.
 - `.github/workflows/desktop-release.yml`: contrato futuro da esteira de
   instalador Windows. Hoje ele depende do scaffold do app Radar Escola para
-  conseguir gerar artefatos reais.
+  conseguir gerar artefatos reais. Em execucao manual, informa pendencias sem
+  publicar artefatos; em tag `v*`, falha se o app ainda nao existir.
 
 ## Comandos locais equivalentes
 

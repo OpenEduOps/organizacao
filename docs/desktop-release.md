@@ -118,7 +118,19 @@ Exemplo futuro:
 v0.1.0
 ```
 
-## Limitacoes Atuais
+## Comportamento Enquanto o App Nao Existe
+
+O workflow `Desktop Release` pode ser executado manualmente para conferir o
+estado da esteira.
+
+Enquanto o scaffold do app nao existir, a execucao manual deve terminar sem
+gerar instalador e sem publicar release. Isso evita ruido operacional, mas deixa
+claro quais arquivos ainda faltam.
+
+Se alguem tentar publicar uma tag `v*` antes do scaffold existir, o preflight
+deve falhar. Uma release versionada nao pode ser publicada sem artefato real.
+
+## Pendencias Que Dependem do App
 
 Ainda nao e possivel entregar a experiencia completa de download, instalacao e
 execucao porque faltam:
@@ -131,6 +143,10 @@ execucao porque faltam:
 - script de smoke test Windows;
 - definicao final de formato de instalador;
 - decisao futura sobre assinatura de codigo.
+
+Essas pendencias nao devem ser tratadas neste repositorio de organizacao. Elas
+devem ser resolvidas quando o repositorio ou diretorio do app Radar Escola for
+criado.
 
 Mesmo assim, o contrato de CI/CD ja deixa claro qual sera o caminho de entrega
 do produto para a pessoa usuaria final.
