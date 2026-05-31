@@ -127,10 +127,11 @@ Essa direcao favorece uma experiencia de adocao mais proxima de softwares livres
 tradicionais, como LibreOffice, VLC, GIMP, Audacity e 7-Zip: o usuario baixa,
 instala, abre pelo icone e usa.
 
-A aplicacao pode usar tecnologias web internamente, caso isso ajude na
-produtividade, na manutenibilidade e na formacao de contribuidores. No entanto,
-a experiencia entregue ao usuario final deve ser a de um programa desktop comum,
-nao a de um sistema que precisa ser implantado, hospedado ou configurado.
+A aplicacao pode usar tecnologias modernas de interface internamente, caso isso
+ajude na produtividade, na manutenibilidade e na formacao de contribuidores. No
+entanto, a experiencia entregue ao usuario final deve ser a de um programa
+desktop comum, nao a de um sistema que precisa ser implantado, hospedado ou
+configurado.
 
 Uma formulacao possivel:
 
@@ -181,8 +182,8 @@ Para o primeiro MVP, uma direcao de produto coerente e:
 - interface simples, direta e em Portugues Brasileiro;
 - primeiro uso guiado;
 - tecnologia interna escolhida em funcao da experiencia final;
-- possibilidade de usar interface web internamente, desde que isso nao apareca
-  como complexidade para o usuario;
+- possibilidade de usar tecnologias modernas de interface internamente, desde
+  que isso nao apareca como complexidade para o usuario;
 - possibilidade futura de migracao para banco externo;
 - Docker como opcao para desenvolvimento, testes e implantacoes tecnicas.
 

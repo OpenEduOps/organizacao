@@ -76,7 +76,9 @@ Neste momento, o OpenEduOps não tem como foco:
 
 Nosso foco está em resolver problemas operacionais.
 
-O OpenEduOps prioriza aplicações web progressivas, acessíveis e instaláveis, usando tecnologias amplamente adotadas pela indústria.
+O OpenEduOps prioriza ferramentas locais, acessíveis e instaláveis, com
+experiência simples para instituições que precisam baixar, instalar e começar a
+usar sem depender de infraestrutura complexa.
 
 ---
 
