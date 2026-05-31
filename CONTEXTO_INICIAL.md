@@ -58,14 +58,15 @@ cada troca de equipe um recomeco.
 
 ## Ponto de partida recomendado
 
-A aposta inicial do OpenEduOps deve ser uma solucao simples para chamados,
-ativos e manutencao em instituicoes educacionais.
+A aposta inicial do OpenEduOps deve ser uma solucao simples para registrar
+necessidades, solicitar apoio, acompanhar andamento e preservar historico de
+manutencao em instituicoes educacionais.
 
 Uma formulacao possivel:
 
 > Uma central operacional simples para escolas e instituicoes educacionais,
-> combinando chamados internos, inventario basico de equipamentos e historico
-> de manutencao.
+> combinando necessidades operacionais, apoio interno, inventario basico de
+> equipamentos e historico de manutencao.
 
 Esse recorte e promissor porque:
 
@@ -83,23 +84,23 @@ Esse recorte e promissor porque:
 O primeiro produto escolhido para iniciar o OpenEduOps e `EduDesk`.
 
 O EduDesk representa uma central operacional simples para instituicoes
-educacionais, com foco inicial em chamados internos, equipamentos e historico de
-manutencao.
+educacionais, com foco inicial em necessidades, apoio interno, equipamentos e
+historico de manutencao.
 
 Definicao curta:
 
 > EduDesk e um aplicativo desktop local para Windows que ajuda escolas a
-> organizar chamados internos, equipamentos e historico de manutencao, sem
+> organizar necessidades, equipamentos e historico de manutencao, sem
 > depender de internet, servidor ou equipe tecnica especializada.
 
 Frase de produto:
 
-> Um programa simples para escolas organizarem chamados, equipamentos e
+> Um programa simples para escolas organizarem necessidades, equipamentos e
 > manutencoes no proprio computador.
 
 O principio de experiencia do EduDesk deve ser:
 
-> Instalar, abrir e registrar o primeiro chamado em poucos minutos.
+> Instalar, abrir e registrar a primeira necessidade em poucos minutos.
 
 ## Por que comecar pelo EduDesk
 
@@ -119,8 +120,8 @@ Ele tambem e transversal. Pode ser util para:
 - campus;
 - setor tecnico.
 
-Comecar por chamados internos, equipamentos e manutencao permite gerar valor
-rapido sem restringir demais o produto.
+Comecar por necessidades, apoio interno, equipamentos e manutencao permite gerar
+valor rapido sem restringir demais o produto.
 
 Outros recortes foram considerados, mas parecem menos adequados como primeiro
 produto unico:
@@ -133,16 +134,98 @@ produto unico:
 O EduDesk cria uma base operacional comum e permite que esses outros produtos ou
 modulos aparecam depois de forma mais natural.
 
+## Fluxo conceitual do EduDesk
+
+O EduDesk deve tratar chamados como necessidades acompanhadas, nao como tickets
+tecnicos.
+
+A unidade central do produto deve ser a `necessidade`.
+
+Uma necessidade representa algo que surgiu na rotina da instituicao e precisa de
+atencao, apoio, cuidado, planejamento ou resolucao.
+
+Exemplos:
+
+- um equipamento que parou de funcionar;
+- uma sala que precisa de manutencao;
+- um laboratorio com computadores sem internet;
+- uma impressora que nao imprime;
+- uma solicitacao de apoio para uma atividade;
+- uma necessidade de material, organizacao ou acompanhamento;
+- um problema recorrente que precisa deixar de depender da memoria das pessoas.
+
+Fluxo principal:
+
+> Necessidade -> solicitar apoio ou ajuda -> marcar envolvidos -> notificar
+> envolvidos -> plano de acao detalhado -> monitorar andamento -> registrar como
+> resolvido.
+
+### Etapas do fluxo
+
+#### Necessidade
+
+Algo apareceu na rotina da escola e precisa ser registrado para nao se perder.
+
+#### Solicitar apoio ou ajuda
+
+A pessoa registra que precisa de apoio, acompanhamento ou resolucao. A linguagem
+do produto deve evitar termos excessivamente tecnicos como ticket, service desk
+ou incidente, exceto quando forem necessarios internamente.
+
+#### Marcar envolvidos
+
+A necessidade deve permitir indicar pessoas envolvidas, como solicitante,
+responsavel, setor, equipe tecnica, coordenacao, direcao ou outras pessoas que
+precisam acompanhar o caso.
+
+#### Notificar envolvidos
+
+O sistema deve prever um fluxo para avisar os envolvidos quando uma necessidade
+for registrada, atualizada, atribuida, comentada ou resolvida.
+
+A forma de notificacao ainda nao esta definida.
+
+Hipotese inicial:
+
+- priorizar e-mail por ser mais barato, aberto e menos dependente de vendors;
+- evitar depender de WhatsApp como requisito central do produto;
+- permitir que notificacoes sejam desativadas ou configuradas;
+- manter o produto util mesmo sem notificacao automatica;
+- considerar WhatsApp, mensageria ou integracoes externas apenas como evolucao
+  futura, se houver necessidade real e baixo atrito de implantacao.
+
+#### Plano de acao detalhado
+
+A necessidade pode evoluir para um plano com passos, responsaveis, prazos,
+observacoes, materiais necessarios, impedimentos e proximas acoes.
+
+O objetivo e evitar que o registro fique parado em "alguem precisa ver isso".
+
+#### Monitorar andamento
+
+O sistema deve permitir acompanhar se a necessidade esta nova, em analise, em
+execucao, aguardando material, aguardando autorizacao, pausada, resolvida ou
+cancelada.
+
+#### Registrar como resolvido
+
+Ao resolver uma necessidade, o sistema deve guardar o que foi feito, por quem,
+quando, se houve equipamento relacionado, observacoes finais e se ha necessidade
+de acompanhamento posterior.
+
+Esse fechamento cria memoria operacional para a instituicao.
+
 ### MVP inicial
 
 O MVP deve priorizar:
 
-- abertura de chamados internos;
-- acompanhamento de status;
+- registro de necessidades;
+- solicitacao de apoio ou ajuda;
+- acompanhamento de andamento;
 - cadastro basico de equipamentos;
-- vinculo entre chamado e equipamento;
+- vinculo entre necessidade e equipamento;
 - registro de manutencoes;
-- comentarios e historico do chamado;
+- comentarios e historico da necessidade;
 - categorias e prioridades simples;
 - perfis basicos, como solicitante, tecnico e gestor;
 - relatorios simples;
@@ -268,8 +351,9 @@ experiencia final simples, consistente e acessivel para pessoas que precisam
 abrir o aplicativo e resolver problemas operacionais sem treinamento complexo.
 
 React ajuda a organizar a interface em componentes reutilizaveis, favorecendo a
-criacao de telas previsiveis para chamados, equipamentos, filtros, formularios,
-tabelas, estados vazios, mensagens de erro e fluxos de primeiro uso.
+criacao de telas previsiveis para necessidades, equipamentos, filtros,
+formularios, tabelas, estados vazios, mensagens de erro e fluxos de primeiro
+uso.
 
 TypeScript ajuda a reduzir erros comuns, tornar contratos de dados mais claros,
 facilitar refatoracoes e tornar o codigo mais compreensivel para quem esta
@@ -354,15 +438,15 @@ relacionados.
 
 Primeiro produto da fila.
 
-Central desktop local para chamados internos, equipamentos e historico de
+Central desktop local para necessidades, equipamentos e historico de
 manutencao.
 
 Objetivo inicial:
 
 - permitir que uma instituicao educacional instale o aplicativo no Windows;
-- registre chamados internos;
+- registre necessidades;
 - cadastre equipamentos basicos;
-- vincule chamados a equipamentos;
+- vincule necessidades a equipamentos;
 - acompanhe status;
 - mantenha historico de manutencao;
 - faca backup e exportacao dos dados.
@@ -404,7 +488,7 @@ Quinto produto ou modulo candidato.
 Base de conhecimento operacional com procedimentos, contatos, checklists,
 rotinas e documentacao institucional.
 
-Pode complementar o EduDesk ao transformar chamados recorrentes, manutencoes e
+Pode complementar o EduDesk ao transformar necessidades recorrentes, manutencoes e
 solucoes em conhecimento institucional reutilizavel.
 
 ## Principios para o primeiro MVP
