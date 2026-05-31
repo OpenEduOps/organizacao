@@ -16,8 +16,8 @@ em andamento, mantenha historico basico e faca backup local dos dados.
 
 Frase-guia:
 
-> Instalar, abrir, registrar uma necessidade, acompanhar andamento, resolver e
-> preservar historico.
+> Instalar, abrir, registrar uma necessidade, acompanhar andamento, marcar como
+> resolvido e preservar historico.
 
 ## Linha de corte
 
@@ -187,8 +187,8 @@ A V0 pode ser considerada entregue quando:
 
 Se uma nova ideia nao ajudar diretamente a completar o fluxo:
 
-> registrar -> acompanhar -> atualizar -> resolver -> preservar historico ->
-> fazer backup
+> registrar -> acompanhar -> marcar envolvidos -> atualizar -> marcar como
+> resolvido -> preservar historico
 
 ela deve ficar fora da V0.
 

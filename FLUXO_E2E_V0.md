@@ -11,7 +11,8 @@ O objetivo e responder uma pergunta simples:
 Sim, desde que a V0 entregue um ciclo operacional completo:
 
 > configurar -> entrar -> registrar necessidade -> acompanhar no radar ->
-> atualizar andamento -> resolver -> consultar historico -> fazer backup.
+> marcar envolvidos -> atualizar andamento -> marcar como resolvido -> consultar
+> historico.
 
 Se qualquer etapa desse ciclo faltar, a V0 fica incompleta.
 
@@ -88,7 +89,25 @@ Resultado esperado:
 - necessidades paradas nao desaparecem;
 - a escola consegue enxergar o que ainda precisa ser cuidado.
 
-### 4. Atualizar andamento
+### 4. Marcar envolvidos
+
+A pessoa indica quem precisa acompanhar a necessidade.
+
+Na V0, isso pode ser simples:
+
+- pessoa responsavel;
+- setor;
+- equipe;
+- observacao em texto.
+
+Resultado esperado:
+
+- a necessidade deixa de ser apenas um registro solto;
+- existe clareza sobre quem deve acompanhar ou agir;
+- os envolvidos podem consultar o Radar Escola no computador instalado, usando
+  usuario e senha.
+
+### 5. Atualizar andamento
 
 Uma pessoa envolvida acessa o computador onde o aplicativo esta instalado e
 entra com seu usuario e senha.
@@ -114,7 +133,7 @@ Resultado esperado:
 - outras pessoas podem consultar a situacao no Radar Escola;
 - a necessidade continua viva ate ser resolvida.
 
-### 5. Registrar resolucao
+### 6. Marcar como resolvido
 
 Quando o problema for resolvido, alguem registra:
 
@@ -133,7 +152,7 @@ Resultado esperado:
 - a solucao fica preservada;
 - a escola cria memoria operacional.
 
-### 6. Consultar historico
+### 7. Consultar historico
 
 Depois, a escola pode consultar necessidades resolvidas.
 
@@ -150,9 +169,12 @@ Resultado esperado:
 - problemas recorrentes ficam mais faceis de perceber;
 - trocas de equipe nao apagam o historico.
 
-### 7. Fazer backup
+## Rotina de salvaguarda de dados
 
-A pessoa responsavel faz backup manual dos dados.
+Backup nao faz parte do fluxo principal de um usuario comum.
+
+Mesmo assim, como o produto e local, a V0 deve prever backup manual como rotina
+da pessoa responsavel pela instalacao, administracao ou salvaguarda dos dados.
 
 Resultado esperado:
 
@@ -164,11 +186,12 @@ Resultado esperado:
 
 O menor fluxo que ainda entrega valor real e:
 
-> registrar necessidade -> ver no radar -> atualizar andamento -> registrar
-> resolucao -> consultar historico.
+> registrar necessidade -> ver no radar -> marcar envolvidos -> atualizar
+> andamento -> marcar como resolvido -> consultar historico.
 
-Backup nao e parte da dor diaria, mas e obrigatorio para a V0 porque o produto e
-local e os dados precisam ser protegidos.
+Backup nao e parte da dor diaria do usuario comum, mas deve existir como rotina
+da pessoa responsavel porque o produto e local e os dados precisam ser
+protegidos.
 
 ## O que torna o MVP util
 
@@ -189,7 +212,7 @@ E passe a ter:
 - registro de atualizacoes;
 - resolucao documentada;
 - historico consultavel;
-- backup local.
+- rotina de backup local para responsavel.
 
 ## O que nao faz parte do fluxo E2E da V0
 
@@ -213,8 +236,8 @@ principal da V0.
 
 Antes de adicionar qualquer nova funcionalidade, a pergunta deve ser:
 
-> Isso melhora diretamente o ciclo registrar, acompanhar, atualizar, resolver,
-> consultar historico e fazer backup?
+> Isso melhora diretamente o ciclo registrar, acompanhar, marcar envolvidos,
+> atualizar andamento, marcar como resolvido e consultar historico?
 
 Se a resposta for nao, a funcionalidade deve ficar fora da V0.
 
@@ -226,10 +249,10 @@ A V0 deve ser validada com uma historia simples:
 2. Maria cria o primeiro acesso da escola.
 3. Maria registra que o projetor da sala 8 nao liga.
 4. A necessidade aparece no Radar de Necessidades.
-5. Joao acessa o mesmo computador e registra uma atualizacao.
-6. A necessidade aparece como em andamento.
-7. Depois de resolver, Joao registra a solucao.
-8. Maria consulta o historico e ve o que foi feito.
-9. Maria faz backup dos dados.
+5. Maria marca Joao como responsavel/envolvido.
+6. Joao acessa o mesmo computador e registra uma atualizacao.
+7. A necessidade aparece como em andamento.
+8. Depois de resolver, Joao marca a necessidade como resolvida.
+9. Maria consulta o historico e ve o que foi feito.
 
 Se essa historia funcionar de ponta a ponta, a V0 tem um MVP util.
