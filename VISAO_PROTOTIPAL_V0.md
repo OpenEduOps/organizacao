@@ -262,6 +262,7 @@ Principio do produto:
 |                                                      |
 | Recomenda-se anotar o token em local seguro.          |
 | Se tirar foto para anotar depois, apague a foto.      |
+| O token nao sera gerado novamente.                    |
 |                                                      |
 | [ Salvar e entrar ]                                  |
 |                                                      |
@@ -351,7 +352,8 @@ Principio do produto:
 |                                                      |
 | A senha voltara para: 123456                         |
 | No proximo acesso, a pessoa devera trocar a senha e   |
-| confirmar sua salvaguarda local.                     |
+| continuar usando o token original.                    |
+| Esta acao nao gera novo token.                        |
 |                                                      |
 | [ Confirmar redefinicao ]                            |
 |                                                      |

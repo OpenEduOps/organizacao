@@ -81,6 +81,8 @@ No primeiro acesso, a pessoa cadastrada deve obrigatoriamente:
 - definir token simples ou frase de recuperacao;
 - guardar a salvaguarda em local seguro.
 
+O token deve ser exibido nesse momento e nao deve ser regenerado depois.
+
 Resultado esperado:
 
 - existem pessoas cadastradas para serem marcadas como envolvidas;
@@ -92,7 +94,7 @@ Se uma pessoa cadastrada perder senha e salvaguarda:
 - a direcao ou pessoa responsavel principal pode redefinir a senha para
   `123456`;
 - no proximo acesso, a pessoa deve trocar a senha novamente;
-- a pessoa deve confirmar ou redefinir sua salvaguarda local.
+- essa redefinicao nao gera novo token de recuperacao.
 
 ### 3. Registrar uma necessidade
 

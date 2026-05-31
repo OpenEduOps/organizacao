@@ -109,6 +109,8 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
   recuperacao por token simples ou frase de recuperacao.
 - O token e a frase de recuperacao devem ser apresentados de forma que a direcao ou
   pessoa responsavel consiga anotar e guardar em local seguro.
+- O token de recuperacao deve ser exibido no momento de configuracao da
+  salvaguarda e nao deve ser regenerado.
 - A resposta da frase de recuperacao nao deve ser armazenada em texto claro.
 - Para pessoas cadastradas depois da configuracao inicial, a salvaguarda local
   tambem deve ser definida no primeiro acesso, junto com a troca da senha padrao.
@@ -122,8 +124,11 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
 - A direcao ou pessoa responsavel principal pode redefinir a senha de usuarios
   comuns para `123456` quando a pessoa perder senha e salvaguarda.
 - Essa redefinicao deve recolocar o usuario em estado de primeiro acesso,
-  exigindo troca obrigatoria de senha e nova confirmacao de salvaguarda antes do
-  uso normal.
+  exigindo troca obrigatoria de senha antes do uso normal.
+- A redefinicao administrativa de senha nao deve gerar novo token. Se houver
+  necessidade de atualizar a frase de recuperacao, isso deve acontecer dentro do
+  fluxo autenticado apos a redefinicao, mantendo o token original como historico
+  de salvaguarda exibido uma unica vez.
 - A redefinicao administrativa deve ser registrada no historico/auditoria local
   quando esse recurso existir, sem expor a senha nova em texto claro.
 - Se usuario, senha e salvaguarda forem perdidos, o acesso administrativo pode
@@ -191,6 +196,7 @@ Devem cobrir regras puras e validacoes, incluindo:
 - validacao de campos obrigatorios;
 - validacao de usuario;
 - regras de token simples ou frase de recuperacao;
+- regra de nao regenerar token de recuperacao;
 - regras de plano de acao;
 - fechamento/resolucao de necessidade.
 

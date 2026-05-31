@@ -198,11 +198,14 @@ Pessoas cadastradas pela direcao ou responsavel principal podem receber a senha
 inicial padrao `123456` apenas para o primeiro acesso. Ao entrar pela primeira
 vez, a pessoa deve obrigatoriamente trocar a senha, definir sua salvaguarda
 local de recuperacao e guardar token ou frase de recuperacao em local seguro.
+O token de recuperacao deve ser exibido no momento de configuracao da
+salvaguarda e nao deve ser regenerado depois.
 
 Se uma pessoa cadastrada perder senha e salvaguarda, a direcao ou responsavel
 principal podera redefinir sua senha para `123456`, obrigando nova troca no
-proximo acesso. Essa recuperacao administrativa vale para usuarios comuns; a
-salvaguarda da direcao continua sendo critica.
+proximo acesso. Essa redefinicao nao deve gerar novo token; ela apenas recupera
+a entrada do usuario comum no sistema. Essa recuperacao administrativa vale para
+usuarios comuns; a salvaguarda da direcao continua sendo critica.
 
 #### Plano de acao detalhado
 

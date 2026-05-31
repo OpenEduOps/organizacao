@@ -84,10 +84,12 @@ decisao explicita posterior.
   de recuperacao.
 - A salvaguarda individual deve permitir recuperacao por token simples ou por
   frase de recuperacao.
+- O token de recuperacao deve ser exibido no momento de configuracao da
+  salvaguarda e nao deve poder ser regenerado.
 - Se uma pessoa cadastrada perder senha e salvaguarda, a direcao ou pessoa
   responsavel principal pode redefinir a senha dessa pessoa para `123456`.
 - Apos redefinicao administrativa, o proximo login deve obrigar nova troca de
-  senha e nova confirmacao de salvaguarda local.
+  senha. Essa redefinicao nao deve gerar novo token.
 
 ### Necessidades
 
