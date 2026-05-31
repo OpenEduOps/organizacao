@@ -102,14 +102,16 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
 - A V0 nao deve criar regras complexas de permissao por cargo ou funcao.
 - As excecoes devem ser acoes sensiveis da direcao ou pessoa responsavel
   principal, especialmente exportacao de seguranca e gestao de acessos/senhas.
-- A direcao ou pessoa responsavel principal pode delegar o cadastro de novos
-  usuarios para pessoas ou cargos/funcoes especificos.
+- A direcao ou pessoa responsavel principal pode definir ate duas pessoas como
+  apoio de gestao.
+- Apoio de gestao deve ser uma delegacao unica na V0.
 - A delegacao deve ser explicita, preferencialmente para coordenadores ou
   funcoes imediatamente abaixo da direcao, conforme a hierarquia real da escola.
-- Alem da direcao, no maximo duas pessoas podem receber a atribuicao de
-  cadastrar novos usuarios na V0.
-- Delegar cadastro de usuarios nao deve liberar automaticamente exportacao de
-  seguranca nem recuperacao administrativa da propria direcao.
+- Apoio de gestao permite cadastrar usuarios, cancelar/corrigir necessidades e
+  marcar necessidades como resolvidas.
+- Apoio de gestao nao deve liberar automaticamente exportacao/restauracao de
+  seguranca, recuperacao administrativa da propria direcao nem transferencia de
+  direcao.
 - O cadastro de pessoa nao deve ser bloqueado quando o cargo ou funcao ainda nao
   existir; a interface deve permitir criar a opcao como excecao dentro do fluxo.
 
@@ -120,7 +122,7 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
 - Eventos sensiveis minimos:
   - cadastro de usuario;
   - redefinicao administrativa de senha;
-  - delegacao de cadastro de usuarios;
+  - definicao de apoio de gestao;
   - exportacao/importacao de seguranca;
   - transferencia de direcao/responsavel principal;
   - marcacao de necessidade como resolvida;
@@ -224,7 +226,7 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
 - Pessoas cadastradas podem acompanhar necessidades e registrar atualizacoes de
   andamento.
 - Marcar uma necessidade como resolvida deve ser permitido apenas para direcao ou
-  pessoas delegadas pela direcao para fechamento.
+  apoio de gestao.
 - Essa restricao existe para que a resolucao passe pelo olhar da gestao e nao
   seja encerrada sem validacao minima.
 - A restricao de resolucao nao deve impedir que envolvidos expliquem, no
@@ -261,11 +263,11 @@ A V0 deve nascer com testes automatizados proporcionais ao risco do produto.
 Devem cobrir regras puras e validacoes, incluindo:
 
 - visibilidade geral de necessidades para pessoas cadastradas;
-- restricao de exportacao de seguranca e gestao de acessos/senhas para direcao
-  ou pessoa responsavel principal;
-- delegacao explicita de cadastro de usuarios para pessoa/cargo/funcao;
-- limite maximo de duas pessoas delegadas alem da direcao;
-- restricao de marcacao como resolvido para direcao ou pessoas delegadas;
+- restricao de exportacao/restauracao de seguranca e transferencia de direcao
+  para direcao ou pessoa responsavel principal;
+- definicao explicita de apoio de gestao;
+- limite maximo de duas pessoas como apoio de gestao alem da direcao;
+- restricao de marcacao como resolvido para direcao ou apoio de gestao;
 - auditoria minima de acoes sensiveis;
 - transferencia de direcao/responsavel principal;
 - logout/saida da conta em computador compartilhado;

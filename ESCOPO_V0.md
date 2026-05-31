@@ -85,13 +85,14 @@ decisao explicita posterior.
   andamentos.
 - Acoes sensiveis devem ficar restritas a direcao ou pessoa responsavel
   principal, incluindo exportacao de seguranca e gestao de acessos/senhas.
-- A direcao ou pessoa responsavel principal pode delegar o cadastro de novos
-  usuarios para pessoas ou cargos/funcoes especificos, preferencialmente
-  coordenadores ou funcoes imediatamente abaixo da direcao.
-- Alem da direcao, no maximo duas pessoas podem receber essa atribuicao na V0.
-- Essa delegacao deve permitir cadastrar pessoas/usuarios, mas nao deve liberar
-  automaticamente exportacao de seguranca nem recuperacao administrativa da
-  propria direcao.
+- A direcao ou pessoa responsavel principal pode definir ate duas pessoas como
+  apoio de gestao, preferencialmente coordenadores ou funcoes imediatamente
+  abaixo da direcao.
+- Apoio de gestao deve ser uma delegacao unica na V0.
+- Essa delegacao permite cadastrar pessoas/usuarios, cancelar/corrigir
+  necessidades e marcar necessidades como resolvidas.
+- Essa delegacao nao deve liberar exportacao/restauracao de seguranca,
+  recuperacao administrativa da propria direcao nem transferencia de direcao.
 - Pessoas cadastradas podem ser marcadas como envolvidas em necessidades.
 - A senha inicial padrao para pessoas cadastradas pode ser `123456`, mas apenas
   para primeiro acesso.
@@ -132,7 +133,7 @@ decisao explicita posterior.
 - Alterar status.
 - Registrar resolucao.
 - Marcar como resolvido deve ser permitido apenas para direcao ou pessoas
-  delegadas pela direcao para fechamento de necessidades.
+  definidas como apoio de gestao.
 - Necessidades cadastradas por engano podem ser editadas ou canceladas.
 - Exclusao definitiva de necessidade deve ser evitada na V0 ou ficar restrita a
   direcao/responsavel principal, preservando historico quando possivel.
@@ -168,7 +169,7 @@ decisao explicita posterior.
 - Eventos minimos:
   - cadastro de usuario;
   - redefinicao administrativa de senha;
-  - delegacao de cadastro de usuarios;
+  - definicao de apoio de gestao;
   - exportacao/importacao de seguranca;
   - transferencia de direcao/responsavel principal;
   - marcacao de necessidade como resolvida;
@@ -276,7 +277,7 @@ A V0 pode ser considerada entregue quando:
 - mostra a necessidade no Radar de Necessidades;
 - atualiza andamento;
 - registra resolucao;
-- restringe marcacao como resolvido a direcao ou pessoa delegada;
+- restringe marcacao como resolvido a direcao ou apoio de gestao;
 - permite cancelar necessidade cadastrada por engano;
 - preserva historico;
 - registra auditoria minima de acoes sensiveis;

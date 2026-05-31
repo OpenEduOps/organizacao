@@ -199,11 +199,12 @@ pratica, pessoas cadastradas podem ver as necessidades, historico, envolvidos e
 andamentos. As excecoes devem ser acoes sensiveis da direcao ou responsavel
 principal, especialmente exportacao de seguranca e gestao de acessos/senhas.
 
-A direcao ou responsavel principal deve poder delegar o cadastro de novos
-usuarios para pessoas ou cargos/funcoes especificos. Essa delegacao deve ser
-explicita e preferencialmente usada para coordenadores ou funcoes imediatamente
-abaixo da direcao, conforme a hierarquia real da escola. Alem da direcao, no
-maximo duas pessoas podem receber essa atribuicao na V0.
+A direcao ou responsavel principal deve poder definir ate duas pessoas como
+apoio de gestao. Essa delegacao deve ser explicita e preferencialmente usada
+para coordenadores ou funcoes imediatamente abaixo da direcao, conforme a
+hierarquia real da escola. Na V0, essa mesma delegacao permite cadastrar novos
+usuarios, cancelar/corrigir necessidades e marcar necessidades como resolvidas.
+Ela nao libera exportacao/restauracao de seguranca nem transferencia de direcao.
 
 Pessoas cadastradas pela direcao ou responsavel principal podem receber a senha
 inicial padrao `123456` apenas para o primeiro acesso. Ao entrar pela primeira
@@ -252,14 +253,13 @@ ou notificacoes automaticas.
 
 #### Registrar como resolvido
 
-Ao resolver uma necessidade, a direcao ou pessoa delegada por ela deve registrar
+Ao resolver uma necessidade, a direcao ou apoio de gestao deve registrar
 o que foi feito, por quem, quando, se houve equipamento relacionado,
 observacoes finais e se ha necessidade de acompanhamento posterior.
 
 Na V0, marcar como resolvido deve passar pelo olhar da gestao. Pessoas
 cadastradas podem acompanhar e atualizar andamento, mas a resolucao final deve
-ser feita pela direcao ou por pessoas delegadas por ela para esse tipo de
-fechamento.
+ser feita pela direcao ou por pessoas definidas como apoio de gestao.
 
 Esse fechamento cria memoria operacional para a instituicao.
 
@@ -267,7 +267,7 @@ Esse fechamento cria memoria operacional para a instituicao.
 
 A V0 deve registrar historico interno simples para acoes sensiveis. O objetivo
 nao e criar um dashboard de auditoria, mas preservar "quem fez o que e quando"
-em eventos como cadastro de usuario, redefinicao de senha, delegacao de cadastro,
+em eventos como cadastro de usuario, redefinicao de senha, definicao de apoio de gestao,
 exportacao/importacao de seguranca, transferencia de direcao e marcacao de
 necessidade como resolvida.
 

@@ -169,7 +169,7 @@ Principio do produto:
 +------------------------------------------------------+
 | Registrar solucao da necessidade #12          [Voltar]|
 +------------------------------------------------------+
-| Acao disponivel para direcao ou pessoa delegada.      |
+| Acao disponivel para direcao ou apoio de gestao.      |
 +------------------------------------------------------+
 |                                                      |
 | O que foi feito?                                    |
@@ -282,8 +282,8 @@ Principio do produto:
 | Pessoas e usuarios                           [Voltar] |
 +------------------------------------------------------+
 | [ Cadastrar pessoa ]                                  |
-| Direcao/responsavel ou pessoa delegada cadastra.      |
-| [ Delegar cadastro de usuarios ]                     |
+| Direcao/responsavel ou apoio de gestao cadastra.      |
+| [ Definir apoio de gestao ]                          |
 | [ Transferir direcao ]                               |
 |                                                      |
 | Buscar                                               |
@@ -322,14 +322,14 @@ Principio do produto:
 +------------------------------------------------------+
 ```
 
-## Delegar Cadastro de Usuarios
+## Definir Apoio de Gestao
 
 ```text
 +------------------------------------------------------+
-| Delegar cadastro de usuarios                 [Voltar] |
+| Apoio de gestao                              [Voltar] |
 +------------------------------------------------------+
 |                                                      |
-| Quem pode cadastrar novos usuarios?                  |
+| Quem pode apoiar a gestao?                           |
 | [ Buscar pessoa ou cargo/funcao _____________ ]      |
 | Limite: ate 2 pessoas alem da direcao.               |
 |                                                      |
@@ -338,16 +338,17 @@ Principio do produto:
 | [ ] Vice-direcao                                     |
 | [ ] Secretaria responsavel                           |
 |                                                      |
-| Delegacoes atuais                                    |
+| Apoios atuais                                        |
 | ---------------------------------------------------- |
-| Coordenacao            Pode cadastrar usuarios       |
-| Vice-direcao           Pode cadastrar usuarios       |
+| Coordenacao            Apoio de gestao               |
+| Vice-direcao           Apoio de gestao               |
 | Limite atingido                                      |
 |                                                      |
-| Esta delegacao nao libera exportacao de seguranca    |
-| nem recuperacao administrativa da direcao.            |
+| Permite cadastrar usuarios, cancelar/corrigir e      |
+| marcar como resolvido.                               |
+| Nao libera exportacao/restauracao nem transferencia. |
 |                                                      |
-| [ Salvar delegacoes ]                                |
+| [ Salvar apoios ]                                    |
 |                                                      |
 +------------------------------------------------------+
 ```

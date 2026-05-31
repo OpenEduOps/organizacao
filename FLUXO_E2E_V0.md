@@ -99,12 +99,12 @@ Resultado esperado:
 - a direcao ou pessoa responsavel principal conserva as acoes sensiveis de
   exportacao de seguranca e gestao de acessos/senhas.
 
-A direcao tambem pode delegar o cadastro de novos usuarios para pessoas ou
-cargos/funcoes especificos, preferencialmente coordenadores ou funcoes
-imediatamente abaixo da direcao. A pessoa delegada pode cadastrar usuarios, mas
-nao recebe automaticamente acesso a exportacao de seguranca nem recuperacao da
-propria direcao. Alem da direcao, no maximo duas pessoas podem receber essa
-atribuicao na V0.
+A direcao tambem pode definir ate duas pessoas como apoio de gestao,
+preferencialmente coordenadores ou funcoes imediatamente abaixo da direcao. Essa
+delegacao unica permite cadastrar usuarios, cancelar/corrigir necessidades e
+marcar necessidades como resolvidas. Apoio de gestao nao recebe automaticamente
+acesso a exportacao/restauracao de seguranca, recuperacao administrativa da
+propria direcao nem transferencia de direcao.
 
 Se uma pessoa cadastrada perder senha e salvaguarda:
 
@@ -191,7 +191,7 @@ Resultado esperado:
 
 ### 7. Marcar como resolvido
 
-Quando o problema for resolvido, a direcao ou pessoa delegada por ela registra:
+Quando o problema for resolvido, a direcao ou apoio de gestao registra:
 
 - o que foi feito;
 - quem resolveu;
@@ -271,7 +271,7 @@ A V0 deve registrar "quem fez o que e quando" para acoes sensiveis, como:
 
 - cadastro de usuario;
 - redefinicao de senha;
-- delegacao de cadastro;
+- definicao de apoio de gestao;
 - transferencia de direcao;
 - exportacao/importacao de seguranca;
 - cancelamento de necessidade;
