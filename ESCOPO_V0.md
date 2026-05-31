@@ -209,6 +209,9 @@ decisao explicita posterior.
 - A exportacao precisa preservar dados suficientes para restauracao coerente,
   incluindo vinculos entre necessidades, equipamentos, pessoas, envolvidos,
   andamentos e historico.
+- A exportacao restauravel deve incluir usuarios, cargos/funcoes, apoio de
+  gestao e hashes de senha necessarios para restaurar os acessos.
+- A exportacao nunca deve incluir senhas em texto claro.
 
 ### Testes
 

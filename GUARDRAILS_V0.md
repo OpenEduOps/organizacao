@@ -222,6 +222,9 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
   os dados atuais serao substituidos.
 - A exportacao deve preservar vinculos entre necessidades, equipamentos,
   pessoas, envolvidos, andamentos e historico.
+- A exportacao restauravel deve incluir usuarios, cargos/funcoes, apoio de
+  gestao e hashes de senha necessarios para restaurar os acessos.
+- A exportacao nunca deve incluir senhas em texto claro.
 - A importacao de restauracao deve ser tratada como acao sensivel da direcao ou
   pessoa responsavel principal.
 
@@ -318,6 +321,9 @@ Devem cobrir fluxos criticos de dados:
 - dados essenciais presentes;
 - preservacao de vinculos entre necessidades, equipamentos, pessoas,
   envolvidos, andamentos e historico;
+- preservacao de usuarios, cargos/funcoes, apoio de gestao e hashes de senha na
+  exportacao restauravel;
+- ausencia de senhas em texto claro na exportacao;
 - erro ao exportar para caminho indisponivel;
 - preservacao do banco local apos exportacao.
 

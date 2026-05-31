@@ -638,6 +638,7 @@ Principio do produto:
 | [ Escolher pendrive, pasta de rede ou outra maquina ]|
 |                                                      |
 | Restaurar substitui todos os dados atuais.            |
+| A copia inclui usuarios e hashes, nunca senhas claras.|
 +------------------------------------------------------+
 | Confirmacao ao restaurar                             |
 | Os dados atuais deste computador serao substituidos.  |

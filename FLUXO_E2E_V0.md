@@ -260,6 +260,8 @@ Resultado esperado:
   V0.
 - antes de confirmar a restauracao, o sistema avisa claramente que os dados
   atuais serao substituidos.
+- a exportacao restauravel inclui usuarios, cargos/funcoes, apoio de gestao e
+  hashes de senha, nunca senhas em texto claro.
 
 ## Computador compartilhado
 
