@@ -81,15 +81,16 @@ Esse recorte e promissor porque:
 
 ## Primeiro produto possivel
 
-O primeiro produto escolhido para iniciar o OpenEduOps e `EduDesk`.
+O primeiro produto escolhido para iniciar o OpenEduOps tem como nome publico
+candidato `Radar Escola`.
 
-O EduDesk representa uma central operacional simples para instituicoes
+O Radar Escola representa uma central operacional simples para instituicoes
 educacionais, com foco inicial em necessidades, apoio interno, equipamentos e
 historico de manutencao.
 
 Definicao curta:
 
-> EduDesk e um aplicativo desktop local para Windows que ajuda escolas a
+> Radar Escola e um aplicativo desktop local para Windows que ajuda escolas a
 > organizar necessidades, equipamentos e historico de manutencao, sem
 > depender de internet, servidor ou equipe tecnica especializada.
 
@@ -98,16 +99,16 @@ Frase de produto:
 > Um programa simples para escolas organizarem necessidades, equipamentos e
 > manutencoes no proprio computador.
 
-O principio de experiencia do EduDesk deve ser:
+O principio de experiencia do Radar Escola deve ser:
 
 > Instalar, abrir e registrar a primeira necessidade em poucos minutos.
 
-## Por que comecar pelo EduDesk
+## Por que comecar pelo Radar Escola
 
-O EduDesk deve ser o primeiro produto porque resolve uma dor comum em diferentes
-tipos de instituicao educacional: pedidos de manutencao, equipamentos,
-laboratorios, salas e problemas cotidianos que hoje frequentemente ficam
-espalhados em WhatsApp, papel, e-mail solto ou memoria das pessoas.
+O Radar Escola deve ser o primeiro produto porque resolve uma dor comum em
+diferentes tipos de instituicao educacional: pedidos de manutencao,
+equipamentos, laboratorios, salas e problemas cotidianos que hoje frequentemente
+ficam espalhados em WhatsApp, papel, e-mail solto ou memoria das pessoas.
 
 Ele tambem e transversal. Pode ser util para:
 
@@ -131,13 +132,13 @@ produto unico:
 - `EduRooms` depende mais de regras de agenda e organizacao institucional;
 - `EduLibrary` entra em um dominio mais especifico.
 
-O EduDesk cria uma base operacional comum e permite que esses outros produtos ou
-modulos aparecam depois de forma mais natural.
+O Radar Escola cria uma base operacional comum e permite que esses outros
+produtos ou modulos aparecam depois de forma mais natural.
 
-## Fluxo conceitual do EduDesk
+## Fluxo conceitual do Radar Escola
 
-O EduDesk deve tratar chamados como necessidades acompanhadas, nao como tickets
-tecnicos.
+O Radar Escola deve tratar chamados como necessidades acompanhadas, nao como
+tickets tecnicos.
 
 A unidade central do produto deve ser a `necessidade`.
 
@@ -251,6 +252,15 @@ Um menu inicial ou conjunto de acoes pode seguir esta linguagem:
 Essa linguagem deve ajudar professoras, secretaria, coordenacao e equipes de
 apoio a reconhecer rapidamente a acao desejada sem precisar entender termos como
 ticket, chamado, incidente, workflow ou dashboard.
+
+## Documentos complementares da V0
+
+A concepcao da V0 deve ser lida junto com:
+
+- `VISAO_PROTOTIPAL_V0.md`, que registra a primeira visao prototipal em baixa
+  fidelidade;
+- `GUARDRAILS_V0.md`, que define limites de escopo, privacidade, notificacoes,
+  backup, arquitetura, testes automatizados e criterios de aceite.
 
 ### MVP inicial
 
@@ -471,7 +481,7 @@ artificial de tecnologia.
 O OpenEduOps pode evoluir em uma sequencia de projetos independentes, mas
 relacionados.
 
-### EduDesk
+### Radar Escola
 
 Primeiro produto da fila.
 
@@ -494,7 +504,7 @@ Segundo produto ou modulo candidato.
 
 Inventario mais completo de equipamentos, ativos e patrimonio operacional.
 
-Pode evoluir a partir da base de equipamentos do EduDesk quando houver
+Pode evoluir a partir da base de equipamentos do Radar Escola quando houver
 necessidade de controle mais detalhado de patrimonio, localizacao, responsaveis,
 estado, identificadores e historico.
 
@@ -506,7 +516,7 @@ Gestao de laboratorios de informatica, computadores, softwares instalados,
 estado das maquinas, reservas e incidentes.
 
 Pode nascer depois que a organizacao tiver clareza sobre os fluxos reais de
-laboratorios e sobre quais dados do EduDesk e do EduInventory devem ser
+laboratorios e sobre quais dados do Radar Escola e do EduInventory devem ser
 reaproveitados.
 
 ### EduRooms
@@ -525,8 +535,8 @@ Quinto produto ou modulo candidato.
 Base de conhecimento operacional com procedimentos, contatos, checklists,
 rotinas e documentacao institucional.
 
-Pode complementar o EduDesk ao transformar necessidades recorrentes, manutencoes e
-solucoes em conhecimento institucional reutilizavel.
+Pode complementar o Radar Escola ao transformar necessidades recorrentes,
+manutencoes e solucoes em conhecimento institucional reutilizavel.
 
 ## Principios para o primeiro MVP
 

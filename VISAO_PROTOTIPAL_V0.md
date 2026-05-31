@@ -7,6 +7,8 @@ O objetivo ainda nao e definir layout visual, componentes finais ou tecnologia d
 interface. O objetivo e validar fluxo, linguagem, prioridade das acoes e
 experiencia esperada para uma pessoa nao tecnica usando o produto em uma escola.
 
+Esta visao deve ser lida junto com `CONTEXTO_INICIAL.md` e `GUARDRAILS_V0.md`.
+
 ## Produto
 
 Nome candidato do produto:
@@ -228,12 +230,14 @@ Principio do produto:
 | Recuperar senha                              [Voltar] |
 +------------------------------------------------------+
 |                                                      |
-| Informe seu e-mail pessoal de recuperacao.            |
+| Informe seu e-mail pessoal de recuperacao,            |
+| se essa opcao tiver sido configurada.                 |
 |                                                      |
 | E-mail pessoal                                       |
 | [ maria.pessoal@email.com ___________________ ]      |
 |                                                      |
-| O sistema enviara instrucoes para recuperar o acesso. |
+| O sistema tentara enviar instrucoes para recuperar    |
+| o acesso. Tambem pode haver uma alternativa local.    |
 |                                                      |
 | [ Enviar instrucoes ]                                |
 |                                                      |

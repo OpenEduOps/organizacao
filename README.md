@@ -54,7 +54,7 @@ Desenvolvemos software livre para apoiar atividades como:
 * Gestão de bibliotecas;
 * Reserva de salas e espaços;
 * Gestão de eventos institucionais;
-* Central de chamados internos;
+* Registro e acompanhamento de necessidades operacionais;
 * Ferramentas administrativas e operacionais;
 * Gestão de recursos tecnológicos;
 * Apoio à infraestrutura institucional.
@@ -79,6 +79,20 @@ Nosso foco está em resolver problemas operacionais.
 O OpenEduOps prioriza ferramentas locais, acessíveis e instaláveis, com
 experiência simples para instituições que precisam baixar, instalar e começar a
 usar sem depender de infraestrutura complexa.
+
+---
+
+## Documentos Iniciais
+
+Algumas decisões iniciais de produto, experiência e arquitetura estão registradas
+em documentos próprios:
+
+* [`CONTEXTO_INICIAL.md`](CONTEXTO_INICIAL.md): recorte do problema, direção do
+  primeiro produto e estratégia desktop local;
+* [`VISAO_PROTOTIPAL_V0.md`](VISAO_PROTOTIPAL_V0.md): primeira visão prototipal
+  em baixa fidelidade;
+* [`GUARDRAILS_V0.md`](GUARDRAILS_V0.md): limites de escopo, privacidade,
+  arquitetura, testes automatizados e critérios de aceite da V0.
 
 ---
 
@@ -271,7 +285,16 @@ A organização OpenEduOps será composta por múltiplos projetos independentes,
 
 Os nomes dos projetos poderão seguir uma identidade visual e organizacional comum, facilitando a identificação do ecossistema OpenEduOps.
 
+O primeiro produto em concepção é o **Radar Escola**, uma aplicação desktop local
+para Windows voltada a registrar necessidades, envolver pessoas, acompanhar
+andamento, preservar histórico e apoiar a manutenção operacional da escola.
+
 Exemplos de iniciativas futuras:
+
+### Radar Escola
+
+Aplicativo desktop local para escolas acompanharem necessidades operacionais,
+apoio interno, equipamentos e histórico de manutenção.
 
 ### EduLab
 
@@ -280,10 +303,6 @@ Sistema para gestão de laboratórios de informática.
 ### EduInventory
 
 Sistema para inventário e controle de ativos institucionais.
-
-### EduTickets
-
-Sistema para abertura e acompanhamento de chamados internos.
 
 ### EduRooms
 
