@@ -33,6 +33,9 @@ apenas esse nome para nao depender de nomes de matrix ou jobs auxiliares.
   review em pull requests.
 - `.github/workflows/thank-contributor.yml`: envia mensagem de boas-vindas para
   novas issues e pull requests.
+- `.github/workflows/desktop-release.yml`: contrato futuro da esteira de
+  instalador Windows. Hoje ele depende do scaffold do app Radar Escola para
+  conseguir gerar artefatos reais.
 
 ## Comandos locais equivalentes
 
@@ -57,3 +60,11 @@ Quando o repositorio do app existir, a CI devera evoluir para validar:
 
 Esses comandos nao devem ser adicionados a este repositorio enquanto o scaffold
 do app nao existir.
+
+## Esteira Desktop Futura
+
+A esteira alvo de download, instalacao e execucao do app esta documentada em
+[`docs/desktop-release.md`](desktop-release.md).
+
+Ela devera gerar artefato baixavel, checksum SHA-256 e release versionada quando
+o app desktop existir.

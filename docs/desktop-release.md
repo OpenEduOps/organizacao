@@ -1,0 +1,136 @@
+# Release Desktop do Radar Escola
+
+Este documento define a esteira alvo de CI/CD ponta a ponta para o futuro app
+desktop do Radar Escola.
+
+## Objetivo Final
+
+O objetivo final da CI/CD e permitir que uma pessoa usuaria consiga:
+
+1. abrir a pagina de release do projeto;
+2. baixar o instalador Windows;
+3. instalar o Radar Escola na maquina desktop;
+4. abrir o aplicativo;
+5. usar um banco local;
+6. validar que a experiencia basica funciona sem depender de infraestrutura
+   tecnica externa.
+
+Essa e a materializacao da regra de UX definida para o produto:
+
+> A pessoa usuaria final deve ver instalar, abrir, cadastrar, acompanhar,
+> marcar como resolvido, consultar historico e exportar seguranca.
+
+Ela nao deve precisar saber que existem Tauri, React, TypeScript, Rust, SQLite,
+CI, GitHub Actions ou banco de dados.
+
+## Estado Atual
+
+O repositorio `OpenEduOps/organizacao` ainda contem apenas documentacao,
+governanca e requisitos.
+
+Por isso, a esteira completa de release desktop ainda nao consegue gerar um
+instalador real.
+
+O workflow `.github/workflows/desktop-release.yml` ja existe como contrato
+tecnico, mas sua etapa de preflight falha intencionalmente enquanto o scaffold
+do app nao existir.
+
+## Contrato Minimo do App
+
+Para ativar a esteira desktop, o repositorio do app precisara conter:
+
+```text
+package.json
+package-lock.json
+src-tauri/Cargo.toml
+scripts/smoke-windows.ps1
+```
+
+O projeto tambem deve expor scripts locais claros:
+
+```text
+npm ci
+npm run lint
+npm run typecheck
+npm test
+npm run build
+npm run tauri build
+```
+
+Scripts podem ser ajustados conforme o scaffold real, mas a intencao deve ser
+preservada: qualquer pessoa mantenedora precisa conseguir reproduzir localmente
+o que a CI executa.
+
+## Esteira Ponta a Ponta
+
+O workflow `Desktop Release` deve cobrir:
+
+1. preflight do scaffold desktop;
+2. instalacao de Node e Rust;
+3. instalacao de dependencias;
+4. lint, typecheck, testes e build do frontend;
+5. `cargo fmt`, `cargo clippy` e `cargo test` na camada Tauri/Rust;
+6. build do instalador Windows;
+7. smoke test do instalador em runner Windows;
+8. coleta de `.msi` ou `.exe`;
+9. geracao de SHA-256;
+10. upload de artefato baixavel no GitHub Actions;
+11. publicacao em GitHub Release quando houver tag `v*`.
+
+## Smoke Test Windows
+
+O arquivo futuro `scripts/smoke-windows.ps1` deve validar o minimo necessario
+para confiar que o instalador nao esta quebrado.
+
+Ele deve testar:
+
+- instalador encontrado;
+- instalacao sem erro;
+- aplicativo abre sem crash imediato;
+- banco local e criado no local esperado;
+- aplicacao encerra corretamente;
+- desinstalacao ou limpeza do runner quando aplicavel.
+
+O smoke test nao substitui teste de UX humano, mas reduz o risco de publicar um
+instalador que sequer abre.
+
+## Artefatos Esperados
+
+Cada build de release deve produzir:
+
+```text
+Radar-Escola-<versao>-windows-x64.msi ou .exe
+Radar-Escola-<versao>-windows-x64.msi.sha256 ou .exe.sha256
+```
+
+Enquanto nao houver assinatura de codigo, a documentacao da release deve avisar
+que o Windows pode exibir alerta de origem desconhecida.
+
+## Publicacao
+
+Pull requests e pushes comuns devem validar qualidade e build.
+
+Tags `v*` devem publicar release com artefatos baixaveis.
+
+Exemplo futuro:
+
+```text
+v0.1.0
+```
+
+## Limitacoes Atuais
+
+Ainda nao e possivel entregar a experiencia completa de download, instalacao e
+execucao porque faltam:
+
+- codigo do app Radar Escola;
+- scaffold Tauri;
+- interface React/TypeScript;
+- banco SQLite local;
+- scripts de build;
+- script de smoke test Windows;
+- definicao final de formato de instalador;
+- decisao futura sobre assinatura de codigo.
+
+Mesmo assim, o contrato de CI/CD ja deixa claro qual sera o caminho de entrega
+do produto para a pessoa usuaria final.

@@ -94,6 +94,8 @@ em documentos próprios:
 * [`CI_CD_OSS.md`](CI_CD_OSS.md): direcao inicial de CI/CD OSS profissional para
   a organizacao e para o futuro app Radar Escola;
 * [`docs/ci.md`](docs/ci.md): funcionamento da CI inicial deste repositorio;
+* [`docs/desktop-release.md`](docs/desktop-release.md): objetivo final da
+  esteira desktop para baixar, instalar e executar o app no Windows;
 * [`docs/permissions.md`](docs/permissions.md): politica de permissoes minimas
   dos workflows;
 * [`docs/oss-guardrails.md`](docs/oss-guardrails.md): guardrails praticos para

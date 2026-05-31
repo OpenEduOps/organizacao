@@ -16,6 +16,7 @@ Criar uma base de CI/CD que:
 - prepare caminho para o futuro app Tauri + React + TypeScript + SQLite;
 - use permissoes minimas por padrao;
 - separe CI, seguranca, automacoes de comunidade e release;
+- aponte para uma esteira final capaz de gerar instalador Windows baixavel;
 - evite depender de servicos privados, pagos ou credenciais externas para checks
   essenciais.
 
@@ -66,8 +67,9 @@ SECURITY.md
 MAINTAINERS.md
 ```
 
-`release.yml` pode ficar fora da Fase 0, porque ainda nao existe artefato de
-produto para empacotar.
+`desktop-release.yml` pode existir como contrato tecnico futuro, mas deve falhar
+de forma explicita enquanto o scaffold do app nao existir. O projeto nao deve
+publicar artefatos falsos.
 
 ## CI inicial para documentacao
 
@@ -201,13 +203,19 @@ permissions:
 
 - Se usar `pull_request_target`, nunca fazer checkout nem executar codigo do PR.
 
-## Release workflow futuro
+## Release workflow desktop
 
-`release.yml` deve ser criado apenas quando houver app empacotavel.
+O workflow `.github/workflows/desktop-release.yml` define a esteira alvo do app
+desktop.
+
+Enquanto o repositorio nao tiver `package.json`, `src-tauri/Cargo.toml` e
+`scripts/smoke-windows.ps1`, o workflow deve parar no preflight com mensagem
+clara.
 
 Para o Radar Escola, release futura deve considerar:
 
 - instalador Windows como prioridade;
+- smoke test de instalacao e abertura em runner Windows;
 - artefatos verificaveis;
 - checksums SHA-256;
 - SBOMs;
@@ -215,10 +223,15 @@ Para o Radar Escola, release futura deve considerar:
 - tags versionadas, preferencialmente assinadas;
 - documentacao clara de como verificar o download.
 
+O objetivo final e permitir que uma pessoa baixe o instalador, instale e execute
+o Radar Escola em uma maquina desktop Windows para validar a experiencia real do
+produto.
+
 Antes do primeiro release publico, criar:
 
 ```text
 docs/release.md
+docs/desktop-release.md
 docs/permissions.md
 SECURITY.md
 MAINTAINERS.md
@@ -300,6 +313,7 @@ Permissoes especiais:
 - [ ] Smoke test valida o fluxo minimo.
 - [ ] Release workflow gera instalador Windows quando o produto estiver pronto.
 - [ ] Release gera checksums e documenta verificacao.
+- [ ] Smoke test instala e abre o app em ambiente Windows automatizado.
 
 ## Proxima decisao
 
