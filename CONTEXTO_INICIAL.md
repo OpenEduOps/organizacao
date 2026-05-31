@@ -254,7 +254,8 @@ A concepcao da V0 deve ser lida junto com:
 - `GUARDRAILS_V0.md`, que define limites de escopo, privacidade, consulta
   manual pelos envolvidos, backup, arquitetura, testes automatizados e criterios
   de aceite;
-- `ESCOPO_V0.md`, que define a linha de corte do primeiro MVP executavel.
+- `ESCOPO_V0.md`, que define a linha de corte do primeiro MVP executavel;
+- `FLUXO_E2E_V0.md`, que consolida o ciclo ponta a ponta da V0.
 
 ### MVP inicial
 

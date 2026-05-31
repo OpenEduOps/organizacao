@@ -3,6 +3,8 @@
 Este documento define a linha de corte da V0 do primeiro produto, usando
 `Radar Escola` como nome publico candidato atual.
 
+O fluxo ponta a ponta esta descrito em `FLUXO_E2E_V0.md`.
+
 A V0 deve entregar uma experiencia util, instalavel/local e pequena o suficiente
 para ser implementada, testada e validada sem transformar a primeira versao em um
 produto amplo demais.

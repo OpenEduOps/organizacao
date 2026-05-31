@@ -7,7 +7,8 @@ Ele deve ser lido junto com:
 
 - `CONTEXTO_INICIAL.md`;
 - `VISAO_PROTOTIPAL_V0.md`;
-- `ESCOPO_V0.md`.
+- `ESCOPO_V0.md`;
+- `FLUXO_E2E_V0.md`.
 
 O objetivo e proteger a experiencia do usuario final, reduzir riscos de escopo e
 evitar que decisoes tecnicas enfraquecam a proposta inicial.
