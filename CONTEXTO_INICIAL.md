@@ -23,6 +23,10 @@ O ponto de partida mais saudavel parece estar na intersecao entre:
 - potencial de formacao pratica para novos contribuidores;
 - possibilidade de evolucao incremental.
 
+Como a proposta inicial e operacional, a V0 nao deve depender de dados pessoais
+de estudantes. O foco deve estar em necessidades da instituicao, equipamentos,
+locais, pessoas envolvidas na operacao e historico de resolucao.
+
 Por esse motivo, o primeiro foco recomendado nao esta na sala de aula, em
 plataformas pedagogicas, em ambientes virtuais de aprendizagem ou em solucoes
 baseadas em inteligencia artificial.

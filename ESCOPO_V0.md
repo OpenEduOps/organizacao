@@ -117,6 +117,7 @@ decisao explicita posterior.
 
 ## Fica fora da V0
 
+- Nomes, e-mails, documentos, matriculas ou dados pessoais de estudantes.
 - E-mail automatico.
 - WhatsApp.
 - Push notification.

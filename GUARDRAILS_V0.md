@@ -67,7 +67,13 @@ Funcionalidades que devem ser tratadas com cuidado para nao inflar a V0:
 ## Dados, privacidade e LGPD
 
 - Coletar apenas os dados necessarios para a V0.
-- Evitar dados de estudantes por padrao.
+- Nao coletar nomes, e-mails, documentos, matriculas ou outros dados pessoais de
+  estudantes na V0.
+- O Radar Escola e um produto operacional, nao pedagogico ou academico. A V0 deve
+  registrar necessidades da instituicao, equipamentos, locais, envolvidos
+  operacionais e historico de resolucao.
+- Se uma necessidade envolver estudantes indiretamente, o registro deve
+  descrever o problema operacional sem identificar estudantes.
 - Deixar claro que os dados ficam no computador da instituicao.
 - Nao enviar dados para nuvem por padrao.
 - Nao adicionar telemetria por padrao.
