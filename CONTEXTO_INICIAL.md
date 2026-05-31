@@ -86,15 +86,16 @@ Esse recorte e promissor porque:
 ## Primeiro produto possivel
 
 O primeiro produto escolhido para iniciar o OpenEduOps tem como nome publico
-candidato `Radar Escola`.
+candidato atual `Radar Escola`.
 
-O Radar Escola representa uma central operacional simples para instituicoes
-educacionais, com foco inicial em necessidades, apoio interno, equipamentos e
-historico de manutencao.
+O Radar Escola, enquanto nome candidato atual, representa uma central
+operacional simples para instituicoes educacionais, com foco inicial em
+necessidades, apoio interno, equipamentos e historico de manutencao.
 
 Definicao curta:
 
-> Radar Escola e um aplicativo desktop local para Windows que ajuda escolas a
+> Radar Escola e um nome candidato para um aplicativo desktop local para Windows
+> que ajuda escolas a
 > organizar necessidades, equipamentos e historico de manutencao, sem
 > depender de internet, servidor ou equipe tecnica especializada.
 
@@ -107,12 +108,13 @@ O principio de experiencia do Radar Escola deve ser:
 
 > Instalar, abrir e registrar a primeira necessidade em poucos minutos.
 
-## Por que comecar pelo Radar Escola
+## Por que comecar pelo produto Radar Escola
 
-O Radar Escola deve ser o primeiro produto porque resolve uma dor comum em
-diferentes tipos de instituicao educacional: pedidos de manutencao,
-equipamentos, laboratorios, salas e problemas cotidianos que hoje frequentemente
-ficam espalhados em WhatsApp, papel, e-mail solto ou memoria das pessoas.
+O primeiro produto, hoje tratado pelo nome candidato Radar Escola, deve ser o
+ponto de partida porque resolve uma dor comum em diferentes tipos de instituicao
+educacional: pedidos de manutencao, equipamentos, laboratorios, salas e
+problemas cotidianos que hoje frequentemente ficam espalhados em WhatsApp, papel,
+e-mail solto ou memoria das pessoas.
 
 Ele tambem e transversal. Pode ser util para:
 

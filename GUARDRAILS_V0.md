@@ -14,7 +14,7 @@ evitar que decisoes tecnicas enfraquecam a proposta inicial.
 
 ## Identidade e linguagem
 
-- O nome publico candidato do produto e `Radar Escola`.
+- O nome publico candidato atual do produto e `Radar Escola`.
 - `EduDesk` deve ser tratado apenas como nome anterior/codinome historico, ate
   decisao contraria.
 - A tela principal/conceito operacional e `Radar de Necessidades`.

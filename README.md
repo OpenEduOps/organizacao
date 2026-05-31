@@ -92,7 +92,7 @@ em documentos próprios:
 * [`VISAO_PROTOTIPAL_V0.md`](VISAO_PROTOTIPAL_V0.md): primeira visão prototipal
   em baixa fidelidade;
 * [`GUARDRAILS_V0.md`](GUARDRAILS_V0.md): limites de escopo, privacidade,
-  arquitetura, testes automatizados e critérios de aceite da V0.
+  arquitetura, testes automatizados e critérios de aceite da V0;
 * [`ESCOPO_V0.md`](ESCOPO_V0.md): linha de corte do primeiro MVP executável.
 
 ---
@@ -286,16 +286,18 @@ A organização OpenEduOps será composta por múltiplos projetos independentes,
 
 Os nomes dos projetos poderão seguir uma identidade visual e organizacional comum, facilitando a identificação do ecossistema OpenEduOps.
 
-O primeiro produto em concepção é o **Radar Escola**, uma aplicação desktop local
-para Windows voltada a registrar necessidades, envolver pessoas, acompanhar
-andamento, preservar histórico e apoiar a manutenção operacional da escola.
+O primeiro produto em concepção usa **Radar Escola** como nome público candidato
+atual. A proposta é uma aplicação desktop local para Windows voltada a registrar
+necessidades, envolver pessoas, acompanhar andamento, preservar histórico e
+apoiar a manutenção operacional da escola.
 
 Exemplos de iniciativas futuras:
 
 ### Radar Escola
 
-Aplicativo desktop local para escolas acompanharem necessidades operacionais,
-apoio interno, equipamentos e histórico de manutenção.
+Nome público candidato atual para o primeiro produto: um aplicativo desktop
+local para escolas acompanharem necessidades operacionais, apoio interno,
+equipamentos e histórico de manutenção.
 
 ### EduLab
 

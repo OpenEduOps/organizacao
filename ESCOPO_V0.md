@@ -1,6 +1,7 @@
 # Escopo da V0
 
-Este documento define a linha de corte da V0 do Radar Escola.
+Este documento define a linha de corte da V0 do primeiro produto, usando
+`Radar Escola` como nome publico candidato atual.
 
 A V0 deve entregar uma experiencia util, instalavel/local e pequena o suficiente
 para ser implementada, testada e validada sem transformar a primeira versao em um
